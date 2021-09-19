@@ -6,63 +6,45 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-    <title>mouse drag scrollable 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <title>大切にすることを大切にするための本</title>
     <style type="text/css">
-      body {background:#fff;}
-
-      .library h1,
-      .library u {
-        font-family: "游ゴシック","YuGothic","Yu Gothic","游ゴシック体";
+      .value,
+      .en {
+        font-family:'Source Serif Pro', serif;
       }
-      .library b,
-      .library i {
-        font-family: "YuMincho","Yu Mincho","游明朝体";
+      .value {
+        font-size:2.5rem;
+        width:90%;
+        height: 65vh;
       }
-      .library li{
-        background:#fff;
+      .info i {font-size:110%; padding-right: 2vw;}
+      .info b {font-weight:900; font-size:120%;}
+      
+      .date {
         font-size:1rem;
-        padding: 2.5vh 1rem;
-        font-family: monospace;
-        color:limegreen;
-      }
-      .library h1 {
-        font-size:200%;
-        font-weight: 500;
-        color:blue;
-      }
-      .library a {
-        background:limegreen;
-        color:blue;
-      }
-      .library hr {
-        border:none;
-        clear:both;
-        padding:0.25rem 0;
-        border-bottom:0.15rem dotted blue;
+        position:absolute;
+        right:2.5vw;
+        top:5vh;
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
       }
 
-      .library::-webkit-scrollbar,
-      .library li::-webkit-scrollbar{
-        width: 0.25rem;
-        height: 2.5vh;
-        background: blue;
-      }
-      .library::-webkit-scrollbar-track,
-      .library li::-webkit-scrollbar-track{
-        border: none;
-      }
-      .library::-webkit-scrollbar-thumb,
-      .library li::-webkit-scrollbar-thumb{
-        background: #fff;
-        border: none;
-      }
+      .cover {background-image: url(book.png);}
+      .a {background-image: url(000.jpg);}
+      .b {background-image: url(004.JPG);}
+      .c {background-image: url(005.JPG);}
+      .d {background-image: url(006.JPG);}
+      .f {background-image: url(007.JPG);}
+      .g {background-image: url(008.JPG);}
+      .h {background-image: url(009.JPG);}
 
+      @media screen and (max-width: 1100px){
+        .value {
+          font-size:3vw;
+        }
+      }
     </style>
-
-    <meta
-      name="description"
-      content="https://www.it-the-best.com/entry/javascript-technic-mousedragscroll"
-    />
 
     <!-- Import the webpage's stylesheet -->
     <link rel="stylesheet" href="scrollable.css" />
@@ -74,54 +56,76 @@
   <body>
     <ul class="mousedragscrollable library">
       <li>
-        <b class="left">left</b>
-        <b class="right">right</b>
-        <h1 class="right">H1</h1>
-        <p class="left">p class="left"</p>
-        <hr/>
-        <p><u>Members Only</u></p>
-        <h1><a href="part2.zip">Download</a></h1>
+        <p class="date">大切にすることを大切にするための本</p>
+        <div id="contents" class="info">
+          <div class="value">
+          <h1 class="info">
+            <i>the book</i> for<br/>
+            <b>valuing an act<br/>
+              of valuing</b></h1>
+          </div>
+        <p class="center en">
+        <span class="by">First</span>
+        <span class="by">Edition</span>
+        <span class="by"></span>
+        <span class="as">November </span>
+        <span class="by">23th</span>
+        <span class="by">2019</span>
+        <br/>
+        <span class="by">B6</span>
+        <span class="by">size</span>
+        <span class="by"></span>
+        <span class="by">134</span>
+        <span class="as">pages</span>
+        <span class="">300　copies</span>
+        </p>
+        </div>
+      </li>
+
+      <li class="cover"></li>
+
+      <li>
+        <p class="date">あなたの大切なものは何ですか？</p>
+        <div id="contents">
+        <p class="margin">
+        このとてもシンプルな問いへの３８個の回答をこの本に収録します。<br/>
+        アーティスト・デザイナー・ディレクターなど計30名が、大切に想う物事を知ることで、読者自身が想う大切なものごとをもっと大切に想えるようなヒントになればという想いを込めて制作しました。
+        </p>
+        <h2 class="en"><u>“What do you value?”</u></h2>
+        <p class="en">
+          This book gathers 38 unique answers for this simple question from (artists, musicians, designers, art directors).<br/>
+          We published this book hoping to provide readers with hints to admire their valuables better by reading the answers.
+        </p>
+        </div>
+      </li>
+
+      <li class="a">
+        <div id="outside">
+        <span class="buy">
+        <a href="http://newlifecollection.com/ca2/1/p-r-s/" target="_parent">BUY</a>
+        </span>
+        </div>
       </li>
 
       <li>
-        <b class="left">left</b>
-        <b class="right">right</b>
-        <h1 class="right">H1</h1>
-        <p class="left">p class="left"</p>
-        <hr/>
-        <p><u>Members Only</u></p>
-        <h1><a href="part2.zip">Download</a></h1>
+        <div id="contents" class="info">
+          <p class="center"><u>参加者</u></p>
+          <p class="name">
+          立川愛子 (well) | 星川あさこ | 小西彩水 | 芥川亜由弥 | 趙千恵 | Dove | fileloaded1.ofdusty | 沼本春花 | Joseph Torres | 中尾香織 | 笹嶋一馬 | 中西一成
+          | Kenji T. | 江崎將史 | 唐木満 (O Gallery eyes) | 小林椋 | Natalia Panzer | Nicholas Strobelt | 大津愛美 | 鷲尾玲 |  趙里奈
+          | ロクロトタンテ | 高原颯時 (well) | シーケタ | 松尾信太郎 | 船川翔司 | Theodore Cale Schafer |
+          Tom Trudgeon | 水内義人 | Yuto Ohashi
+          </p>
+        </div>
       </li>
 
-      <li>
-        <b class="left">left</b>
-        <b class="right">right</b>
-        <h1 class="right">H1</h1>
-        <p class="left">p class="left"</p>
-        <hr/>
-        <p><u>Members Only</u></p>
-        <h1><a href="part2.zip">Download</a></h1>
-      </li>
-
-      <li>
-        <b class="left">left</b>
-        <b class="right">right</b>
-        <h1 class="right">H1</h1>
-        <p class="left">p class="left"</p>
-        <hr/>
-        <p><u>Members Only</u></p>
-        <h1><a href="part2.zip">Download</a></h1>
-      </li>
-
-      <li>
-        <b class="left">left</b>
-        <b class="right">right</b>
-        <h1 class="right">H1</h1>
-        <p class="left">p class="left"</p>
-        <hr/>
-        <p><u>Members Only</u></p>
-        <h1><a href="part2.zip">Download</a></h1>
-      </li>
+      <li class="b"></li>
+      <li class="c"></li>
+      <li class="d"></li>
+      <li class="e"></li>
+      <li class="f"></li>
+      <li class="g"></li>
+      <li class="h"></li>
       
     </ul>
   </body>

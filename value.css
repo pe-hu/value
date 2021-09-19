@@ -69,13 +69,13 @@ body {
 .ja .app .tt {
 	position: absolute;
 	top:3rem;
-	font-size:0.8rem;
+	font-size:0.75rem;
 	font-weight: 555;
 	z-index:10;
 }
 .ja .app .essay {
 	display: inline-block;
-	font-size:0.75rem;
+	font-size:0.8rem;
 	height:85%;
 	padding:2rem 5rem 0 2rem;
 }
@@ -94,14 +94,14 @@ body {
 .en .app .tt {
 	display: block;
 	width: 100%;
-	font-size:0.8rem;
+	font-size:0.75rem;
 	font-weight: 555;
 	padding:0 2rem;
 	font-family: 'Source Serif Pro', serif;
 }
 .en .app .essay {
 	display: block;
-	font-size:0.75rem;
+	font-size:0.8rem;
 	padding: 2rem 2rem;
 	font-family: 'Source Serif Pro', serif;
 }

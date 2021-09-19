@@ -9,20 +9,6 @@ body {
   writing-mode: vertical-rl;
 }
 
-.link {
-	float:right;
-	text-align:right;
-	width:20rem;
-	font-size:75%;
-	margin:0.5vw 2.5% 0;
-}
-.link a {
-	text-decoration:none;
-	color:#000;
-	border:0.1rem solid;
-	padding:2% 4%;
-	border-radius:50%;
-}
 #image {
 	background:#fff;
 	font-size:1.1rem;
@@ -128,6 +114,18 @@ body {
 	font-size:1rem;
 	margin:0 5%;
 	z-index:10;
+}
+
+.link {
+	position:fixed;
+	bottom: 0;
+	left: 0;
+	font-size:2.5rem;
+	margin:2.5vw;
+}
+.link a {
+	text-decoration:none;
+	color:#000;
 }
 
 @media screen and (max-width: 900px){

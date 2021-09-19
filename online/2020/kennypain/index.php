@@ -54,5 +54,9 @@ Kenny Pain
 </div>
 </div>
 </div>
+
+<p class="link">
+<a href="#" onclick="window.history.back(); return false;">↩︎</a>
+</p>
 </body>
 </html>

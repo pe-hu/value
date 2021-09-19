@@ -9,7 +9,7 @@ $language = (string)filter_input(INPUT_POST, 'language');
 $text = (string)filter_input(INPUT_POST, 'text');
 $email = (string)filter_input(INPUT_POST, 'email');
 
-$fp = fopen('draft.csv', 'a+b');
+$fp = fopen('value.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$title, $name, $link, $language, $text, $email]);

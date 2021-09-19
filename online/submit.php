@@ -86,6 +86,8 @@ fclose($fp);
 <input type="text" name="title" placeholder="題名" required></p>
 <p>Your Name<br/>
 <input type="name" name="name" placeholder="名前" required></p>
+<p style="display:none;">Link<br/>
+<input type="text" name="link" value="none"></p>
 <p>Your Email<br/>
 <input type="email" name="email" placeholder="メールアドレス" required></p>
 <p>Text by

@@ -50,6 +50,7 @@ fclose($fp);
 <p><?=h($row[4])?></p>
 </div>
 <div class="link">
+<p style="display:<?=h($row[2])?>;"><a href="<?=h($row[2])?>"></a></p>
 </div>
 </div>
 </div>

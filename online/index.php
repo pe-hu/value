@@ -36,16 +36,10 @@ fclose($fp);
 <title>大切なことを大切にするためのウェブサイト</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <style type="text/css">
-#post .jp_title {
-    position: fixed;
-    z-index: 50;
-    top:1rem; right:2.5rem;
-}
 </style>
 </head>
 <body>
 <div id="post">
-<h1 class="jp_title">あなたの大切なものは何ですか？</h1>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div class="<?=h($row[3])?>">

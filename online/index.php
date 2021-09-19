@@ -35,9 +35,17 @@ fclose($fp);
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
 <title>大切なことを大切にするためのウェブサイト</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<style type="text/css">
+#post .jp_title {
+    position: fixed;
+    z-index: 50;
+    top:0; right:0;
+}
+</style>
 </head>
 <body>
 <div id="post">
+<h1 class="jp_title">大切にすることを大切にする場所</h1>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div class="<?=h($row[3])?>">

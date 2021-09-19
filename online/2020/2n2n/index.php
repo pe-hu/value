@@ -32,7 +32,7 @@ fclose($fp);
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="image">
+<div id="image">
 <span>あなたの大切なものは何ですか？</span>
 <p><img src="image.jpg"></p>
 </div>

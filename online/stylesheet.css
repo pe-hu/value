@@ -23,7 +23,7 @@ body {
 	padding:2% 4%;
 	border-radius:50%;
 }
-.image {
+#image {
 	background:#fff;
 	font-size:1.1rem;
 	position:relative;
@@ -31,7 +31,7 @@ body {
 	top:0; left:0;
 	width:85vw; height:85vh;
 }
-.image img {
+#image img {
 	margin:auto;
 	padding:5%;
 	width:auto; max-width:70%;
@@ -40,12 +40,12 @@ body {
 	filter: blur(0.5rem);
     transition: all 2500ms ease;
 }
-.image img:hover {
+#image img:hover {
 	-webkit-filter: blur(0);
 	filter: blur(0);
     transition: all 2500ms ease;
 }
-.image p {
+#image p {
 	text-align:center;
 	z-index:100;
 	width:100%; height:100%;
@@ -54,7 +54,7 @@ body {
 	transform:translateY(-50%) translateX(-50%);
 	-webkit-transform:translateY(-50%) translateX(-50%);
 }
-.image span {
+#image span {
 	position:absolute;
 	top:5%; left:5%;
 	z-index:100;

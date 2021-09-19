@@ -47,13 +47,12 @@ fclose($fp);
 <?php foreach ($rows as $row): ?>
 <div class="<?=h($row[3])?>">
 <div class="app">
-<p class="tt"><?=h($row[0])?> Title<br/>
-<?=h($row[1])?> Name</p>
+<p class="tt"><?=h($row[0])?><br/>
+<?=h($row[1])?></p>
 <div class="essay">
 <p><?=h($row[4])?></p>
 </div>
 <div class="link">
-<a href="<?=h($row[2])?>" class="<?=h($row[2])?>" target="_blank" rel="noopener noreferrer">Link</a>
 </div>
 </div>
 </div>
@@ -66,9 +65,6 @@ Name</p>
 <div class="essay">
 <p>Text</p>
 </div>
-<div class="link">
-<a href="" target="_blank" rel="noopener noreferrer">Link</a>
-</div>
 </div>
 </div>
 <div class="ja">
@@ -77,9 +73,6 @@ Name</p>
 Name</p>
 <div class="essay">
 <p>Text</p>
-</div>
-<div class="link">
-<a href="" target="_blank" rel="noopener noreferrer">Link</a>
 </div>
 </div>
 </div>

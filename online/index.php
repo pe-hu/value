@@ -37,7 +37,7 @@ fclose($fp);
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
-
+<div id="post">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div class="<?=h($row[3])?>">
@@ -72,6 +72,6 @@ Name</p>
 </div>
 </div>
 <?php endif; ?>
-
+</div>
 </body>
 </html>

@@ -3,8 +3,10 @@ body {
 	background:#fff;
 }
 #what,
+#title,
 #image span,
-.ja .app {
+.ja .app,
+.ja .list {
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
 }
@@ -42,6 +44,12 @@ body {
 }
 #image span {
 	position:absolute;
+	top:5%; left:5%;
+	z-index:100;
+	font-size:75%;
+}
+#title {
+	position:fixed;
 	top:5%; left:5%;
 	z-index:100;
 	font-size:75%;
@@ -86,6 +94,14 @@ body {
 	font-size:0.8rem;
 	height:85%;
 	padding:2rem 2rem 0 2rem;
+}
+.ja .list {
+	position:relative;
+	display:flex;
+	width:90%;
+	margin:2.5rem auto 7.5rem;
+	font-size:1rem;
+	padding:2rem 5rem 0 2rem;
 }
 
 .en .app {

@@ -8,21 +8,14 @@ body {
 	left:1rem;
 	font-size:1.5rem;
 }
-#target a,
-.link a {
+#target a {
 	text-decoration:none;
 	color:#000;
 	border:0.1rem solid;
 	border-radius:50%;
 	display:inline-block;
 	background:#fff;
-}
-#target a {
 	padding:0.5rem 1rem;
-}
-.link a {
-	font-size: 1rem;
-	padding:0.25rem 0.5rem;
 }
 
 .value {
@@ -104,12 +97,6 @@ body {
 	font-size:0.8rem;
 	padding: 2rem 2rem;
 	font-family: 'Source Serif Pro', serif;
-}
-
-.link {
-	float:left;
-	-ms-writing-mode: horizontal-tb;
-	writing-mode: horizontal-tb;
 }
 
 @media screen and (max-width: 1000px){

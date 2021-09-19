@@ -38,11 +38,6 @@ fclose($fp);
 </head>
 <body>
 
-<div class="value">
-<h2 id="title"><u>this is</u> a <i>space</i> for <b>valuing an act of valuing</b></h2>
-<h1 class="jp_title">大切にすることを大切にする場所</h1>
-</div>
-
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div class="<?=h($row[3])?>">

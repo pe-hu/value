@@ -1,72 +1,4 @@
 <?php
-
-mb_language("ja");
-mb_internal_encoding("UTF-8");
-
-//var_dump($_POST);
-
-// 変数の初期化
-$page_flag = 0;
-
-if( !empty($_POST['btn_confirm']) ) {
-	$page_flag = 1;
-	// セッションの書き込み
-	session_start();
-	$_SESSION['page'] = true;
-
-} elseif( !empty($_POST['btn_submit']) ) {
-	session_start();
-	if( !empty($_SESSION['page']) && $_SESSION['page'] === true ) {
-
-	// セッションの削除
-	unset($_SESSION['page']);
-
-	$page_flag = 2;
-
-	// 変数とタイムゾーンを初期化
-	$header = null;
-	$auto_reply_subject = null;
-	$auto_reply_text = null;
-	$admin_reply_subject = null;
-	$admin_reply_text = null;
-	date_default_timezone_set('Asia/Tokyo');
-
-	// ヘッダー情報を設定
-	$header = "MIME-Version: 1.0\n";
-	$header .= "From: creative, community space ∧°┐ <we.are.pe.hu@gmail.com>\n";
-	$header .= "Reply-To: creative, community space ∧°┐ <we.are.pe.hu@gmail.com>\n";
-
-	// 件名を設定
-	$auto_reply_subject = '大切にすることを大切にする';
-
-	// 本文を設定
-	$admin_reply_text .= "" . $_POST['name'] . "の大切なもの\n";
-	$admin_reply_text .= "title" . $_POST['title'] . "\n\n";
-	$admin_reply_text .= "" . nl2br($_POST['text']) . "\n\n\n";
-	$admin_reply_text .= "Posted on " . date("m-d-Y H:i") . "\n";
-	$admin_reply_text .= "creative-community.space/value/";
-
-	// メール送信
-	mb_send_mail( $_POST['email'], $auto_reply_subject, $auto_reply_text, $header);
-
-	// 運営側へ送るメールの件名
-	$admin_reply_subject = "大切にすることを大切にする";
-
-	// 本文を設定
-	$admin_reply_text .= "" . $_POST['name'] . "の大切なもの\n";
-	$admin_reply_text .= "title" . $_POST['title'] . "\n\n";
-	$admin_reply_text .= "" . nl2br($_POST['text']) . "\n\n\n";
-	$admin_reply_text .= "Posted on " . date("m-d-Y H:i") . "\n";
-	$admin_reply_text .= "creative-community.space/value/";
-
-	// 運営側へメール送信
-	mb_send_mail( 'admin@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
-
-	} else {
-		$page_flag = 0;
-	}
-}
-
 function h($str) {
     return htmlspecialchars($str, ENT_QUOTES, 'UTF-8');
 }
@@ -77,7 +9,7 @@ $language = (string)filter_input(INPUT_POST, 'language');
 $text = (string)filter_input(INPUT_POST, 'text');
 $email = (string)filter_input(INPUT_POST, 'email');
 
-$fp = fopen('value.csv', 'a+b');
+$fp = fopen('draft.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$title, $name, $link, $language, $text, $email]);

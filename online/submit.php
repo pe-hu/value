@@ -147,7 +147,7 @@ fclose($fp);
 <body>
 <div id="submit">
 <section>
-<form action="complete.php" method="post">
+<form action="/value/online/complete.php" method="post">
 <h1>Q. What do you value?</h1>
 <p class="jp_title">あなたの大切なものは何ですか？</p>
 <p>Title<br/>

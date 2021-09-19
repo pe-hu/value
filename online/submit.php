@@ -154,8 +154,6 @@ fclose($fp);
 <input type="text" name="title" placeholder="題名" required></p>
 <p>Your Name<br/>
 <input type="name" name="name" placeholder="名前" required></p>
-<p>Your Website<br/>
-<input type="url" name="link" placeholder="ウェブサイト"></p>
 <p>Your Email<br/>
 <input type="email" name="email" placeholder="メールアドレス" required></p>
 <p>Text by

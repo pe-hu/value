@@ -39,13 +39,13 @@ fclose($fp);
 #post .jp_title {
     position: fixed;
     z-index: 50;
-    top:0; right:0;
+    top:1rem; right:2.5rem;
 }
 </style>
 </head>
 <body>
 <div id="post">
-<h1 class="jp_title">大切にすることを大切にする場所</h1>
+<h1 class="jp_title">あなたの大切なものは何ですか？</h1>
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div class="<?=h($row[3])?>">

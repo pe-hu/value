@@ -86,7 +86,6 @@ body {
 }
 .en .app .tt {
 	display: block;
-	width: 100%;
 	font-size:0.75rem;
 	font-weight: 555;
 	padding:0 2rem;

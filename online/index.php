@@ -31,6 +31,7 @@ fclose($fp);
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="icon" href="/value/icon.png">
+<link rel="stylesheet" type="text/css" href="/value/stylesheet.css" />
 <link rel="stylesheet" type="text/css" href="/value/online/post.css" />
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
 <title>大切なことを大切にするためのウェブサイト</title>

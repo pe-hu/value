@@ -36,6 +36,17 @@ fclose($fp);
 <title>大切なことを大切にするためのウェブサイト</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <style type="text/css">
+.link {
+	position:fixed;
+	bottom: 0;
+	left: 0;
+	font-size:2.5rem;
+	margin:2.5vw;
+}
+.link a {
+	text-decoration:none;
+	color:#000;
+}
 </style>
 </head>
 <body>

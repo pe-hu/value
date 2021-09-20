@@ -48,7 +48,13 @@ body {
 	font-weight:500;
 }
 
-#about {padding:5vw 0;}
+#about {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 95vh;
+	padding:5vh 0 0;}
 .ja .app {
 	position:relative;
 	display:flex;

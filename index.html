@@ -11,6 +11,7 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
+$("#index").load("/menu/");
 $("#submit").load("online/submit.php");
 })
 </script>
@@ -21,6 +22,10 @@ p.scrollLeft(1000);
 });
 </script>
 <style type="text/css">
+#btn {
+    bottom:0;
+    right:0;
+}
 .none {
     opacity: 0;
     pointer-events: none;
@@ -42,11 +47,14 @@ p.scrollLeft(1000);
     bottom:0;
     right:0;
 }
+
 </style>
 </head>
 <body>
+<div id="index"></div>
+
 <div id="target">
-<a href="#about">About</a>
+<a id="open" href="#about">About</a>
 <a href="#submit">Submit</a>
 <a href="#publication">Publication</a>
 </div>
@@ -56,7 +64,7 @@ p.scrollLeft(1000);
 <h1 class="jp_title">大切にすることを大切にする場所</h1>
 </div>
 
-<div id="about" class="ja">
+<div id="about" class="ja none">
 <div class="app">
 <p class="tt">大切にすることを大切にする<br/>
 クリエイティブ・コミュニティスペース ペフ</p>
@@ -77,6 +85,19 @@ p.scrollLeft(1000);
 <iframe src="book/"></iframe>
 <iframe src="still/"></iframe>
 </div>
+
+<script>
+   let btn = document.querySelector('#open');
+   let open = document.querySelector('#about');
+    
+   let btnToggleclass = function(el) {
+     el.classList.toggle('open');
+   }
+    
+   btn.addEventListener('click', function() {
+     btnToggleclass(open);
+   }, false);
+</script>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 

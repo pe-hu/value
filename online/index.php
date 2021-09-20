@@ -37,13 +37,15 @@ fclose($fp);
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <style type="text/css">
 .link {
-	position:fixed;
-	bottom: 0;
-	left: 0;
-	font-size:2.5rem;
 	margin:2.5vw;
+    -ms-writing-mode: horizontal-tb;
+    writing-mode: horizontal-tb;
 }
 .link a {
+	font-size:1rem;
+	border:0.1rem solid;
+	border-radius:50%;
+	padding:0.5rem 1rem;
 	text-decoration:none;
 	color:#000;
 }

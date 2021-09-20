@@ -27,7 +27,7 @@ fclose($fp);
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="../../stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="../../post.css" />
 <title>矜持を保つこと | by wanna be youth</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>

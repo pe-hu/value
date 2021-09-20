@@ -81,7 +81,6 @@ fclose($fp);
 <section>
 <form action="/value/online/complete.php" method="post">
 <h1>Q. What do you value?</h1>
-<p class="jp_title">あなたの大切なものは何ですか？</p>
 <p>Title<br/>
 <input type="text" name="title" placeholder="題名" required></p>
 <p>Your Name<br/>

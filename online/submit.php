@@ -48,12 +48,13 @@ if( !empty($_POST['btn_confirm']) ) {
 	$header .= "Reply-To: ichoose <we.are.pe.hu@gmail.com>\n";
 
 	// 件名を設定
-	$auto_reply_subject = 'ichoose | Create 10 Questions';
+	$auto_reply_subject = '大切にすることを大切にする場所';
 
 	// 本文を設定
 	$auto_reply_text .= "Thank You for Submit\n\n";
-	$auto_reply_text .= "大切なもの | What do you value?\n" . $_POST['name'] . "\n\n";
+	$auto_reply_text .= "大切なもの | What do you value?\n" . $_POST['name'] . "\n";
 
+	$auto_reply_text .= "\n" . $_POST['q_one'] . "\n\n";
 	$auto_reply_text .= "\n" . $_POST['q_one'] . "\n\n";
 	$auto_reply_text .= "Posted on " . date("m-d-y H:i") . "\n\n";
 	$auto_reply_text .= "creative-community.space/value/";
@@ -62,18 +63,19 @@ if( !empty($_POST['btn_confirm']) ) {
 
 
 	// 件名を設定
-	$admin_reply_subject = 'ichoose | Create 10 Questions';
+	$admin_reply_subject = '大切にすることを大切にする場所';
 
 	// 本文を設定
-	$admin_reply_text .= "大切なもの | What do you value?\n" . $_POST['name'] . "\n\n";
-	$admin_reply_text .= "Email " . $_POST['email'] . "\n\n\n";
+	$admin_reply_text .= "大切なもの | What do you value?\n" . $_POST['name'] . "\n";
 
 	$admin_reply_text .= "\n" . $_POST['q_one'] . "\n\n";
+	$admin_reply_text .= "Name " . $_POST['name'] . "\n";
+	$admin_reply_text .= "Email " . $_POST['email'] . "\n\n\n";
 
 	$admin_reply_text .= "Posted on " . date("m-d-y H:i") . "\n\n";
 	$admin_reply_text .= "creative-community.space/value/";
 
-	mb_send_mail( 'sorryforthedelayinsending@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
+	mb_send_mail( 'sasajimakazuma@gmail.com', $admin_reply_subject, $admin_reply_text, $header);
 
 	} else {
 		$page_flag = 0;

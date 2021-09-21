@@ -75,7 +75,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$auto_reply_text .= "Posted on " . date("Y-m-d H:i:s") . "\n\n\n";
 	$auto_reply_text .= "https://creative-community.space/value/";
 
-	mb_send_mail( 'sasajimakazuma@gmail.com', $admin_reply_subject, $admin_reply_text, $header);
+	mb_send_mail( 'hello@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
 
 	} else {
 		$page_flag = 0;
@@ -137,7 +137,6 @@ if( !empty($_POST['btn_confirm']) ) {
 </head>
 <body>
 <div id="submit">
-<?php if( $page_flag === 1 ): ?>
 <section>
 <form action="/value/online/complete.php" method="post">
 <h1>Q. What do you value?</h1>
@@ -156,24 +155,6 @@ if( !empty($_POST['btn_confirm']) ) {
 <button type="submit">Submit</button>
 </form>
 </section>
-<?php elseif( $page_flag === 2 ): ?>
-
-<div class="thankyou">
-<div class="ichoose">
-<h1>Thank You for Submit</h1>
-<b><?php echo $_POST['name']; ?></b>
-<p>ご投稿ありがとうございます。</p>
-<br/>
-<p>投稿フォームに入力いただいたメールアドレスに、あなたの大切なものを自動返信します。</p>
-<p><u>※ 投稿後、返信メールが届かなかった場合は、お手数ですが we.are.pe.hu@gmail.com までお問合わせください。</u></p>
-<br/>
-<p>投稿いただいた大切なものを、このウェブサイトに公開する準備が整いましたら、同じく投稿フォームに入力いただいたメールアドレスまで、ウェブページ公開のお知らせをお送りいたします。</p>
-<hr/>
-</div>
-</div>
-
-<?php else: ?>
-
 </div>
 </body>
 </html>

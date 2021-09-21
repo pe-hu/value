@@ -20,7 +20,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	if( $file_handle = fopen( FILENAME, "a") ) {
 
 		// 書き込むデータを作成
-		$data = "'".$_POST['title']."','".$_POST['name']."','".$_POST['link']."','".$_POST['language']."','".$_POST['text']."','".$_POST['email']."'\n\n\n";
+		$data = "'".$_POST['name']."','".$_POST['q_one']."'\n\n\n";
 
 		// 書き込み
 		fwrite( $file_handle, $data);
@@ -44,38 +44,37 @@ if( !empty($_POST['btn_confirm']) ) {
 
 	// ヘッダー情報を設定
 	$header = "MIME-Version: 1.0\n";
-	$header .= "From: ∧° ┐ | creative, community space <we.are.pe.hu@gmail.com>\n";
-	$header .= "Reply-To: ∧° ┐ | creative, community space <we.are.pe.hu@gmail.com>\n";
+	$header .= "From: ichoose <we.are.pe.hu@gmail.com>\n";
+	$header .= "Reply-To: ichoose <we.are.pe.hu@gmail.com>\n";
 
 	// 件名を設定
-	$auto_reply_subject = '大切にすることを大切にする';
+	$auto_reply_subject = 'ichoose | Create 10 Questions';
 
 	// 本文を設定
-	$admin_reply_text .= "Thank You for Submit\n\n";
-	$auto_reply_text .= "Your Name\n" . $_POST['name'] . "\n\n\n";
+	$auto_reply_text .= "Thank You for Create 10 Questions\n\n";
+	$auto_reply_text .= "This questions was created by\n" . $_POST['name'] . "\n\n\n";
 
-	$auto_reply_text .= "大切なもの | What do you value?\n" . $_POST['title'] . "\n\n";
-	$auto_reply_text .= "" . $_POST['text'] . "";
-
-	$auto_reply_text .= "Posted on " . date("Y-m-d H:i:s") . "\n\n\n";
-	$auto_reply_text .= "https://creative-community.space/value/";
+	$auto_reply_text .= "Question 1\n\n" . $_POST['q_one'] . "\n";
+	$auto_reply_text .= "Posted on " . date("m-d-y H:i") . "\n\n\n";
+	$auto_reply_text .= "ichoose.pe.hu";
 
 	mb_send_mail( $_POST['email'], $auto_reply_subject, $auto_reply_text, $header);
 
 
 	// 件名を設定
-	$auto_reply_subject = '大切にすることを大切にする';
+	$admin_reply_subject = 'ichoose | Create 10 Questions';
 
 	// 本文を設定
-	$auto_reply_text .= "Name\n" . $_POST['name'] . "\n\n\n";
+	$admin_reply_text .= "Thank You for Create 10 Questions\n\n";
+	$admin_reply_text .= "This questions was created by\n" . $_POST['name'] . "\n\n";
+	$admin_reply_text .= "Email " . $_POST['email'] . "\n\n\n";
 
-	$auto_reply_text .= "大切なもの | What do you value?\n" . $_POST['title'] . "\n\n";
-	$auto_reply_text .= "" . $_POST['text'] . "";
+	$admin_reply_text .= "Question 1\n\n" . $_POST['q_one'] . "\n";
 
-	$auto_reply_text .= "Posted on " . date("Y-m-d H:i:s") . "\n\n\n";
-	$auto_reply_text .= "https://creative-community.space/value/";
+	$admin_reply_text .= "Posted on " . date("m-d-y H:i") . "\n\n\n";
+	$admin_reply_text .= "ichoose.pe.hu";
 
-	mb_send_mail( 'sasajimakazuma@gmail.com', $admin_reply_subject, $admin_reply_text, $header);
+	mb_send_mail( 'sorryforthedelayinsending@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
 
 	} else {
 		$page_flag = 0;
@@ -83,126 +82,151 @@ if( !empty($_POST['btn_confirm']) ) {
 }
 ?>
 
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="icon" href="../icon.png">
-<link rel="stylesheet" type="text/css" href="/value/stylesheet.css" />
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
-<title>大切にすることを大切にする場所</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/styles.css" />
+<link rel="stylesheet" type="text/css" href="/10q/10q.css" />
+<link rel="stylesheet" type="text/css" href="/10q/list.css" />
+<title>Create 10 Questions | The Answers are always inside of you</title>
 <style type="text/css">
-#submit h1,
-#submit p,
-#submit button {
-	font-family: 'Source Serif Pro', serif;
-	font-weight:500;
+.ichoose {font-size: 2vw; margin:10vw 5vw 35vw;}
+
+.ichoose h3 u {font-size: 2.5vw;}
+.ichoose p {margin-bottom: 5vw;}
+input[type="name"],
+input[type="email"],
+input[type="text"] {
+  width:75%;
+  padding:1.25%;
+  font-size:2vw;
 }
-#submit {
-	position:relative;
-	top:0; left:0;
-	font-size:0.75rem;
-	padding:5% 0;
+
+input[type="submit"] {
+  padding:2.5% 5%;
+  margin:0 2.5%;
+  font-size:2.5vw;
+  background:transparent;
+  border:red 2px solid;
+  border-radius:50%;
+  cursor:pointer;
 }
-#submit section {
-	width:90%;
-	max-width:35rem;
-    margin:auto;
+#next {margin-top:5vw;}
+
+.thankyou {
+  position:absolute;
+  display:block;
+  overflow:auto;
+  padding:0; margin:0;
+  width:100%; height:100vh;
 }
-#submit input[type="text"],
-#submit input[type="name"],
-#submit input[type="url"],
-#submit input[type="email"],
-#submit textarea {
-	padding:1.5%;
-	margin:0.01vw 0;
-	border:0.1rem solid;
-	border-radius:0.5rem;
-	font-size:0.75rem;
-	width:97%;
+.thankyou h2 {
+  position:fixed;
+  bottom:0;
+  width:100%;
+  text-align:center;
+  font-size: 2.5vw; font-weight: 500;
+  font-family: "Times New Roman", "Times", serif;
 }
-#submit button {
-	font-size: 1rem;
-	cursor:pointer;
-	width:100%;
-	margin-bottom:2.5rem;
-	padding:0.25rem 0;
-	background: #fff;
-	color: #000;
-	border-radius:2.5rem;
+.thankyou hr {
+  border:none;
+  padding:2.5vw;
+}
+
+#next {zoom:1.25;}
+
+@media screen and (max-width: 500px){
+.or {width:75%;}
+.left, .right {width:100%;}
+input[type="name"],
+input[type="email"],
+input[type="text"] {
+  width:85%;
+  font-size:2.5vw;
+}
+.question h2 {padding-bottom:2.5vw;}
+.or {padding-bottom:5vw;}
+#answer {margin-top:2.5vw;}
+#next {margin-top:7.5vw;}
+}
+@media print{
+.ichoose {zoom:150%; height:70vh;}
 }
 </style>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
-<div id="submit">
 <?php if( $page_flag === 1 ): ?>
 <section id="main" class="form">
-<form action="" method="post">
 
-<div id="post">
-<div class="<?php echo $_POST['language']; ?>">
-<div class="app">
-<p class="tt"><?php echo $_POST['title']; ?><br/>
-<?php echo $_POST['name']; ?></p>
-<div class="essay">
-<p><?php echo $_POST['text']; ?></p>
-</div>
-<div class="link">
-<p><a><?php echo $_POST['email']; ?></a></p>
-</div>
-</div>
-</div>
+<div class="ichoose">
+<h3><u>This question was created by</u></h3>
+これは、 <b><?php echo $_POST['name']; ?></b>
+<p>が考えた 10の質問 です。</p>
 </div>
 
+<form action="" id="10q" method="post">
+<div class="question">
+<h2><?php echo $_POST['q_one']; ?></h2>
+</div>
+
+<div class="question">
 <p id="next">
 <input type="submit" name="btn_back" value="Back">
 <input type="submit" name="btn_submit" value="Post">
 </p>
 
-<input type="hidden" name="title" value="<?php echo $_POST['title']; ?>">
 <input type="hidden" name="name" value="<?php echo $_POST['name']; ?>">
-<input type="hidden" name="link" value="<?php echo $_POST['link']; ?>">
-<input type="hidden" name="language" value="<?php echo $_POST['language']; ?>">
-<input type="hidden" name="text" value="<?php echo $_POST['text']; ?>">
 <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
-
-
+<input type="hidden" name="q_one" value="<?php echo $_POST['q_one']; ?>">
+</div>
 </form>
 </section>
 
 <?php elseif( $page_flag === 2 ): ?>
-<h1>Thank You for Submit</h1>
-<p>投稿フォームに入力いただいたメールアドレスに、あなたの大切なものを自動返信します。</p>
-<p><u>※ 投稿後、返信メールが届かなかった場合は、お手数ですが we.are.pe.hu@gmail.com までお問合わせください。</u></p>
+
+<div class="thankyou">
+<h3><u>Thank You </u></h3>
+<b><?php echo $_POST['name']; ?></b>
+<p>10の質問をご制作いただき、ありがとうございます。</p>
 <br/>
-<p>投稿いただいた大切なものを、このウェブサイトに公開する準備が整いましたら、同じく投稿フォームに入力いただいたメールアドレスまで、ウェブページ公開のお知らせをお送りいたします。</p>
+<p>10の質問投稿フォームに入力いただいたメールアドレスに、あなたが制作した10の質問を自動返信します。</p>
+<p><u>※ 質問投稿後、返信メールが届かなかった場合は、お手数ですが we.are.pe.hu@gmail.com までお問合わせください。</u></p>
+<br/>
+<p>投稿いただいた10の質問を、このウェブサイトに公開する準備が整いましたら、同じく投稿フォームに入力いただいたメールアドレスまで、ウェブページ公開のお知らせをお送りいたします。</p>
 <hr/>
+</div>
+
 <?php else: ?>
+<section id="main" class="form">
+<form action="" id="10q" method="post">
 
-<section>
-<form action="" method="post">
-<h1>Q. What do you value?</h1>
-<p>Title<br/>
-<input type="text" name="title" value="<?php if( !empty($_POST['title']) ){ echo $_POST['title']; } ?>" placeholder="あなたの大切なものは何ですか？" required></p>
-<p>Your Name<br/>
-<input type="name" name="name" value="<?php if( !empty($_POST['name']) ){ echo $_POST['name']; } ?>" placeholder="名前" required></p>
-<p style="display:none;">Link<br/>
-<input type="text" name="link" value="none"></p>
-<p>Your Email<br/>
-<input type="email" name="email" value="<?php if( !empty($_POST['email']) ){ echo $_POST['email']; } ?>" placeholder="メールアドレス" required></p>
-<p>Text by
-<input type="radio" name="language" value="ja" required> 日本語
-<input type="radio" name="language" value="en" required> English<br/>
-<textarea name="text" rows="7.5" value="<?php if( !empty($_POST['text']) ){ echo $_POST['text']; } ?>" placeholder="あなたの大切なものは何ですか？" required></textarea></p>
+<div class="question">
+<div id="answer">
+<h2 for="name">Your Name</h2>
+<p><input id="name" type="name" name="name" value="<?php if( !empty($_POST['name']) ){ echo $_POST['name']; } ?>" required></p>
+<br/>
+<h2 for="name">Email</h2>
+<p><input id="email" type="email" name="email" value="<?php if( !empty($_POST['email']) ){ echo $_POST['email']; } ?>" required></p>
+</div>
+</div>
 
+<div class="question">
+<h2 for="q_one">Question 1</h2>
+<h2><input id="q_one" type="text" name="q_one" value="<?php if( !empty($_POST['q_one']) ){ echo $_POST['q_one']; } ?>" required></h2>
+</div>
+
+<div class="question">
+<p id="next">
 <input type="submit" name="btn_confirm" value="Submit">
-
+</p>
+</div>
 </form>
 </section>
-
 <?php endif; ?>
-</div>
 </body>
 </html>

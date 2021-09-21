@@ -152,9 +152,9 @@ if( !empty($_POST['btn_confirm']) ) {
 <div class="essay">
 <p><?php echo $_POST['essay']; ?></p>
 </div>
+</div>
 <div class="link">
 <p><a><?php echo $_POST['email']; ?></a></p>
-</div>
 </div>
 </div>
 </div>

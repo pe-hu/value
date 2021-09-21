@@ -182,7 +182,8 @@ if( !empty($_POST['btn_confirm']) ) {
 <p><u>※ 投稿後、返信メールが届かなかった場合は、お手数ですが we.are.pe.hu@gmail.com までお問合わせください。</u></p>
 <br/>
 <p>あなたの大切なものを、このウェブサイトに公開する準備が整いましたら、改めてご連絡いたします。</p>
-<h1><a href="/value/" target="_parent">Back to The Top</a></h1>
+<br/>
+<h1 style="text-align:center;"><a style="color:#000; border:solid 2px; border-radius:50%; padding: 1rem 2.5rem;" href="/value/" target="_parent">Back to The Top</a></h1>
 </div>
 
 <?php else: ?>

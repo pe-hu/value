@@ -30,7 +30,7 @@ fclose($fp);
 <meta http-equiv="refresh" content="3;URL=/value/">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>大切なことを大切にする場所</title>
+<title>大切にすることを大切にする場所</title>
 <style type="text/css">
 .inside h1 {
   width:50vw;

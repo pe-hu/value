@@ -92,7 +92,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <link rel="icon" href="../icon.png">
 <link rel="stylesheet" type="text/css" href="/value/stylesheet.css" />
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
-<title>大切なことを大切にする場所</title>
+<title>大切にすることを大切にする場所</title>
 <style type="text/css">
 #submit h1,
 #submit p,
@@ -182,7 +182,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <?php else: ?>
 
 <section>
-<form action="/value/online/complete.php" method="post">
+<form action="" method="post">
 <h1>Q. What do you value?</h1>
 <p>Title<br/>
 <input type="text" name="title" value="<?php if( !empty($_POST['title']) ){ echo $_POST['title']; } ?>" placeholder="あなたの大切なものは何ですか？" required></p>

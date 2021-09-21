@@ -20,7 +20,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	if( $file_handle = fopen( FILENAME, "a") ) {
 
 		// 書き込むデータを作成
-		$data = "'".$_POST['title']."','".$_POST['name']."',,'".$_POST['language']."','".$_POST['essay']."'\n\n";
+		$data = "'".$_POST['title']."','".$_POST['name']."',,'".$_POST['language']."','". nl2br($_POST['essay']) ."'\n\n";
 
 		// 書き込み
 		fwrite( $file_handle, $data);
@@ -54,7 +54,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$auto_reply_text .= "Thank You for Submit\n\n";
 	$auto_reply_text .= "大切なもの | What do you value?\n" . $_POST['title'] . "\n";
 
-	$auto_reply_text .= "\n" . $_POST['essay'] . "\n\n";
+	$auto_reply_text .= "\n" . nl2br($_POST['essay']) . "\n\n";
 	$auto_reply_text .= "\n" . $_POST['name'] . "\n\n";
 	$auto_reply_text .= "Posted on " . date("m-d-y H:i") . "\n\n";
 	$auto_reply_text .= "creative-community.space/value/";
@@ -68,7 +68,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	// 本文を設定
 	$admin_reply_text .= "大切なもの | What do you value?\n" . $_POST['title'] . "\n";
 
-	$admin_reply_text .= "\n" . $_POST['essay'] . "\n\n";
+	$admin_reply_text .= "\n" . nl2br($_POST['essay']) . "\n\n";
 	$admin_reply_text .= "Name " . $_POST['name'] . "\n";
 	$admin_reply_text .= "Email " . $_POST['email'] . "\n\n\n";
 
@@ -169,6 +169,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <input type="hidden" name="name" value="<?php echo $_POST['name']; ?>">
 <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
 <input type="hidden" name="language" value="<?php echo $_POST['language']; ?>">
+<textarea name="essay"><?php if( !empty($_POST['essay']) ){ echo $_POST['essay']; } ?></textarea>
 
 
 </form>
@@ -197,9 +198,9 @@ if( !empty($_POST['btn_confirm']) ) {
 <p>Your Email<br/>
 <input type="email" name="email" value="<?php if( !empty($_POST['email']) ){ echo $_POST['email']; } ?>" placeholder="メールアドレス" required></p>
 <p>Text by
-<input type="radio" name="language" value="ja" required> 日本語
-<input type="radio" name="language" value="en" required> English<br/>
-<textarea name="essay" rows="12.5" value="<?php if( !empty($_POST['essay']) ){ echo $_POST['essay']; } ?>" placeholder="あなたの大切なものは何ですか？" required></textarea></p>
+<input type="radio" name="language" value="ja" <?php if( !empty($_POST['language']) && $_POST['language'] === "ja" ){ echo 'checked'; } ?> required> 日本語
+<input type="radio" name="language" value="en" <?php if( !empty($_POST['language']) && $_POST['language'] === "en" ){ echo 'checked'; } ?> required> English<br/>
+<textarea name="essay" rows="12.5" placeholder="あなたの大切なものは何ですか？" required></textarea></p>
 
 <p><input type="submit" name="btn_confirm" value="Submit"></p>
 </form>

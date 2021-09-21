@@ -48,7 +48,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$header .= "Reply-To: ichoose <we.are.pe.hu@gmail.com>\n";
 
 	// 件名を設定
-	$auto_reply_subject = 'Thank You for Submit';
+	$auto_reply_subject = 'ichoose | Create 10 Questions';
 
 	// 本文を設定
 	$auto_reply_text .= "Thank You for Submit\n\n";
@@ -62,13 +62,13 @@ if( !empty($_POST['btn_confirm']) ) {
 
 
 	// 件名を設定
-	$admin_reply_subject = 'What do you value?';
+	$admin_reply_subject = 'ichoose | Create 10 Questions';
 
 	// 本文を設定
 	$admin_reply_text .= "大切なもの | What do you value?\n" . $_POST['name'] . "\n\n";
 	$admin_reply_text .= "Email " . $_POST['email'] . "\n\n\n";
 
-	$auto_reply_text .= "\n" . $_POST['q_one'] . "\n\n";
+	$admin_reply_text .= "\n" . $_POST['q_one'] . "\n\n";
 
 	$admin_reply_text .= "Posted on " . date("m-d-y H:i") . "\n\n";
 	$admin_reply_text .= "creative-community.space/value/";

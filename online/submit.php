@@ -144,6 +144,11 @@ if( !empty($_POST['btn_confirm']) ) {
 <form action="" id="10q" method="post">
 
 
+<p id="next">
+<input type="submit" name="btn_submit" value="Submit">
+<input type="submit" value="Back" onClick="history.back(); return false;">
+</p>
+
 <div id="post">
 <div class="<?php echo $_POST['language']; ?>">
 <div class="app">
@@ -157,11 +162,6 @@ if( !empty($_POST['btn_confirm']) ) {
 </div>
 </div>
 
-
-<p id="next">
-<input type="submit" name="btn_submit" value="Submit">
-<input type="submit" name="btn_back" value="Back">
-</p>
 
 <input type="hidden" name="title" value="<?php echo $_POST['title']; ?>">
 <input type="hidden" name="name" value="<?php echo $_POST['name']; ?>">

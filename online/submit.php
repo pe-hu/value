@@ -52,7 +52,7 @@ if( !empty($_POST['btn_confirm']) ) {
 
 	// 本文を設定
 	$auto_reply_text .= "Thank You for Submit\n\n";
-	$auto_reply_text .= "大切なもの | What do you value?\n" . $_POST['title'] . "\n";
+	$auto_reply_text .= "大切なもの | What do you value?\n" . $_POST['title'] . "\n\n";
 
 	$auto_reply_text .= "\n" . nl2br($_POST['essay']) . "\n\n";
 	$auto_reply_text .= "\n" . $_POST['name'] . "\n\n";
@@ -66,7 +66,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$admin_reply_subject = '大切にすることを大切にする場所';
 
 	// 本文を設定
-	$admin_reply_text .= "大切なもの | What do you value?\n" . $_POST['title'] . "\n";
+	$admin_reply_text .= "大切なもの | What do you value?\n" . $_POST['title'] . "\n\n";
 
 	$admin_reply_text .= "\n" . nl2br($_POST['essay']) . "\n\n";
 	$admin_reply_text .= "Name " . $_POST['name'] . "\n";

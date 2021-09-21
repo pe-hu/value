@@ -110,12 +110,12 @@ body {
 	padding: 1rem;
 	-webkit-filter: blur(0.5rem);
 	filter: blur(0.5rem);
-    transition: all 2500ms ease;
+    transition: all 250ms ease;
 }
 .ja .list a:hover {
 	-webkit-filter: blur(0);
 	filter: blur(0);
-    transition: all 2500ms ease;
+    transition: all 100ms ease;
 }
 
 .en .app {

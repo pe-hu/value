@@ -154,8 +154,8 @@ if( !empty($_POST['btn_confirm']) ) {
 
 <div class="question">
 <p id="next">
-<input type="submit" name="btn_back" value="Back">
 <input type="submit" name="btn_submit" value="Post">
+<input type="submit" name="btn_back" value="Back">
 </p>
 
 <input type="hidden" name="name" value="<?php echo $_POST['name']; ?>">

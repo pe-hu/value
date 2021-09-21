@@ -107,7 +107,8 @@ if( !empty($_POST['btn_confirm']) ) {
 	font-size:0.75rem;
 	padding:5% 0;
 }
-#submit section {
+#submit section,
+.thankyou {
 	width:90%;
 	max-width:35rem;
     margin:auto;
@@ -193,12 +194,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <input type="radio" name="language" value="en" required> English<br/>
 <textarea name="essay" rows="7.5" value="<?php if( !empty($_POST['essay']) ){ echo $_POST['essay']; } ?>" placeholder="あなたの大切なものは何ですか？" required></textarea></p>
 
-
-<div class="question">
-<p id="next">
-<input type="submit" name="btn_confirm" value="Submit">
-</p>
-</div>
+<p><input type="submit" name="btn_confirm" value="Submit"></p>
 </form>
 </section>
 <?php endif; ?>

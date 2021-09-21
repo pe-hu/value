@@ -44,8 +44,8 @@ if( !empty($_POST['btn_confirm']) ) {
 
 	// ヘッダー情報を設定
 	$header = "MIME-Version: 1.0\n";
-	$header .= "From: creative community pehu <we.are.pe.hu@gmail.com>\n";
-	$header .= "Reply-To: creative community pehu <we.are.pe.hu@gmail.com>\n";
+	$header .= "From: Pehu <we.are.pe.hu@gmail.com>\n";
+	$header .= "Reply-To: Pehu <we.are.pe.hu@gmail.com>\n";
 
 	// 件名を設定
 	$auto_reply_subject = '大切にすることを大切にする場所';

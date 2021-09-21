@@ -147,12 +147,12 @@ if( !empty($_POST['btn_confirm']) ) {
 これは、 <b><?php echo $_POST['name']; ?></b>
 <p>が考えた 10の質問 です。</p>
 
-<h2><?php echo $_POST['essay']; ?></h2>
+<textarea name="essay" rows="7.5" value="<?php if( !empty($_POST['essay']) ){ echo $_POST['essay']; } ?>"></textarea></p>
 
 
 <p id="next">
-<input type="submit" name="btn_back" value="Back">
-<input type="submit" name="btn_submit" value="Post">
+<input type="submit" name="btn_submit" value="投稿する Submit">
+<input type="submit" name="btn_back" value="修正する Back">
 </p>
 
 <input type="hidden" name="title" value="<?php echo $_POST['title']; ?>">
@@ -160,6 +160,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
 <input type="hidden" name="language" value="<?php echo $_POST['language']; ?>">
 <input type="hidden" name="essay" value="<?php echo $_POST['essay']; ?>">
+
 </form>
 </section>
 <?php elseif( $page_flag === 2 ): ?>

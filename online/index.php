@@ -61,7 +61,7 @@ fclose($fp);
   <?php
   $mod = filemtime("value.csv");
   date_default_timezone_set('Asia/Tokyo');
-  print "".date("m.d.y H:i",$mod);
+  print "".date("Y-m-d H:i:s",$mod);
   ?>
   更新</h1>
 

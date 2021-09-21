@@ -85,79 +85,16 @@ if( !empty($_POST['btn_confirm']) ) {
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" type="text/css" href="/styles.css" />
-<link rel="stylesheet" type="text/css" href="/10q/10q.css" />
-<link rel="stylesheet" type="text/css" href="/10q/list.css" />
-<title>Create 10 Questions | The Answers are always inside of you</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="icon" href="../icon.png">
+<link rel="stylesheet" type="text/css" href="/value/stylesheet.css" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
+<title>大切にすることを大切にする場所</title>
 <style type="text/css">
-.ichoose {font-size: 2vw; margin:10vw 5vw 35vw;}
-
-.ichoose h3 u {font-size: 2.5vw;}
-.ichoose p {margin-bottom: 5vw;}
-input[type="name"],
-input[type="email"],
-input[type="text"] {
-  width:75%;
-  padding:1.25%;
-  font-size:2vw;
-}
-
-input[type="submit"] {
-  padding:2.5% 5%;
-  margin:0 2.5%;
-  font-size:2.5vw;
-  background:transparent;
-  border:red 2px solid;
-  border-radius:50%;
-  cursor:pointer;
-}
-#next {margin-top:5vw;}
-
-.thankyou {
-  position:absolute;
-  display:block;
-  overflow:auto;
-  padding:0; margin:0;
-  width:100%; height:100vh;
-}
-.thankyou h2 {
-  position:fixed;
-  bottom:0;
-  width:100%;
-  text-align:center;
-  font-size: 2.5vw; font-weight: 500;
-  font-family: "Times New Roman", "Times", serif;
-}
-.thankyou hr {
-  border:none;
-  padding:2.5vw;
-}
-
-#next {zoom:1.25;}
-
-@media screen and (max-width: 500px){
-.or {width:75%;}
-.left, .right {width:100%;}
-input[type="name"],
-input[type="email"],
-input[type="text"] {
-  width:85%;
-  font-size:2.5vw;
-}
-.question h2 {padding-bottom:2.5vw;}
-.or {padding-bottom:5vw;}
-#answer {margin-top:2.5vw;}
-#next {margin-top:7.5vw;}
-}
-@media print{
-.ichoose {zoom:150%; height:70vh;}
-}
 </style>
-<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
 <?php if( $page_flag === 1 ): ?>

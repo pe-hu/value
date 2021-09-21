@@ -41,6 +41,9 @@ fclose($fp);
     top:0;
     right:0;
 }
+.essay {
+  white-space:pre-wrap;
+}
 .link {
 	margin:2.5vw;
     -ms-writing-mode: horizontal-tb;

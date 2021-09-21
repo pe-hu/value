@@ -20,7 +20,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	if( $file_handle = fopen( FILENAME, "a") ) {
 
 		// 書き込むデータを作成
-		$data = "'".$_POST['title']."'".$_POST['name']."','".$_POST['text']."'\n";
+		$data = "'".$_POST['name']."','".$_POST['q_one']."'\n";
 
 		// 書き込み
 		fwrite( $file_handle, $data);
@@ -52,13 +52,12 @@ if( !empty($_POST['btn_confirm']) ) {
 
 	// 本文を設定
 	$auto_reply_text .= "大切なもの | What do you value?\n\n";
-	$auto_reply_text .= "\n". $_POST['title'] . "\n";
-	$auto_reply_text .= "by" . $_POST['name'] . "\n\n";
+	$auto_reply_text .= "Question 1\n\n" . $_POST['q_one'] . "\n";
+	$auto_reply_text .= "This questions was created by\n" . $_POST['name'] . "\n\n\n";
 
-	$auto_reply_text .= "\n" . $_POST['text'] . "\n\n\n";
-
-	$auto_reply_text .= "Posted on " . date("m-d-y H:i") . "\n\n";
-	$auto_reply_text .= "https://creative-community.space/value/";
+	$auto_reply_text .= "Question 1\n\n" . $_POST['q_one'] . "\n";
+	$auto_reply_text .= "Posted on " . date("m-d-y H:i") . "\n\n\n";
+	$auto_reply_text .= "ichoose.pe.hu";
 
 	mb_send_mail( $_POST['email'], $auto_reply_subject, $auto_reply_text, $header);
 
@@ -68,14 +67,13 @@ if( !empty($_POST['btn_confirm']) ) {
 
 	// 本文を設定
 	$admin_reply_text .= "大切なもの | What do you value?\n\n";
-	$auto_reply_text .= "\n". $_POST['title'] . "\n";
-	$auto_reply_text .= "by" . $_POST['name'] . "\n";
-	$admin_reply_text .= "Email " . $_POST['email'] . "\n\n";
+	$admin_reply_text .= "This questions was created by\n" . $_POST['name'] . "\n\n";
+	$admin_reply_text .= "Email " . $_POST['email'] . "\n\n\n";
 
-	$admin_reply_text .= "\n" . $_POST['text'] . "\n\n\n";
+	$admin_reply_text .= "Question 1\n\n" . $_POST['q_one'] . "\n";
 
-	$admin_reply_text .= "Posted on " . date("m-d-y H:i") . "\n\n";
-	$admin_reply_text .= "https://creative-community.space/value/";
+	$admin_reply_text .= "Posted on " . date("m-d-y H:i") . "\n\n\n";
+	$admin_reply_text .= "ichoose.pe.hu";
 
 	mb_send_mail( 'sorryforthedelayinsending@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
 
@@ -104,7 +102,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <section id="main" class="form">
 
 <div id="post">
-<div class="en">
+<div class="<?php echo $_POST['language']; ?>">
 <div class="app">
 <p class="tt"><?php echo $_POST['title']; ?><br/>
 <?php echo $_POST['name']; ?></p>
@@ -118,16 +116,26 @@ if( !empty($_POST['btn_confirm']) ) {
 </div>
 </div>
 
+<div class="ichoose">
+<h3><u>This question was created by</u></h3>
+これは、 <b><?php echo $_POST['name']; ?></b>
+<p>が考えた 10の質問 です。</p>
+</div>
+
+<form action="" id="10q" method="post">
+<div class="question">
+<h2><?php echo $_POST['q_one']; ?></h2>
+</div>
+
 <div class="question">
 <p id="next">
 <input type="submit" name="btn_back" value="Back">
 <input type="submit" name="btn_submit" value="Post">
 </p>
 
-<input type="hidden" name="title" value="<?php echo $_POST['title']; ?>">
 <input type="hidden" name="name" value="<?php echo $_POST['name']; ?>">
 <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
-<input type="hidden" name="text" value="<?php echo $_POST['text']; ?>">
+<input type="hidden" name="q_one" value="<?php echo $_POST['q_one']; ?>">
 </div>
 </form>
 </section>
@@ -135,11 +143,14 @@ if( !empty($_POST['btn_confirm']) ) {
 <?php elseif( $page_flag === 2 ): ?>
 
 <div class="thankyou">
-<h1>Thank You for Submit</h1>
-<p>投稿フォームに入力いただいたメールアドレスに、あなたの大切なものを自動返信します。</p>
-<p><u>※ 投稿後、返信メールが届かなかった場合は、お手数ですが we.are.pe.hu@gmail.com までお問合わせください。</u></p>
+<h3><u>Thank You </u></h3>
+<b><?php echo $_POST['name']; ?></b>
+<p>10の質問をご制作いただき、ありがとうございます。</p>
 <br/>
-<p>あなたの大切なものを、このウェブサイトに公開する準備が整いましたら、改めてご連絡いたします。</p>
+<p>10の質問投稿フォームに入力いただいたメールアドレスに、あなたが制作した10の質問を自動返信します。</p>
+<p><u>※ 質問投稿後、返信メールが届かなかった場合は、お手数ですが we.are.pe.hu@gmail.com までお問合わせください。</u></p>
+<br/>
+<p>投稿いただいた10の質問を、このウェブサイトに公開する準備が整いましたら、同じく投稿フォームに入力いただいたメールアドレスまで、ウェブページ公開のお知らせをお送りいたします。</p>
 <hr/>
 </div>
 
@@ -149,7 +160,7 @@ if( !empty($_POST['btn_confirm']) ) {
 
 <div class="question">
 <div id="answer">
-<p><input id="title" type="text" name="title" value="<?php if( !empty($_POST['title']) ){ echo $_POST['title']; } ?>" required></p>
+<h2 for="name">Your Name</h2>
 <p><input id="name" type="name" name="name" value="<?php if( !empty($_POST['name']) ){ echo $_POST['name']; } ?>" required></p>
 <br/>
 <h2 for="name">Email</h2>
@@ -158,7 +169,8 @@ if( !empty($_POST['btn_confirm']) ) {
 </div>
 
 <div class="question">
-<h2><input id="text" type="text" name="text" value="<?php if( !empty($_POST['text']) ){ echo $_POST['text']; } ?>" required></h2>
+<h2 for="q_one">Question 1</h2>
+<h2><input id="q_one" type="text" name="q_one" value="<?php if( !empty($_POST['q_one']) ){ echo $_POST['q_one']; } ?>" required></h2>
 </div>
 
 <div class="question">

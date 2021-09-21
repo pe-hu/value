@@ -152,16 +152,15 @@ if( !empty($_POST['btn_confirm']) ) {
 <h2><?php echo $_POST['essay']; ?></h2>
 </div>
 
-<div class="question">
 <p id="next">
 <input type="submit" name="btn_submit" value="Post">
 <input type="submit" name="btn_back" value="Back">
 </p>
 
+<input type="hidden" name="title" value="<?php echo $_POST['title']; ?>">
 <input type="hidden" name="name" value="<?php echo $_POST['name']; ?>">
 <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
 <input type="hidden" name="essay" value="<?php echo $_POST['essay']; ?>">
-</div>
 </form>
 </section>
 
@@ -192,7 +191,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <p>Text by
 <input type="radio" name="language" value="ja" required> 日本語
 <input type="radio" name="language" value="en" required> English<br/>
-<textarea name="text" rows="7.5" value="<?php if( !empty($_POST['text']) ){ echo $_POST['text']; } ?>" placeholder="あなたの大切なものは何ですか？" required></textarea></p>
+<textarea name="essay" rows="7.5" value="<?php if( !empty($_POST['essay']) ){ echo $_POST['essay']; } ?>" placeholder="あなたの大切なものは何ですか？" required></textarea></p>
 
 
 <div class="question">

@@ -44,8 +44,8 @@ if( !empty($_POST['btn_confirm']) ) {
 
 	// ヘッダー情報を設定
 	$header = "MIME-Version: 1.0\n";
-	$header .= "From: ichoose <we.are.pe.hu@gmail.com>\n";
-	$header .= "Reply-To: ichoose <we.are.pe.hu@gmail.com>\n";
+	$header .= "From: creative community pehu <we.are.pe.hu@gmail.com>\n";
+	$header .= "Reply-To: creative community pehu <we.are.pe.hu@gmail.com>\n";
 
 	// 件名を設定
 	$auto_reply_subject = '大切にすることを大切にする場所';
@@ -56,7 +56,7 @@ if( !empty($_POST['btn_confirm']) ) {
 
 	$auto_reply_text .= "\n" . nl2br($_POST['essay']) . "\n\n";
 	$auto_reply_text .= "\n" . $_POST['name'] . "\n\n";
-	$auto_reply_text .= "Posted on " . date("m-d-y H:i") . "\n\n";
+	$auto_reply_text .= "Posted on " . date("Y-m-d H:i:s") . "\n\n";
 	$auto_reply_text .= "creative-community.space/value/";
 
 	mb_send_mail( $_POST['email'], $auto_reply_subject, $auto_reply_text, $header);
@@ -72,7 +72,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$admin_reply_text .= "Name " . $_POST['name'] . "\n";
 	$admin_reply_text .= "Email " . $_POST['email'] . "\n\n\n";
 
-	$admin_reply_text .= "Posted on " . date("m-d-y H:i") . "\n\n";
+	$admin_reply_text .= "Posted on " . date("Y-m-d H:i:s") . "\n\n";
 	$admin_reply_text .= "creative-community.space/value/";
 
 	mb_send_mail( 'hello@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);

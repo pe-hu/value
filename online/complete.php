@@ -8,7 +8,7 @@ $id = (string)filter_input(INPUT_POST, 'id');
 $language = (string)filter_input(INPUT_POST, 'language');
 $text = (string)filter_input(INPUT_POST, 'text');
 
-$fp = fopen('value.csv', 'a+b');
+$fp = fopen('draft.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$title, $name, $id, $language, $text]);

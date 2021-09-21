@@ -9,7 +9,7 @@ $language = (string)filter_input(INPUT_POST, 'language');
 $text = (string)filter_input(INPUT_POST, 'text');
 $email = (string)filter_input(INPUT_POST, 'email');
 
-$fp = fopen('value.csv', 'a+b');
+$fp = fopen('draft.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$title, $name, $link, $language, $text, $email]);
@@ -82,7 +82,7 @@ fclose($fp);
 <form action="/value/online/complete.php" method="post">
 <h1>Q. What do you value?</h1>
 <p>Title<br/>
-<input type="text" name="title" placeholder="題名" required></p>
+<input type="text" name="title" placeholder="あなたの大切なものは何ですか？" required></p>
 <p>Your Name<br/>
 <input type="name" name="name" placeholder="名前" required></p>
 <p style="display:none;">Link<br/>

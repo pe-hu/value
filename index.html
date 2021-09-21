@@ -12,7 +12,7 @@
 <script type="text/javascript">
 $(function(){
 $("#submit").load("online/submit.php");
-$("#online").load("online/");
+$("#online").load("online/index.php");
 })
 </script>
 <script type="text/javascript">
@@ -64,7 +64,13 @@ p.scrollLeft(1000);
 
 <div class="value">
 <h2 id="title"><u>this is</u> a <i>space</i> for <b>valuing an act of valuing</b></h2>
-<h1 class="jp_title">あなたの大切なものは何ですか？</h1>
+<h1 class="jp_title">
+  <?php
+  $mod = filemtime("value.csv");
+  date_default_timezone_set('Asia/Tokyo');
+  print "".date("m.d.y H:i",$mod);
+  ?>
+  更新</h1>
 </div>
 
 <div id="about" class="ja none">

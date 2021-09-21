@@ -36,6 +36,11 @@ fclose($fp);
 <title>大切なことを大切にするためのウェブサイト</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <style type="text/css">
+#jp_title {
+    position: fixed;
+    top:0;
+    right:0;
+}
 .link {
 	margin:2.5vw;
     -ms-writing-mode: horizontal-tb;
@@ -52,6 +57,14 @@ fclose($fp);
 </style>
 </head>
 <body>
+<h1 class="jp_title">
+  <?php
+  $mod = filemtime("value.csv");
+  date_default_timezone_set('Asia/Tokyo');
+  print "".date("m.d.y H:i",$mod);
+  ?>
+  更新</h1>
+
 <div id="post">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>

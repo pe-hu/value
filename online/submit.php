@@ -20,7 +20,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	if( $file_handle = fopen( FILENAME, "a") ) {
 
 		// 書き込むデータを作成
-		$data = "'".$_POST['name']."','".$_POST['q_one']."'\n";
+		$data = "'".$_POST['name']."','".$_POST['q_one']."'\n\n\n";
 
 		// 書き込み
 		fwrite( $file_handle, $data);
@@ -44,15 +44,14 @@ if( !empty($_POST['btn_confirm']) ) {
 
 	// ヘッダー情報を設定
 	$header = "MIME-Version: 1.0\n";
-	$header .= "From: ∧° ┐ | creative, community space <we.are.pe.hu@gmail.com>\n";
-	$header .= "Reply-To: ∧° ┐ | creative, community space <we.are.pe.hu@gmail.com>\n";
+	$header .= "From: ichoose <we.are.pe.hu@gmail.com>\n";
+	$header .= "Reply-To: ichoose <we.are.pe.hu@gmail.com>\n";
 
 	// 件名を設定
-	$auto_reply_subject = '大切にすることを大切にする';
+	$auto_reply_subject = 'ichoose | Create 10 Questions';
 
 	// 本文を設定
-	$auto_reply_text .= "大切なもの | What do you value?\n\n";
-	$auto_reply_text .= "Question 1\n\n" . $_POST['q_one'] . "\n";
+	$auto_reply_text .= "Thank You for Create 10 Questions\n\n";
 	$auto_reply_text .= "This questions was created by\n" . $_POST['name'] . "\n\n\n";
 
 	$auto_reply_text .= "Question 1\n\n" . $_POST['q_one'] . "\n";
@@ -63,10 +62,10 @@ if( !empty($_POST['btn_confirm']) ) {
 
 
 	// 件名を設定
-	$admin_reply_subject = '大切にすることを大切にする';
+	$admin_reply_subject = 'ichoose | Create 10 Questions';
 
 	// 本文を設定
-	$admin_reply_text .= "大切なもの | What do you value?\n\n";
+	$admin_reply_text .= "Thank You for Create 10 Questions\n\n";
 	$admin_reply_text .= "This questions was created by\n" . $_POST['name'] . "\n\n";
 	$admin_reply_text .= "Email " . $_POST['email'] . "\n\n\n";
 
@@ -100,21 +99,6 @@ if( !empty($_POST['btn_confirm']) ) {
 <body>
 <?php if( $page_flag === 1 ): ?>
 <section id="main" class="form">
-
-<div id="post">
-<div class="<?php echo $_POST['language']; ?>">
-<div class="app">
-<p class="tt"><?php echo $_POST['title']; ?><br/>
-<?php echo $_POST['name']; ?></p>
-<div class="essay">
-<p><?php echo $_POST['text']; ?></p>
-</div>
-<div class="link">
-<p><a><?php echo $_POST['email']; ?></a></p>
-</div>
-</div>
-</div>
-</div>
 
 <div class="ichoose">
 <h3><u>This question was created by</u></h3>

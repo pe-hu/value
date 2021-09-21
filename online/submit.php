@@ -106,6 +106,7 @@ body {padding: 0; margin: 0;}
 	position:fixed;
 	top:0; left:0;
 	font-size:0.75rem;
+	overflow: auto;
 }
 #submit section,
 .thankyou {

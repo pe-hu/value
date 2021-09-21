@@ -4,7 +4,7 @@ mb_language("ja");
 mb_internal_encoding("UTF-8");
 
 // メッセージを保存するファイルのパス設定
-define( 'FILENAME', 'draft.csv');
+define( 'FILENAME', 'backup.csv');
 
 // 変数の初期化
 $page_flag = 0;
@@ -52,7 +52,7 @@ if( !empty($_POST['btn_confirm']) ) {
 
 	// 本文を設定
 	$auto_reply_text .= "Thank You for Submit\n\n";
-	$auto_reply_text .= "大切なもの | What do you value?\n" . $_POST['name'] . "\n";
+	$auto_reply_text .= "大切なもの | What do you value?\n" . $_POST['title'] . "\n";
 
 	$auto_reply_text .= "\n" . $_POST['essay'] . "\n\n";
 	$auto_reply_text .= "\n" . $_POST['name'] . "\n\n";
@@ -66,7 +66,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$admin_reply_subject = '大切にすることを大切にする場所';
 
 	// 本文を設定
-	$admin_reply_text .= "大切なもの | What do you value?\n" . $_POST['name'] . "\n";
+	$admin_reply_text .= "大切なもの | What do you value?\n" . $_POST['title'] . "\n";
 
 	$admin_reply_text .= "\n" . $_POST['essay'] . "\n\n";
 	$admin_reply_text .= "Name " . $_POST['name'] . "\n";
@@ -75,7 +75,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$admin_reply_text .= "Posted on " . date("m-d-y H:i") . "\n\n";
 	$admin_reply_text .= "creative-community.space/value/";
 
-	mb_send_mail( 'sorryforthedelayinsending@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
+	mb_send_mail( 'hello@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
 
 	} else {
 		$page_flag = 0;
@@ -141,17 +141,14 @@ if( !empty($_POST['btn_confirm']) ) {
 <div id="submit">
 <?php if( $page_flag === 1 ): ?>
 <section id="main" class="form">
+<form action="" id="10q" method="post">
 
-<div class="ichoose">
 <h3><u>This question was created by</u></h3>
 これは、 <b><?php echo $_POST['name']; ?></b>
 <p>が考えた 10の質問 です。</p>
-</div>
 
-<form action="" id="10q" method="post">
-<div class="question">
 <h2><?php echo $_POST['essay']; ?></h2>
-</div>
+
 
 <p id="next">
 <input type="submit" name="btn_back" value="Back">

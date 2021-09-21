@@ -44,15 +44,15 @@ if( !empty($_POST['btn_confirm']) ) {
 
 	// ヘッダー情報を設定
 	$header = "MIME-Version: 1.0\n";
-	$header .= "From: ichoose <we.are.pe.hu@gmail.com>\n";
-	$header .= "Reply-To: ichoose <we.are.pe.hu@gmail.com>\n";
+	$header .= "From: ∧° ┐ | creative, community space <we.are.pe.hu@gmail.com>\n";
+	$header .= "Reply-To: ∧° ┐ | creative, community space <we.are.pe.hu@gmail.com>\n";
 
 	// 件名を設定
-	$auto_reply_subject = 'ichoose | Create 10 Questions';
+	$auto_reply_subject = '大切にすることを大切にする';
 
 	// 本文を設定
-	$auto_reply_text .= "Thank You for Create 10 Questions\n\n";
-	$auto_reply_text .= "This questions was created by\n" . $_POST['name'] . "\n\n\n";
+	$auto_reply_text .= "Thank You for Submit\n\n";
+	$auto_reply_text .= "大切なもの | What do you value?\n" . $_POST['name'] . "\n\n\n";
 
 	$auto_reply_text .= "Question 1\n\n" . $_POST['q_one'] . "\n";
 	$auto_reply_text .= "Posted on " . date("m-d-y H:i") . "\n\n\n";
@@ -62,11 +62,10 @@ if( !empty($_POST['btn_confirm']) ) {
 
 
 	// 件名を設定
-	$admin_reply_subject = 'ichoose | Create 10 Questions';
+	$admin_reply_subject = '大切にすることを大切にする';
 
 	// 本文を設定
-	$admin_reply_text .= "Thank You for Create 10 Questions\n\n";
-	$admin_reply_text .= "This questions was created by\n" . $_POST['name'] . "\n\n";
+	$auto_reply_text .= "大切なもの | What do you value?\n" . $_POST['name'] . "\n\n\n";
 	$admin_reply_text .= "Email " . $_POST['email'] . "\n\n\n";
 
 	$admin_reply_text .= "Question 1\n\n" . $_POST['q_one'] . "\n";

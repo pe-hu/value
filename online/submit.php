@@ -48,7 +48,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$header .= "Reply-To: ichoose <we.are.pe.hu@gmail.com>\n";
 
 	// 件名を設定
-	$auto_reply_subject = '大切にすることを大切にする';
+	$auto_reply_subject = 'Thank You for Submit';
 
 	// 本文を設定
 	$auto_reply_text .= "Thank You for Submit\n\n";
@@ -62,7 +62,7 @@ if( !empty($_POST['btn_confirm']) ) {
 
 
 	// 件名を設定
-	$admin_reply_subject = '大切にすることを大切にする';
+	$admin_reply_subject = 'What do you value?';
 
 	// 本文を設定
 	$admin_reply_text .= "大切なもの | What do you value?\n" . $_POST['name'] . "\n\n";

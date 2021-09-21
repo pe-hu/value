@@ -1,24 +1,36 @@
 <?php
+
 mb_language("ja");
 mb_internal_encoding("UTF-8");
 
-//var_dump($_POST);
+// メッセージを保存するファイルのパス設定
+define( 'FILENAME', 'draft.csv');
 
 // 変数の初期化
 $page_flag = 0;
 
 if( !empty($_POST['btn_confirm']) ) {
+
 	$page_flag = 1;
-	// セッションの書き込み
 	session_start();
 	$_SESSION['page'] = true;
 
 } elseif( !empty($_POST['btn_submit']) ) {
+
+	if( $file_handle = fopen( FILENAME, "a") ) {
+
+		// 書き込むデータを作成
+		$data = "'".$_POST['title']."','".$_POST['name']."','".$_POST['link']."','".$_POST['language']."','".$_POST['email']."'\n\n\n";
+
+		// 書き込み
+		fwrite( $file_handle, $data);
+
+		// ファイルを閉じる
+		fclose( $file_handle);
+	}
+
 	session_start();
 	if( !empty($_SESSION['page']) && $_SESSION['page'] === true ) {
-
-	// セッションの削除
-	unset($_SESSION['page']);
 
 	$page_flag = 2;
 
@@ -32,43 +44,45 @@ if( !empty($_POST['btn_confirm']) ) {
 
 	// ヘッダー情報を設定
 	$header = "MIME-Version: 1.0\n";
-	$header .= "From: creative, community space ∧°┐ <we.are.pe.hu@gmail.com>\n";
-	$header .= "Reply-To: creative, community space ∧°┐ <we.are.pe.hu@gmail.com>\n";
+	$header .= "From: ∧° ┐ | creative, community space <we.are.pe.hu@gmail.com>\n";
+	$header .= "Reply-To: ∧° ┐ | creative, community space <we.are.pe.hu@gmail.com>\n";
 
 	// 件名を設定
 	$auto_reply_subject = '大切にすることを大切にする';
 
 	// 本文を設定
-	$auto_reply_text = "Thank You for Submit\n\n";
-	$auto_reply_text = "大切なもの | What do you value?\n\n";
-	$auto_reply_text .= "Date " . date("Y-m-d H:i") . "\n";
-	$auto_reply_text .= "Your Name " . $_POST['name'] . "\n\n";
-	$auto_reply_text .= "Text\n" . nl2br($_POST['text']) . "\n\n";
-	$auto_reply_text .= "creative-community.space";
+	$admin_reply_text .= "Thank You for Submit\n\n";
+	$auto_reply_text .= "Your Name\n" . $_POST['name'] . "\n\n\n";
 
-	// メール送信
+	$auto_reply_text .= "大切なもの | What do you value?\n" . $_POST['title'] . "\n\n";
+	$auto_reply_text .= "" . $_POST['text'] . "";
+
+	$auto_reply_text .= "Posted on " . date("Y-m-d H:i:s") . "\n\n\n";
+	$auto_reply_text .= "https://creative-community.space/value/";
+
 	mb_send_mail( $_POST['email'], $auto_reply_subject, $auto_reply_text, $header);
 
-	// 運営側へ送るメールの件名
-	$admin_reply_subject = "大切にすることを大切にする";
+
+	// 件名を設定
+	$auto_reply_subject = '大切にすることを大切にする';
 
 	// 本文を設定
-	$admin_reply_text = "大切なもの | What do you value?\n\n";
-	$admin_reply_text .= "Date：" . date("Y-m-d H:i:s") . "\n";
-	$admin_reply_text .= "Name：" . $_POST['name'] . "\n";
-	$admin_reply_text .= "Email：" . $_POST['email'] . "\n\n";
-	$admin_reply_text .= "Text\n" . nl2br($_POST['text']) . "\n\n";
-	$admin_reply_text .= "creative-community.space/value/";
+	$auto_reply_text .= "Name\n" . $_POST['name'] . "\n\n\n";
 
-	// 運営側へメール送信
-	mb_send_mail( 'admin@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
+	$auto_reply_text .= "大切なもの | What do you value?\n" . $_POST['title'] . "\n\n";
+	$auto_reply_text .= "" . $_POST['text'] . "";
+
+	$auto_reply_text .= "Posted on " . date("Y-m-d H:i:s") . "\n\n\n";
+	$auto_reply_text .= "https://creative-community.space/value/";
+
+	mb_send_mail( 'hello@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
 
 	} else {
 		$page_flag = 0;
 	}
 }
-
 ?>
+
 <html lang="ja">
 <head>
 <meta charset="UTF-8" />

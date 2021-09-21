@@ -20,7 +20,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	if( $file_handle = fopen( FILENAME, "a") ) {
 
 		// 書き込むデータを作成
-		$data = "'".$_POST['title']."','".$_POST['name']."',,'".$_POST['language']."','".$_POST['essay']."'\n\n\n";
+		$data = "'".$_POST['title']."','".$_POST['name']."',,'".$_POST['language']."','".$_POST['essay']."'\n\n";
 
 		// 書き込み
 		fwrite( $file_handle, $data);
@@ -141,29 +141,21 @@ if( !empty($_POST['btn_confirm']) ) {
 <div id="submit">
 <?php if( $page_flag === 1 ): ?>
 <section id="main" class="form">
-<form action="" method="post">
 
-<div id="post">
-<div class="<?php echo $_POST['language']; ?>">
-<div class="app">
-<p class="tt"><?php echo $_POST['title']; ?><br/>
-<?php echo $_POST['name']; ?></p>
-<div class="essay">
-<p><?php echo $_POST['essay']; ?></p>
-</div>
-<div class="link">
-<p><a><?php echo $_POST['email']; ?></a></p>
-</div>
-</div>
-</div>
+<div class="ichoose">
+<h3><u>This question was created by</u></h3>
+これは、 <b><?php echo $_POST['name']; ?></b>
+<p>が考えた 10の質問 です。</p>
 </div>
 
-</form>
-</section>
+<form action="" id="10q" method="post">
+<div class="question">
+<h2><?php echo $_POST['essay']; ?></h2>
+</div>
 
 <p id="next">
-<input type="submit" name="btn_submit" value="Post">
 <input type="submit" name="btn_back" value="Back">
+<input type="submit" name="btn_submit" value="Post">
 </p>
 
 <input type="hidden" name="title" value="<?php echo $_POST['title']; ?>">
@@ -173,7 +165,6 @@ if( !empty($_POST['btn_confirm']) ) {
 <input type="hidden" name="essay" value="<?php echo $_POST['essay']; ?>">
 </form>
 </section>
-
 <?php elseif( $page_flag === 2 ): ?>
 
 <div class="thankyou">

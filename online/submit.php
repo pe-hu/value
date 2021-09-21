@@ -183,7 +183,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <br/>
 <p>あなたの大切なものを、このウェブサイトに公開する準備が整いましたら、改めてご連絡いたします。</p>
 <br/>
-<h1 style="text-align:center;"><a style="color:#000; border:solid 2px; border-radius:50%; padding: 1rem 2.5rem;" href="/value/" target="_parent">Back to The Top</a></h1>
+<h1 style="text-align:center;"><a style="color:#000; border:solid 2px; border-radius:50%; padding: 1rem 2.5rem; text-decoration:none;" href="/value/" target="_parent">Back to The Top</a></h1>
 </div>
 
 <?php else: ?>

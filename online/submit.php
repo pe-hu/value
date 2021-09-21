@@ -169,7 +169,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <input type="hidden" name="name" value="<?php echo $_POST['name']; ?>">
 <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
 <input type="hidden" name="language" value="<?php echo $_POST['language']; ?>">
-<textarea name="essay"><?php if( !empty($_POST['essay']) ){ echo $_POST['essay']; } ?></textarea>
+<textarea style="display:none;" name="essay"><?php if( !empty($_POST['essay']) ){ echo $_POST['essay']; } ?></textarea>
 
 
 </form>
@@ -200,7 +200,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <p>Text by
 <input type="radio" name="language" value="ja" <?php if( !empty($_POST['language']) && $_POST['language'] === "ja" ){ echo 'checked'; } ?> required> 日本語
 <input type="radio" name="language" value="en" <?php if( !empty($_POST['language']) && $_POST['language'] === "en" ){ echo 'checked'; } ?> required> English<br/>
-<textarea name="essay" rows="12.5" placeholder="あなたの大切なものは何ですか？" required></textarea></p>
+<textarea name="essay" rows="12.5" placeholder="あなたの大切なものは何ですか？" required><?php if( !empty($_POST['essay']) ){ echo $_POST['essay']; } ?></textarea></p>
 
 <p><input type="submit" name="btn_confirm" value="Submit"></p>
 </form>

@@ -56,7 +56,7 @@ if( !empty($_POST['btn_confirm']) ) {
 
 	$auto_reply_text .= "\n" . $_POST['q_one'] . "\n\n";
 	$auto_reply_text .= "\n" . $_POST['q_one'] . "\n\n";
-	$auto_reply_text .= "Posted on " . date("Y-m-d H:i:s") . "\n\n";
+	$auto_reply_text .= "Posted on " . date("m-d-y H:i") . "\n\n";
 	$auto_reply_text .= "creative-community.space/value/";
 
 	mb_send_mail( $_POST['email'], $auto_reply_subject, $auto_reply_text, $header);
@@ -72,7 +72,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$admin_reply_text .= "Name " . $_POST['name'] . "\n";
 	$admin_reply_text .= "Email " . $_POST['email'] . "\n\n\n";
 
-	$admin_reply_text .= "Posted on " . date("Y-m-d H:i:s") . "\n";
+	$admin_reply_text .= "Posted on " . date("m-d-y H:i") . "\n\n";
 	$admin_reply_text .= "creative-community.space/value/";
 
 	mb_send_mail( 'sasajimakazuma@gmail.com', $admin_reply_subject, $admin_reply_text, $header);

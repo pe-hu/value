@@ -137,6 +137,7 @@ if( !empty($_POST['btn_confirm']) ) {
 </style>
 </head>
 <body>
+<div id="submit">
 <?php if( $page_flag === 1 ): ?>
 <section id="main" class="form">
 
@@ -205,5 +206,6 @@ if( !empty($_POST['btn_confirm']) ) {
 </form>
 </section>
 <?php endif; ?>
+</div>
 </body>
 </html>

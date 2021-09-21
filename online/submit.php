@@ -105,7 +105,6 @@ if( !empty($_POST['btn_confirm']) ) {
 	position:relative;
 	top:0; left:0;
 	font-size:0.75rem;
-	padding:5% 0;
 }
 #submit section,
 .thankyou {

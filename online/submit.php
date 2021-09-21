@@ -143,20 +143,20 @@ if( !empty($_POST['btn_confirm']) ) {
 <section id="main" class="form">
 <form action="" id="10q" method="post">
 
-<div class="question">
-<div id="answer">
-<h2 for="name">Your Name</h2>
-<p><input id="name" type="name" name="name" value="<?php if( !empty($_POST['name']) ){ echo $_POST['name']; } ?>" required></p>
-<br/>
-<h2 for="name">Email</h2>
-<p><input id="email" type="email" name="email" value="<?php if( !empty($_POST['email']) ){ echo $_POST['email']; } ?>" required></p>
-</div>
-</div>
+<h1>Q. What do you value?</h1>
+<p>Title<br/>
+<input type="text" name="title" value="<?php if( !empty($_POST['title']) ){ echo $_POST['title']; } ?>" placeholder="あなたの大切なものは何ですか？" required></p>
+<p>Your Name<br/>
+<input type="name" name="name" value="<?php if( !empty($_POST['name']) ){ echo $_POST['name']; } ?>" placeholder="名前" required></p>
+<p style="display:none;">Link<br/>
+<input type="text" name="link" value="none"></p>
+<p>Your Email<br/>
+<input type="email" name="email" value="<?php if( !empty($_POST['email']) ){ echo $_POST['email']; } ?>" placeholder="メールアドレス" required></p>
+<p>Text by
+<input type="radio" name="language" value="ja" required> 日本語
+<input type="radio" name="language" value="en" required> English<br/>
+<textarea name="text" rows="7.5" value="<?php if( !empty($_POST['text']) ){ echo $_POST['text']; } ?>" placeholder="あなたの大切なものは何ですか？" required></textarea></p>
 
-<div class="question">
-<h2 for="essay">essay</h2>
-<h2><input id="essay" type="text" name="essay" value="<?php if( !empty($_POST['essay']) ){ echo $_POST['essay']; } ?>" required></h2>
-</div>
 
 <div class="question">
 <p id="next">

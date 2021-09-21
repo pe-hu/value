@@ -20,7 +20,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	if( $file_handle = fopen( FILENAME, "a") ) {
 
 		// 書き込むデータを作成
-		$data = "'".$_POST['name']."','".$_POST['text']."'\n\n\n";
+		$data = "'".$_POST['name']."','".$_POST['essay']."'\n\n\n";
 
 		// 書き込み
 		fwrite( $file_handle, $data);
@@ -44,8 +44,8 @@ if( !empty($_POST['btn_confirm']) ) {
 
 	// ヘッダー情報を設定
 	$header = "MIME-Version: 1.0\n";
-	$header .= "From: creative-community.space <we.are.pe.hu@gmail.com>\n";
-	$header .= "Reply-To: creative-community.space <we.are.pe.hu@gmail.com>\n";
+	$header .= "From: ichoose <we.are.pe.hu@gmail.com>\n";
+	$header .= "Reply-To: ichoose <we.are.pe.hu@gmail.com>\n";
 
 	// 件名を設定
 	$auto_reply_subject = '大切にすることを大切にする場所';
@@ -54,7 +54,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$auto_reply_text .= "Thank You for Submit\n\n";
 	$auto_reply_text .= "大切なもの | What do you value?\n" . $_POST['name'] . "\n";
 
-	$auto_reply_text .= "\n" . $_POST['text'] . "\n\n";
+	$auto_reply_text .= "\n" . $_POST['essay'] . "\n\n";
 	$auto_reply_text .= "\n" . $_POST['name'] . "\n\n";
 	$auto_reply_text .= "Posted on " . date("Y-m-d H:i:s") . "\n\n";
 	$auto_reply_text .= "creative-community.space/value/";
@@ -68,7 +68,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	// 本文を設定
 	$admin_reply_text .= "大切なもの | What do you value?\n" . $_POST['name'] . "\n";
 
-	$admin_reply_text .= "\n" . $_POST['text'] . "\n\n";
+	$admin_reply_text .= "\n" . $_POST['essay'] . "\n\n";
 	$admin_reply_text .= "Name " . $_POST['name'] . "\n";
 	$admin_reply_text .= "Email " . $_POST['email'] . "\n\n\n";
 
@@ -109,7 +109,7 @@ if( !empty($_POST['btn_confirm']) ) {
 
 <form action="" id="10q" method="post">
 <div class="question">
-<h2><?php echo $_POST['text']; ?></h2>
+<h2><?php echo $_POST['essay']; ?></h2>
 </div>
 
 <div class="question">
@@ -120,7 +120,7 @@ if( !empty($_POST['btn_confirm']) ) {
 
 <input type="hidden" name="name" value="<?php echo $_POST['name']; ?>">
 <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
-<input type="hidden" name="text" value="<?php echo $_POST['text']; ?>">
+<input type="hidden" name="essay" value="<?php echo $_POST['essay']; ?>">
 </div>
 </form>
 </section>
@@ -154,8 +154,8 @@ if( !empty($_POST['btn_confirm']) ) {
 </div>
 
 <div class="question">
-<h2 for="text">Question 1</h2>
-<h2><input id="text" type="text" name="text" value="<?php if( !empty($_POST['q_one']) ){ echo $_POST['text']; } ?>" required></h2>
+<h2 for="essay">essay</h2>
+<h2><input id="essay" type="text" name="essay" value="<?php if( !empty($_POST['essay']) ){ echo $_POST['essay']; } ?>" required></h2>
 </div>
 
 <div class="question">

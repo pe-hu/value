@@ -201,6 +201,8 @@ if( !empty($_POST['btn_confirm']) ) {
 
 </form>
 </section>
+
+<?php endif; ?>
 </div>
 </body>
 </html>

@@ -20,7 +20,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	if( $file_handle = fopen( FILENAME, "a") ) {
 
 		// 書き込むデータを作成
-		$data = "'".$_POST['title']."','".$_POST['name']."','".$_POST['link']."','".$_POST['language']."','".$_POST['email']."'\n\n\n";
+		$data = "'".$_POST['title']."','".$_POST['name']."','".$_POST['link']."','".$_POST['language']."','".$_POST['text']."','".$_POST['email']."'\n\n\n";
 
 		// 書き込み
 		fwrite( $file_handle, $data);
@@ -137,22 +137,68 @@ if( !empty($_POST['btn_confirm']) ) {
 </head>
 <body>
 <div id="submit">
+<?php if( $page_flag === 1 ): ?>
+<section id="main" class="form">
+<form action="" method="post">
+
+<div id="post">
+<div class="<?php echo $_POST['language']; ?>">
+<div class="app">
+<p class="tt"><?php echo $_POST['title']; ?><br/>
+<?php echo $_POST['name']; ?></p>
+<div class="essay">
+<p><?php echo $_POST['text']; ?></p>
+</div>
+<div class="link">
+<p><a><?php echo $_POST['email']; ?></a></p>
+</div>
+</div>
+</div>
+</div>
+
+<p id="next">
+<input type="submit" name="btn_back" value="Back">
+<input type="submit" name="btn_submit" value="Post">
+</p>
+
+<input type="hidden" name="title" value="<?php echo $_POST['title']; ?>">
+<input type="hidden" name="name" value="<?php echo $_POST['name']; ?>">
+<input type="hidden" name="link" value="<?php echo $_POST['link']; ?>">
+<input type="hidden" name="language" value="<?php echo $_POST['language']; ?>">
+<input type="hidden" name="text" value="<?php echo $_POST['text']; ?>">
+<input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
+
+
+</form>
+</section>
+
+<?php elseif( $page_flag === 2 ): ?>
+<h1>Thank You for Submit</h1>
+<p>投稿フォームに入力いただいたメールアドレスに、あなたの大切なものを自動返信します。</p>
+<p><u>※ 投稿後、返信メールが届かなかった場合は、お手数ですが we.are.pe.hu@gmail.com までお問合わせください。</u></p>
+<br/>
+<p>投稿いただいた大切なものを、このウェブサイトに公開する準備が整いましたら、同じく投稿フォームに入力いただいたメールアドレスまで、ウェブページ公開のお知らせをお送りいたします。</p>
+<hr/>
+<?php else: ?>
+
 <section>
 <form action="/value/online/complete.php" method="post">
 <h1>Q. What do you value?</h1>
 <p>Title<br/>
-<input type="text" name="title" placeholder="あなたの大切なものは何ですか？" required></p>
+<input type="text" name="title" value="<?php if( !empty($_POST['title']) ){ echo $_POST['title']; } ?>" placeholder="あなたの大切なものは何ですか？" required></p>
 <p>Your Name<br/>
-<input type="name" name="name" placeholder="名前" required></p>
+<input type="name" name="name" value="<?php if( !empty($_POST['name']) ){ echo $_POST['name']; } ?>" placeholder="名前" required></p>
 <p style="display:none;">Link<br/>
 <input type="text" name="link" value="none"></p>
 <p>Your Email<br/>
-<input type="email" name="email" placeholder="メールアドレス" required></p>
+<input type="email" name="email" value="<?php if( !empty($_POST['email']) ){ echo $_POST['email']; } ?>" placeholder="メールアドレス" required></p>
 <p>Text by
 <input type="radio" name="language" value="ja" required> 日本語
 <input type="radio" name="language" value="en" required> English<br/>
-<textarea name="text" rows="7.5" placeholder="あなたの大切なものは何ですか？" required></textarea></p>
-<button type="submit">Submit</button>
+<textarea name="text" rows="7.5" value="<?php if( !empty($_POST['text']) ){ echo $_POST['text']; } ?>" placeholder="あなたの大切なものは何ですか？" required></textarea></p>
+
+<input type="submit" name="btn_confirm" value="Submit">
+
 </form>
 </section>
 </div>

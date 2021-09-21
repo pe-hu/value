@@ -72,10 +72,10 @@ if( !empty($_POST['btn_confirm']) ) {
 	$admin_reply_text .= "Name " . $_POST['name'] . "\n";
 	$admin_reply_text .= "Email " . $_POST['email'] . "\n\n\n";
 
-	$admin_reply_text .= "Posted on " . date("Y-m-d H:i:s") . "\n";
+	$admin_reply_text .= "Posted on " . date("Y-m-d H:i:s") . "\n\n";
 	$admin_reply_text .= "creative-community.space/value/";
 
-	mb_send_mail( 'hello@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
+	mb_send_mail( 'sorryforthedelayinsending@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
 
 	} else {
 		$page_flag = 0;

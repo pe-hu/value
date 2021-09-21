@@ -75,7 +75,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$auto_reply_text .= "Posted on " . date("Y-m-d H:i:s") . "\n\n\n";
 	$auto_reply_text .= "https://creative-community.space/value/";
 
-	mb_send_mail( 'hello@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
+	mb_send_mail( 'sasajimakazuma@gmail.com', $admin_reply_subject, $admin_reply_text, $header);
 
 	} else {
 		$page_flag = 0;

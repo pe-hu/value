@@ -44,8 +44,8 @@ if( !empty($_POST['btn_confirm']) ) {
 
 	// ヘッダー情報を設定
 	$header = "MIME-Version: 1.0\n";
-	$header .= "From: ichoose <we.are.pe.hu@gmail.com>\n";
-	$header .= "Reply-To: ichoose <we.are.pe.hu@gmail.com>\n";
+	$header .= "From: creative-community.space <we.are.pe.hu@gmail.com>\n";
+	$header .= "Reply-To: creative-community.space <we.are.pe.hu@gmail.com>\n";
 
 	// 件名を設定
 	$auto_reply_subject = '大切にすることを大切にする場所';
@@ -75,7 +75,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$admin_reply_text .= "Posted on " . date("Y-m-d H:i:s") . "\n";
 	$admin_reply_text .= "creative-community.space/value/";
 
-	mb_send_mail( 'sasajimakazuma@gmail.com', $admin_reply_subject, $admin_reply_text, $header);
+	mb_send_mail( 'we.are.pe.hu@gmail.com', $admin_reply_subject, $admin_reply_text, $header);
 
 	} else {
 		$page_flag = 0;

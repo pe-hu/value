@@ -124,7 +124,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	font-size:0.75rem;
 	width:97%;
 }
-#submit button {
+#submit input[type="submit"] {
 	font-size: 1rem;
 	cursor:pointer;
 	width:100%;

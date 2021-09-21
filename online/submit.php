@@ -155,7 +155,7 @@ body {padding: 0; margin: 0;}
 <p class="tt"><?php echo $_POST['title']; ?><br/>
 <?php echo $_POST['name']; ?></p>
 <div class="essay">
-<p><?php echo $_POST['essay']; ?></p>
+<p><?php echo nl2br($_POST['essay']); ?></p>
 <?php echo $_POST['email']; ?>
 </div>
 </div>
@@ -170,7 +170,7 @@ body {padding: 0; margin: 0;}
 <input type="hidden" name="name" value="<?php echo $_POST['name']; ?>">
 <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
 <input type="hidden" name="language" value="<?php echo $_POST['language']; ?>">
-<textarea style="display:none;" name="essay"><?php if( !empty($_POST['essay']) ){ echo $_POST['essay']; } ?></textarea>
+<input type="hidden" name="essay" value="<?php echo $_POST['essay']; ?>">
 
 
 </form>

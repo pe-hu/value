@@ -143,11 +143,21 @@ if( !empty($_POST['btn_confirm']) ) {
 <section id="main" class="form">
 <form action="" id="10q" method="post">
 
-<h3><u>This question was created by</u></h3>
-これは、 <b><?php echo $_POST['name']; ?></b>
-<p>が考えた 10の質問 です。</p>
 
-<textarea name="essay" rows="7.5" value="<?php echo $_POST['essay']; ?>"></textarea></p>
+<div id="post">
+<div class="<?php echo $_POST['language']; ?>">
+<div class="app">
+<p class="tt"><?php echo $_POST['title']; ?><br/>
+<?php echo $_POST['name']; ?></p>
+<div class="essay">
+<p><?php echo $_POST['essay']; ?></p>
+</div>
+<div class="link">
+<p><a><?php echo $_POST['email']; ?></a></p>
+</div>
+</div>
+</div>
+</div>
 
 
 <p id="next">
@@ -160,6 +170,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <input type="hidden" name="email" value="<?php echo $_POST['email']; ?>">
 <input type="hidden" name="language" value="<?php echo $_POST['language']; ?>">
 
+
 </form>
 </section>
 <?php elseif( $page_flag === 2 ): ?>
@@ -170,7 +181,6 @@ if( !empty($_POST['btn_confirm']) ) {
 <p><u>※ 投稿後、返信メールが届かなかった場合は、お手数ですが we.are.pe.hu@gmail.com までお問合わせください。</u></p>
 <br/>
 <p>あなたの大切なものを、このウェブサイトに公開する準備が整いましたら、改めてご連絡いたします。</p>
-<hr/>
 </div>
 
 <?php else: ?>
@@ -189,7 +199,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <p>Text by
 <input type="radio" name="language" value="ja" required> 日本語
 <input type="radio" name="language" value="en" required> English<br/>
-<textarea name="essay" rows="7.5" value="<?php if( !empty($_POST['essay']) ){ echo $_POST['essay']; } ?>" placeholder="あなたの大切なものは何ですか？" required></textarea></p>
+<textarea name="essay" rows="12.5" value="<?php if( !empty($_POST['essay']) ){ echo $_POST['essay']; } ?>" placeholder="あなたの大切なものは何ですか？" required></textarea></p>
 
 <p><input type="submit" name="btn_confirm" value="Submit"></p>
 </form>

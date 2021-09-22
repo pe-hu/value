@@ -133,7 +133,7 @@ Name</p>
 <div class="en">
 <div class="app">
 <div class="essay" style="text-align:center; font-size:125%;">
-ここに集まった全ての大切なもの
+集まった全ての大切
 </div>
 <div class="link">
 <p><a style="font-size:125%;" href="/value/index/">View All</a></p>

@@ -37,6 +37,12 @@ fclose($fp);
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
 <title>大切にすることを大切にする場所</title>
 <style type="text/css">
+a {
+    text-decolation:none;
+    color:#000;
+    border:solid 1px;
+    border-radius:0.5rem;
+}
 </style>
 </head>
 <body>
@@ -46,7 +52,7 @@ fclose($fp);
 <div id="list">
 <div id="index">
   <form id="information">
-      <p>Index / valuing an act of valuing</p>
+      <p>Index / <a href="/value/">valuing an act of valuing</a></p>
   <ul class="search-box appreciate" id="click">
   <input type="radio" name="appreciate" value="topics" id="topics">
   <label for="topics" class="label">Topics</label><hr/>

@@ -28,14 +28,6 @@ p.scrollLeft(1000);
 #about {
 	padding: 2.5rem 0 0;
 }
-#submit {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	background-color: #fff;
-}
 #submit iframe {
   width: 100%;
   height: 100%;
@@ -46,6 +38,8 @@ p.scrollLeft(1000);
     pointer-events: none;
     user-select: none;
     z-index: 0;
+    width: 100%;
+    height: 0;
     transition: all 5000ms ease;
 }
 .open {
@@ -53,6 +47,7 @@ p.scrollLeft(1000);
     pointer-events:all;
     user-select:auto;
     z-index: 50;
+    height: 100vh;
     transition: all 2500ms ease;
 }
 #publication iframe {
@@ -75,12 +70,12 @@ p.scrollLeft(1000);
 <a href="#publication">Publication</a>
 </div>
 
-<div id="submit" class="none">
-  <iframe src="/value/online/submit.php"></iframe>
-</div>
-
 <div class="value">
 <h2 id="title"><u>this is</u> a <i>space</i> for <b>valuing an act of valuing</b></h2>
+</div>
+
+<div id="submit" class="none">
+  <iframe src="/value/online/submit.php"></iframe>
 </div>
 
 <div id="online"></div>

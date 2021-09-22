@@ -103,16 +103,15 @@ body {padding: 0; margin: 0;}
 	font-weight:500;
 }
 #submit {
-	position:fixed;
-	top:0; left:0;
 	font-size:0.75rem;
+	width:100%;
 	overflow: auto;
 }
 #submit section,
 .thankyou {
 	width:90%;
 	max-width:35rem;
-    margin:5rem auto;
+    margin:7.5rem auto 0;
 }
 #submit input[type="text"],
 #submit input[type="name"],

@@ -91,7 +91,7 @@ fclose($fp);
   ?>
   更新</h1>
 
-<p class="update"><a href="index/">Index</a></p>
+<p class="update"><a href="/value/index/update.php">Update</a></p>
 
 <div id="post">
 <?php if (!empty($rows)): ?>

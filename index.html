@@ -63,17 +63,18 @@
 <body>
 
 <div id="target">
+  <a id="open" href="#index">Index</a>
 <a href="#about">About</a>
-<a id="open" href="#submit">Submit</a>
 <a href="#publication">Publication</a>
+<a href="/online/">Submit</a>
 </div>
 
 <div class="value">
 <h2 id="title"><u>this is</u> a <i>space</i> for <b>valuing an act of valuing</b></h2>
 </div>
 
-<div id="submit" class="none">
-  <iframe src="online/index.php"></iframe>
+<div id="index" class="none">
+  <iframe src="index/index.php"></iframe>
 </div>
 
 <div id="about">
@@ -115,7 +116,7 @@
 
 <script>
    let btn = document.querySelector('#open');
-   let open = document.querySelector('#submit');
+   let open = document.querySelector('#index');
     
    let btnToggleclass = function(el) {
      el.classList.toggle('open');

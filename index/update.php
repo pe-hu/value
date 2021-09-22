@@ -134,8 +134,8 @@ Name</p>
 <div class="app">
 <p class="tt">大切にすることを大切にする場所<br/>
 Index / valuing an act of valuing</p>
-<div class="essay">
-全ての大切なもの一覧ページ
+<div class="essay" style="text-align:center; font-size:125%;">
+ここに集まった全ての大切なものを見る
 </div>
 <div class="link">
 <p><a href="/value/index/">View All</a></p>

@@ -28,7 +28,7 @@ fclose($fp);
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="/value/online/post.css" />
-<title>大切なもの by 名前</title>
+<title>Sign by ∧° ┐ | creative, community space</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
@@ -37,10 +37,10 @@ fclose($fp);
 <p><img src="image.jpg"></p>
 </div>
 <div id="what" class="three">
-<b>タイトル</b>
+<b>Sign</b>
 </div>
 <div id="you">
-名前
+∧° ┐ | creative, community space
 </div>
 
 <div id="about" class="ja">

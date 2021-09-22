@@ -27,7 +27,7 @@ fclose($fp);
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="/value/online/post.css" />
+<link rel="stylesheet" type="text/css" href="/value/online/essay.css" />
 <title>あるにおい by Kazuma Sasajima</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -40,7 +40,7 @@ $("#en").load("en.php");
 <body>
 <div id="image">
 <span>あなたの大切なものは何ですか？</span>
-<div id="en"></div>
+<p><img src="image.jpg"></p>
 </div>
 
 <div id="what" class="one">

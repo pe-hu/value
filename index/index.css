@@ -6,6 +6,19 @@ body {
 }
 ul {padding:0; margin:0.5rem 0;}
 li {list-style: none;}
+a {
+    text-decoration:none;
+    color:#000;
+    border:solid 1px #fff;
+    border-radius:0.5rem;
+    padding:0.25rem;
+    transition:1s all;
+}
+a:hover {
+  color:red;
+  border:solid 1px red;
+  transition:1s all;
+}
 hr {
   clear: both;
   width: 100%;
@@ -26,6 +39,7 @@ input[type="radio"]
 	position:fixed;
 	right:1rem;
 	top:2.5rem;
+  z-index: 50;
 	font-size:0.9rem;
 	font-weight:500;
 }
@@ -58,13 +72,15 @@ input[type="radio"]
 }
 #index .label:hover {
   cursor:pointer;
-  background-color:whitesmoke;
+  color:red;
+  border:1px solid red;
   transition:.5s all;
 }
 #index input[type="checkbox"]:checked + label,
 #index input[type="radio"]:checked + label {
   color: #fff;
   background-color:red;
+  border:1px solid red;
   transition:.5s all;
 }
 .reset-button {
@@ -82,6 +98,7 @@ input[type="radio"]
 .reset-button:hover {
   color: #fff;
   background-color:red;
+  border:1px solid red;
   transition:.5s all;
 }
 
@@ -90,9 +107,9 @@ input[type="radio"]
   position:relative;
   color: #000;
   font-size: 1rem;
-  padding: 0 10% 0 5%;
-  margin:15rem auto;
-  max-width: 55rem;
+  padding: 0 4.5rem 0 1rem;
+  margin:15rem auto 2.5rem;
+  max-width: 80rem;
 	font-family: 'Source Serif Pro', serif;
 }
 #org ul {
@@ -106,9 +123,10 @@ input[type="radio"]
 #org li {
   position: relative;
   padding:0 1rem 1rem;
+  margin: 1rem;
   -webkit-flex-grow: 1;
   flex-grow: 1;
-  width: 33%;
+  width: 30%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -133,21 +151,21 @@ width:100%;
 height: 100%;
 text-indent:-999px;
 z-index: 0;
+padding:0;
 border-radius:0.5em;
 transition:1.5s all;
 }
 #org a:hover {
-background-color:whitesmoke;
 transition:1.5s all;
 }
 
 @media screen and (max-width: 950px){
   #org li {
-    width: 50%;
+    width: 45%;
   }
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 550px){
   #org li {
     width: 100%;
   }

@@ -82,7 +82,7 @@ fclose($fp);
 <div id="post">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
-<div class="<?=h($row[3])?>">
+<div class="topic <?=h($row[3])?>">
 <div class="app">
 <p class="tt"><?=h($row[0])?><br/>
 <?=h($row[1])?></p>

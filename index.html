@@ -30,7 +30,6 @@ p.scrollLeft(1000);
 }
 #submit {
 	position: fixed;
-	z-index: 50;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -46,12 +45,14 @@ p.scrollLeft(1000);
     opacity: 0;
     pointer-events: none;
     user-select: none;
+    z-index: 0;
     transition: all 5000ms ease;
 }
 .open {
     opacity: 1;
     pointer-events:all;
     user-select:auto;
+    z-index: 50;
     transition: all 2500ms ease;
 }
 #publication iframe {
@@ -82,6 +83,8 @@ p.scrollLeft(1000);
 <h2 id="title"><u>this is</u> a <i>space</i> for <b>valuing an act of valuing</b></h2>
 </div>
 
+<div id="online"></div>
+
 <div id="about" class="ja">
 <div class="app">
 <p class="tt">大切にすることを大切にする<br/>
@@ -94,8 +97,6 @@ p.scrollLeft(1000);
 </div>
 </div>
 </div>
-
-<div id="online"></div>
 
 <div id="publication">
 <iframe src="book/"></iframe>

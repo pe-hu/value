@@ -51,6 +51,7 @@ fclose($fp);
     left:0;
     z-index: 0;
     max-height:50vh;
+    width:auto;
 	-webkit-filter: blur(0.5rem);
 	filter: blur(0.5rem);
 }

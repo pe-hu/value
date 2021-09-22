@@ -6,7 +6,7 @@ function h($str) {
 
 $text = (string)filter_input(INPUT_POST, 'text'); // $_POST['text']
 
-$fp = fopen('text.csv', 'a+b');
+$fp = fopen('en.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$ja,]);
@@ -28,7 +28,7 @@ fclose($fp);
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" type="text/css" href="/value/online/post.css" />
-<title>大切なもの by 名前</title>
+<title>In The Wind by Kazuma Sasajima</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
@@ -37,10 +37,10 @@ fclose($fp);
 <p><img src="image.jpg"></p>
 </div>
 <div id="what" class="one">
-<b>タイトル</b>
+<b>風の中</b>
 </div>
 <div id="you">
-名前
+Kazuma Sasajima
 </div>
 
 <div id="about" class="en">

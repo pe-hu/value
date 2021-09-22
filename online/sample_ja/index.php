@@ -36,7 +36,7 @@ fclose($fp);
 <span>あなたの大切なものは何ですか？</span>
 <p><img src="image.jpg"></p>
 </div>
-<div id="what" class="three">
+<div id="what" class="one">
 <b>タイトル</b>
 </div>
 <div id="you">

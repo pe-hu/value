@@ -163,6 +163,9 @@ transition:1.5s all;
   #org li {
     width: 45%;
   }
+  #index {
+    position:absolute;
+  }
 }
 
 @media screen and (max-width: 550px){

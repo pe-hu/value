@@ -30,8 +30,19 @@ fclose($fp);
 <link rel="stylesheet" type="text/css" href="/value/online/post.css" />
 <title>あるにおい by Kazuma Sasajima</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#en").load("en.php");
+})
+</script>
 </head>
 <body>
+<div id="image">
+<span>あなたの大切なものは何ですか？</span>
+<div id="en"></div>
+</div>
+
 <div id="what" class="one">
 <b>あるにおい</b>
 </div>

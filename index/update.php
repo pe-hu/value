@@ -130,7 +130,7 @@ Name</p>
 </div>
 </div>
 <?php endif; ?>
-<div class="ja">
+<div class="en">
 <div class="app">
 <p class="tt">大切にすることを大切にする場所<br/>
 Index / valuing an act of valuing</p>

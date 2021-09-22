@@ -34,7 +34,7 @@ fclose($fp);
 <link rel="icon" href="/value/icon.png">
 <link rel="stylesheet" type="text/css" href="../top.css" />
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
-<title>大切なことを大切にするためのウェブサイト</title>
+<title>大切なことを大切にする場所</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <style type="text/css">
 #jp_title {

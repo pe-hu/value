@@ -38,10 +38,7 @@ $("#en").load("en.php");
 </script>
 </head>
 <body>
-<div id="image">
-<span>あなたの大切なものは何ですか？</span>
 <div id="en"></div>
-</div>
 
 <div id="what" class="one">
 <b>あるにおい</b>

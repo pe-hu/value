@@ -135,8 +135,8 @@ Name</p>
 <div class="essay" style="text-align:center; font-size:125%;">
 ここに集まった全ての大切なものを見る
 </div>
-<div class="link" style="text-align:center; font-size:125%;">
-<p><a href="/value/index/">View All</a></p>
+<div class="link">
+<p><a style="font-size:125%;" href="/value/index/">View All</a></p>
 </div>
 </div>
 </div>

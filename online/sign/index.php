@@ -44,7 +44,25 @@ fclose($fp);
 <div class="essay">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
-<p><?=h($row[0])?></p>
+<p>何もないところから<br />
+始まって続いてる<br />
+知らぬ間に足音が<br />
+重なって一つになる<br />
+<br />
+名前を書く　白いテープ<br />
+力強く　結び直す<br />
+白い壁 絵を飾る<br />
+食事の香りと音楽と<br />
+<br />
+赤い屋根が見える通り<br />
+軽やかに手を振りあゆみ<br />
+れんげの花が咲くまでに<br />
+恥ずかしがらなくなれるように<br />
+<br />
+丸い机がある部屋に<br />
+大きな木 鮮やかな水<br />
+手を滑るのは滑らかで<br />
+光ル輪の先 pal up with you</p>
 <?php endforeach; ?>
 <?php else: ?>
 <?php endif; ?>

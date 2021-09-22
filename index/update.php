@@ -73,7 +73,7 @@ fclose($fp);
 <body>
 <h1 class="jp_title">
   <?php
-  $mod = filemtime("value.csv");
+  $mod = filemtime("index.csv");
   date_default_timezone_set('Asia/Tokyo');
   print "".date("Y-m-d H:i:s",$mod);
   ?>

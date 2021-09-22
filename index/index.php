@@ -38,7 +38,7 @@ fclose($fp);
 <title>大切にすることを大切にする場所</title>
 <style type="text/css">
 a {
-    text-decolation:none;
+    text-decoration:none;
     color:#000;
     border:solid 1px;
     border-radius:0.5rem;

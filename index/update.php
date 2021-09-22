@@ -130,6 +130,18 @@ Name</p>
 </div>
 </div>
 <?php endif; ?>
+<div class="topic en">
+<div class="app">
+<p class="tt">Index<br/>
+valuing an act of valuing</p>
+<div class="essay">
+<p>大切にすることを大切にする場所</p>
+</div>
+<div class="link">
+<p><a href="/value/index/">View All</a></p>
+</div>
+</div>
+</div>
 </div>
 </body>
 </html>

@@ -42,6 +42,12 @@ fclose($fp);
     position:absolute;
   }
 }
+
+@media screen and (max-width: 550px){
+  #org {
+    margin:20rem auto 2.5rem;
+  }
+}
 </style>
 </head>
 <body>

@@ -201,7 +201,7 @@ body {padding: 0; margin: 0;}
 <input type="email" name="email" value="<?php if( !empty($_POST['email']) ){ echo $_POST['email']; } ?>" placeholder="メールアドレス" required></p>
 <p>Text by
 <input type="radio" name="language" value="ja" <?php if( !empty($_POST['language']) && $_POST['language'] === "ja" ){ echo 'checked'; } ?> required> 日本語
-<input type="radio" name="language" value="en" <?php if( !empty($_POST['language']) && $_POST['language'] === "en" ){ echo 'checked'; } ?> required> English<br/>
+<input type="radio" name="language" value="en" <?php if( !empty($_POST['language']) && $_POST['language'] === "en" ){ echo 'checked'; } ?> required> English or Other Language<br/>
 <textarea name="essay" rows="12.5" placeholder="あなたの大切なものは何ですか？" required><?php if( !empty($_POST['essay']) ){ echo $_POST['essay']; } ?></textarea></p>
 
 <p><input type="submit" name="btn_confirm" value="Submit"></p>

@@ -68,7 +68,7 @@ fclose($fp);
 </div>
 
 <div id="org">
-<ul>
+<ul class="random">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <li class="list_item list_toggle" data-appreciate="<?=h($row[7])?>">
@@ -87,6 +87,18 @@ fclose($fp);
 </div>
 </div>
 
+<script type="text/javascript">
+function shuffleContent(container) {
+  var content = container.find("> *");
+  var total = content.length;
+  content.each(function() {
+    content.eq(Math.floor(Math.random() * total)).prependTo(container);
+  });
+}
+$(function() {
+  shuffleContent($(".random"));
+});
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="org.js"></script>
 </body>

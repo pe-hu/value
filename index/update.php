@@ -130,13 +130,10 @@ Name</p>
 </div>
 </div>
 <?php endif; ?>
-<div class="topic en">
+<div class="ja">
 <div class="app">
-<p class="tt">Index<br/>
-valuing an act of valuing</p>
-<div class="essay">
-<p>大切にすることを大切にする場所</p>
-</div>
+<p class="tt">大切にすることを大切にする場所<br/>
+Index / valuing an act of valuing</p>
 <div class="link">
 <p><a href="/value/index/">View All</a></p>
 </div>

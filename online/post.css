@@ -13,7 +13,6 @@ body {
 
 #image {
 	background:#fff;
-	font-size:1.1rem;
 	position:relative;
 	z-index:10;
 	top:0; left:0;
@@ -22,6 +21,12 @@ body {
 #image img {
 	margin:auto;
 	padding:5%;
+	text-align:center;
+	z-index:100;
+	position:absolute;
+	top:50%; left:50%;
+	transform:translateY(-50%) translateX(-50%);
+	-webkit-transform:translateY(-50%) translateX(-50%);
 	width:auto; max-width:70%;
 	height:auto; max-height:80%;
 	-webkit-filter: blur(0.5rem);
@@ -32,15 +37,6 @@ body {
 	-webkit-filter: blur(0);
 	filter: blur(0);
     transition: all 1000ms ease;
-}
-#image p {
-	text-align:center;
-	z-index:100;
-	width:100%; height:100%;
-	position:absolute;
-	top:50%; left:50%;
-	transform:translateY(-50%) translateX(-50%);
-	-webkit-transform:translateY(-50%) translateX(-50%);
 }
 #image span {
 	position:absolute;

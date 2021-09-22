@@ -68,18 +68,6 @@ fclose($fp);
 	text-decoration:none;
 	color:#000;
 }
-.update {
-  text-align:center;
-	padding:5rem 0 0;
-}
-.update a {
-	font-size:1.25rem;
-	border:0.1rem solid;
-	border-radius:50%;
-	padding:1rem 1.5rem;
-	text-decoration:none;
-	color:#000;
-}
 </style>
 </head>
 <body>
@@ -90,8 +78,6 @@ fclose($fp);
   print "".date("Y-m-d H:i:s",$mod);
   ?>
   更新</h1>
-
-<p class="update"><a href="/value/index/update.php">Update</a></p>
 
 <div id="post">
 <?php if (!empty($rows)): ?>

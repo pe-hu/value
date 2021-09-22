@@ -111,7 +111,7 @@ body {padding: 0; margin: 0;}
 .thankyou {
 	width:90%;
 	max-width:35rem;
-    margin:7.5rem auto 0;
+    margin:7.5rem auto 2.5rem;
 }
 #submit input[type="text"],
 #submit input[type="name"],

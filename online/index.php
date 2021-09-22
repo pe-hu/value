@@ -45,13 +45,13 @@ fclose($fp);
 .essay {
   white-space:pre-wrap;
 }
-.app img {
+#post img {
     position:relative;
     top:0;
     left:0;
     z-index: 0;
-    max-height:50vh;
     width:auto;
+    max-height:50vh;
 	-webkit-filter: blur(0.5rem);
 	filter: blur(0.5rem);
 }
@@ -84,13 +84,13 @@ fclose($fp);
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
 <div class="<?=h($row[3])?>">
+<img style="display:<?=h($row[5])?>;" src="<?=h($row[6])?>">
 <div class="app">
 <p class="tt"><?=h($row[0])?><br/>
 <?=h($row[1])?></p>
 <div class="essay">
 <p><?=h($row[4])?></p>
 </div>
-<img style="display:<?=h($row[5])?>;" src="<?=h($row[6])?>">
 <div class="link">
 <p><a href="<?=h($row[2])?>">Read More</a></p>
 </div>

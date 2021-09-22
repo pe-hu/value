@@ -122,7 +122,7 @@ Name</p>
 大切にすることを大切にする
 </div>
 <div class="link">
-<p><a style="font-size:125%;" href="/value/index/">View All</a></p>
+<p><a style="font-size:125%;" href="/value/index/">View the Collection</a></p>
 </div>
 </div>
 </div>

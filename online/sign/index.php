@@ -42,8 +42,6 @@ fclose($fp);
 <div id="about" class="ja">
 <div class="app">
 <div class="essay">
-<?php if (!empty($rows)): ?>
-<?php foreach ($rows as $row): ?>
 <p>何もないところから<br />
 始まって続いてる<br />
 知らぬ間に足音が<br />
@@ -63,9 +61,6 @@ fclose($fp);
 大きな木 鮮やかな水<br />
 手を滑るのは滑らかで<br />
 光ル輪の先 pal up with you</p>
-<?php endforeach; ?>
-<?php else: ?>
-<?php endif; ?>
 </div>
 </div>
 </div>

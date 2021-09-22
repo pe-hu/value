@@ -6,7 +6,7 @@ function h($str) {
 
 $text = (string)filter_input(INPUT_POST, 'text'); // $_POST['text']
 
-$fp = fopen('text.csv', 'a+b');
+$fp = fopen('ja.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$ja,]);

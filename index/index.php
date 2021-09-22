@@ -33,7 +33,7 @@ fclose($fp);
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="icon" href="/value/icon.png">
-<link rel="stylesheet" type="text/css" href="/value/index/index.css" />
+<link rel="stylesheet" type="text/css" href="index.css" />
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
 <title>大切にすることを大切にする場所</title>
 <style type="text/css">
@@ -88,7 +88,7 @@ fclose($fp);
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/value/index/org.js"></script>
+<script src="org.js"></script>
 <script type="text/javascript">
 function shuffleContent(container) {
   var content = container.find("> *");

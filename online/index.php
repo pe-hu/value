@@ -89,7 +89,7 @@ fclose($fp);
 </div>
 <img style="display:<?=h($row[5])?>;" src="<?=h($row[6])?>">
 <div class="link">
-<p><a href="<?=h($row[2])?>">Link</a></p>
+<p><a href="<?=h($row[2])?>">Read More</a></p>
 </div>
 </div>
 </div>

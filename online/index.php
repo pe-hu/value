@@ -7,12 +7,13 @@ $name = (string)filter_input(INPUT_POST, 'name');
 $link = (string)filter_input(INPUT_POST, 'link');
 $language = (string)filter_input(INPUT_POST, 'language');
 $text = (string)filter_input(INPUT_POST, 'text');
-$email = (string)filter_input(INPUT_POST, 'email');
+$image = (string)filter_input(INPUT_POST, 'image');
+$url = (string)filter_input(INPUT_POST, 'ulr');
 
 $fp = fopen('value.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$title, $name, $link, $language, $text, $email]);
+    fputcsv($fp, [$title, $name, $link, $language, $text, $image, $url]);
     rewind($fp);
 }
 
@@ -31,7 +32,7 @@ fclose($fp);
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="icon" href="/value/icon.png">
-<link rel="stylesheet" type="text/css" href="/value/top.css" />
+<link rel="stylesheet" type="text/css" href="../top.css" />
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
 <title>大切なことを大切にするためのウェブサイト</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -43,6 +44,14 @@ fclose($fp);
 }
 .essay {
   white-space:pre-wrap;
+}
+.app img {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 0;
+	-webkit-filter: blur(0.5rem);
+	filter: blur(0.5rem);
 }
 .link {
 	margin:2.5vw;
@@ -78,8 +87,9 @@ fclose($fp);
 <div class="essay">
 <p><?=h($row[4])?></p>
 </div>
+<img style="display:<?=h($row[5])?>;" src="<?=h($row[6])?>">
 <div class="link">
-<p style="display:<?=h($row[2])?>;"><a href="<?=h($row[2])?>">Link</a></p>
+<p><a href="<?=h($row[2])?>">Link</a></p>
 </div>
 </div>
 </div>

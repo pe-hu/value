@@ -31,7 +31,7 @@ body {
 #image img:hover {
 	-webkit-filter: blur(0);
 	filter: blur(0);
-    transition: all 2500ms ease;
+    transition: all 1000ms ease;
 }
 #image p {
 	text-align:center;

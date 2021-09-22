@@ -56,6 +56,7 @@ fclose($fp);
 }
 .link {
 	margin:2.5vw;
+    text-align:center;
     -ms-writing-mode: horizontal-tb;
     writing-mode: horizontal-tb;
 }

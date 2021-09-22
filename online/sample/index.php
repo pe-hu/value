@@ -40,7 +40,7 @@ $("#en").load("en.php");
 <body>
 <div id="image">
 <span>あなたの大切なものは何ですか？</span>
-<p><img src="image.jpg"></p>
+<div id="en"></div>
 </div>
 
 <div id="what" class="one">

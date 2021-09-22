@@ -46,7 +46,7 @@ fclose($fp);
   white-space:pre-wrap;
 }
 .app img {
-    position:absolute;
+    position:relative;
     top:0;
     left:0;
     z-index: 0;

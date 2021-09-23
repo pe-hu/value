@@ -69,8 +69,8 @@ body {
 	position:relative;
 	display:flex;
 	width:90%;
-	height: 90vh;
-	margin:5vh auto;
+	height: 80vh;
+	margin:10vh auto;
 	overflow: auto;
 }
 .ja .app .tt {

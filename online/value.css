@@ -4,7 +4,7 @@ body {
 }
 #what,
 #title,
-#image span,
+#value,
 .ja .app,
 .ja .list {
   -ms-writing-mode: tb-rl;

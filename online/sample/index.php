@@ -38,10 +38,7 @@ $("#en").load("en.php");
 </script>
 </head>
 <body>
-<div id="image">
-<span>あなたの大切なものは何ですか？</span>
-</div>
-<div id="en"></div>
+<span id="value">あなたの大切なものは何ですか？</span>
 
 <div id="what" class="one">
 <b>あるにおい</b>
@@ -49,6 +46,8 @@ $("#en").load("en.php");
 <div id="you">
  ささじまかずま
 </div>
+
+<div id="en"></div>
 
 <div id="about" class="ja">
 <div class="app">

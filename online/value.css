@@ -38,13 +38,8 @@ body {
 	filter: blur(0);
     transition: all 1000ms ease;
 }
-#image span {
-	position:absolute;
-	top:5%; left:5%;
-	z-index:100;
-	font-size:75%;
-}
-#title {
+
+#value {
 	position:fixed;
 	top:5%; left:5%;
 	z-index:100;
@@ -74,8 +69,8 @@ body {
 	position:relative;
 	display:flex;
 	width:90%;
-	height: 75vh;
-	margin:5rem auto 7.5rem;
+	height: 90vh;
+	margin:5vh auto;
 	overflow: auto;
 }
 .ja .app .tt {
@@ -89,7 +84,7 @@ body {
 	display: inline-block;
 	font-size:0.8rem;
 	height:85%;
-	padding:2rem 2rem 0 2rem;
+	padding:5% 2rem 10% 2rem;
 }
 .ja .list {
 	position:relative;

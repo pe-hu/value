@@ -27,20 +27,20 @@ fclose($fp);
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="/value/online/post.css" />
+<link rel="stylesheet" type="text/css" href="/value/online/value.css" />
 <title>In The Wind by Kazuma Sasajima</title>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
 <body>
-<div id="image">
-<span>あなたの大切なものは何ですか？</span>
-<p><img src="image.jpg"></p>
-</div>
+<span id="value">あなたの大切なものは何ですか？</span>
 <div id="what" class="one">
 <b>風の中</b>
 </div>
 <div id="you">
 Kazuma Sasajima
+</div>
+<div id="image">
+<p><img src="image.jpg"></p>
 </div>
 
 <div id="about" class="en">

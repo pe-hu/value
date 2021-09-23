@@ -27,14 +27,11 @@ fclose($fp);
 <meta name="viewport" content="width=device-width">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="../../post.css" />
 <title>ペフのみんなで凧を空に飛ばしたこと | by 大橋優斗</title>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/value/online/value.css" />
 </head>
 <body>
-<div id="image">
-<span>あなたの大切なものは何ですか？</span>
-</div>
+<span id="value">あなたの大切なものは何ですか？</span>
 <div id="what" class="two">
 <b>ペフのみんなで凧を空に飛ばしたこと</b>
 </div>

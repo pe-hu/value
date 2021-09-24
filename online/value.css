@@ -163,3 +163,7 @@ body {
 }
 #what, #you {font-size:55%;}
 }
+
+@media print{
+  .link {display:none;}
+}

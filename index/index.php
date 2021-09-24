@@ -120,7 +120,7 @@ fclose($fp);
   }
   #mc_embed_signup_scroll h2{
     margin: 0;
-    font-size:1.5rem;
+    font-size:1.25rem;
     font-weight: 500;
   }
 	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.

@@ -37,6 +37,27 @@ fclose($fp);
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
 <title>大切にすることを大切にする場所</title>
 <style type="text/css">
+#credit {
+  width:95%;
+  margin:2.5rem 2.5% 0;
+  font-size:1.25rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
+#credit a {
+  color:#000;
+  text-decoration: none;
+  border-bottom: 2px dotted;
+}
+#credit b {
+  color:#fff;
+  background: #000;
+  padding:0.5rem;
+  font-weight: 500;
+}
+.pehu {font-family: "MS Mincho", "SimSong", serif;}
+
 @media screen and (max-width: 950px){
   #index {
     position:absolute;
@@ -136,6 +157,12 @@ fclose($fp);
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
+
+<div id="credit">
+<p>Presented by</p>
+<p><a href="/pehu/" class="pehu">∧° ┐ | creative, community space</a></p>
+<p><a href="https://github.com/pe-hu/value" target="_blank" rel="noopener noreferrer"><b>GitHub</b></a></p>
+</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="org.js"></script>

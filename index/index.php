@@ -45,17 +45,6 @@ fclose($fp);
   justify-content: space-between;
   flex-wrap:wrap;
 }
-#credit a {
-  color:#000;
-  text-decoration: none;
-  border-bottom: 2px dotted;
-}
-#credit b {
-  color:#fff;
-  background: #000;
-  padding:0.5rem;
-  font-weight: 500;
-}
 .pehu {font-family: "MS Mincho", "SimSong", serif;}
 
 @media screen and (max-width: 950px){
@@ -161,7 +150,6 @@ fclose($fp);
 <div id="credit">
 <p>Presented by</p>
 <p><a href="/pehu/" class="pehu">∧° ┐ | creative, community space</a></p>
-<p><a href="https://github.com/pe-hu/value" target="_blank" rel="noopener noreferrer"><b>GitHub</b></a></p>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

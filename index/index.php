@@ -44,6 +44,7 @@ fclose($fp);
   display: flex;
   justify-content: space-between;
   flex-wrap:wrap;
+  font-family: 'Source Serif Pro', serif;
 }
 .pehu {font-family: "MS Mincho", "SimSong", serif;}
 

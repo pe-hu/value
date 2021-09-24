@@ -83,8 +83,8 @@ body {
 .ja .app .essay {
 	display: inline-block;
 	font-size:0.8rem;
-	height:85%;
-	padding:5% 2rem 10% 5rem;
+	height:80%;
+	padding:5% 2rem 15% 5rem;
 }
 .ja .list {
 	position:relative;

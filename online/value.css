@@ -68,7 +68,7 @@ body {
 .ja .app {
 	position:relative;
 	display:flex;
-	width:90%;
+	width:80%;
 	height: 85vh;
 	margin:7.5vh auto;
 	overflow: auto;
@@ -84,7 +84,7 @@ body {
 	display: inline-block;
 	font-size:0.8rem;
 	height:85%;
-	padding:5% 2rem 15% 5rem;
+	padding:5% 2rem 10% 5rem;
 }
 .ja .list {
 	position:relative;

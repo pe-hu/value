@@ -119,7 +119,7 @@ Name</p>
 <div class="en">
 <div class="app">
 <div class="essay" style="text-align:center; font-size:125%;">
-大切にすることを大切にする
+大切にすることを大切にする場所
 </div>
 <div class="link">
 <p><a style="font-size:125%;" href="/value/index/">View the Collection</a></p>

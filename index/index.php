@@ -100,7 +100,12 @@ fclose($fp);
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
-	#mc_embed_signup{background:#fff; clear:left; font-size:1rem; font-family: YuGothic, Yu Gothic",Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif; }
+	#mc_embed_signup {
+    background:#fff;
+    clear:left;
+    font-size:1rem;
+    font-family: YuGothic, Yu Gothic",Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  }
   #mc_embed_signup h2{font-size:1.5rem;}
 	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */

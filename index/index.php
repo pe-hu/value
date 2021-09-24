@@ -106,7 +106,12 @@ fclose($fp);
     font-size:1rem;
     font-family: YuGothic, Yu Gothic",Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
   }
-  #mc_embed_signup h2{font-size:1.5rem;}
+  #mc_embed_signup_scroll h2{
+    margin: 0;
+    font-size:1.5rem;
+    font-weight: 500;
+    font-family: YuGothic, Yu Gothic",Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  }
 	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
 	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 </style>

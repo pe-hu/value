@@ -75,7 +75,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$admin_reply_text .= "Posted on " . date("Y-m-d H:i:s") . "\n\n";
 	$admin_reply_text .= "creative-community.space/value/";
 
-	mb_send_mail( 'weare@vg.pe.hu', $admin_reply_subject, $admin_reply_text, $header);
+	mb_send_mail( 'pehu@creative-community.space', $admin_reply_subject, $admin_reply_text, $header);
 
 	} else {
 		$page_flag = 0;

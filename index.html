@@ -16,18 +16,6 @@
 #about {
 	padding: 2.5rem 0 0;
 }
-#submit {
-	position: fixed;
-  top:0;
-  left:0;
-  width: 100%;
-  background-color: #fff;
-}
-#submit iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
 .none {
   z-index: 0;
   opacity: 0;
@@ -87,16 +75,11 @@
 <div id="target">
 <a href="#about">About</a>
 <a href="#update">Update</a>
-<a id="open" href="#submit">Submit</a>
 <a href="#publication">Publication</a>
 </div>
 
 <div class="value">
 <h2 id="title"><u>this is</u> a <i>space</i> for <b>valuing an act of valuing</b></h2>
-</div>
-
-<div id="submit" class="none">
-  <iframe src="online/index.php"></iframe>
 </div>
 
 <div id="update"></div>
@@ -138,19 +121,6 @@
 <p><a href="/pehu/" class="pehu">∧° ┐ | creative, community space</a></p>
 <p><a href="https://github.com/pe-hu/value" target="_blank" rel="noopener noreferrer"><b>GitHub</b></a></p>
 </div>
-
-<script>
-   let btn = document.querySelector('#open');
-   let open = document.querySelector('#submit');
-    
-   let btnToggleclass = function(el) {
-     el.classList.toggle('open');
-   }
-    
-   btn.addEventListener('click', function() {
-     btnToggleclass(open);
-   }, false);
-</script>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>

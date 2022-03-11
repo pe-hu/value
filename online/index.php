@@ -96,6 +96,16 @@ if( !empty($_POST['btn_confirm']) ) {
 <title>大切にすることを大切にする場所</title>
 <style type="text/css">
 body {padding: 0; margin: 0;}
+#value {
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+#value {
+	position:fixed;
+	top:5%; left:5%;
+	z-index:100;
+	font-size:75%;
+}
 #submit h1,
 #submit p,
 #submit button {

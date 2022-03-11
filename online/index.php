@@ -138,12 +138,12 @@ body {padding: 0; margin: 0;}
 	border-radius:0.5rem;
 	font-size:0.75rem;
 	width:97%;
-	height:50vh;
 }
 #submit input[type="submit"] {
 	font-size: 1rem;
 	cursor:pointer;
 	width:100%;
+	height:50vh;
 	margin-bottom:2.5rem;
 	padding:0.25rem 0;
 	background: #fff;

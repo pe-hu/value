@@ -138,10 +138,11 @@ body {padding: 0; margin: 0;}
 </style>
 </head>
 <body>
+<span id="value">あなたの大切なものは何ですか？</span>
 <div id="submit">
 <?php if( $page_flag === 1 ): ?>
 <section id="main" class="form">
-<form action="" id="10q" method="post">
+<form action="" id="" method="post">
 
 
 <p id="next">

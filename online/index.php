@@ -140,7 +140,7 @@ body {padding: 0; margin: 0;}
 	width:97%;
 }
 #submit textarea {
-	height:50vh;
+	height:55vh;
 }
 #submit input[type="submit"] {
 	font-size: 1rem;
@@ -151,6 +151,9 @@ body {padding: 0; margin: 0;}
 	background: #fff;
 	color: #000;
 	border-radius:2.5rem;
+}
+@media print{
+	#submit input[type="submit"] {display:none;}
 }
 </style>
 </head>

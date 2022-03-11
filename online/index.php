@@ -102,7 +102,7 @@ body {padding: 0; margin: 0;}
 }
 #value {
 	position:fixed;
-	top:5%; left:5%;
+	top:5%; right:5%;
 	z-index:100;
 	font-size:75%;
 }

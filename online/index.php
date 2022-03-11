@@ -105,6 +105,7 @@ body {padding: 0; margin: 0;}
 	top:5%; right:5%;
 	z-index:100;
 	font-size:75%;
+	color:#000;
 }
 #submit h1,
 #submit p,

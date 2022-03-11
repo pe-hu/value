@@ -108,7 +108,7 @@ body {padding: 0; margin: 0;}
 	color:#000;
 	text-decoration:none;
 	border-left:solid 1px red;
-	padding-left:1em;
+	padding-left:0.5em;
 }
 #submit h1,
 #submit p,
@@ -138,6 +138,7 @@ body {padding: 0; margin: 0;}
 	border-radius:0.5rem;
 	font-size:0.75rem;
 	width:97%;
+	height:50vh;
 }
 #submit input[type="submit"] {
 	font-size: 1rem;

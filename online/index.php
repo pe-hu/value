@@ -140,7 +140,7 @@ body {padding: 0; margin: 0;}
 	width:97%;
 }
 #submit textarea {
-	height:55vh;
+	height:50vh;
 }
 #submit input[type="submit"] {
 	font-size: 1rem;

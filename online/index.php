@@ -108,6 +108,7 @@ body {padding: 0; margin: 0;}
 	color:#000;
 	text-decoration:none;
 	border-left:solid 1px red;
+	padding-left:1em;
 }
 #submit h1,
 #submit p,

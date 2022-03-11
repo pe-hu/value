@@ -106,6 +106,8 @@ body {padding: 0; margin: 0;}
 	z-index:100;
 	font-size:75%;
 	color:#000;
+	text-decoration:none;
+	border-left:solid 1px red;
 }
 #submit h1,
 #submit p,

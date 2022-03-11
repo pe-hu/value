@@ -69,7 +69,7 @@
 }
 .pehu {font-family: "MS Mincho", "SimSong", serif;}
 
-h3, #qr {display: none;}
+h3, #qr, .printonly {display: none;}
 #qr {
   position: absolute;
   bottom: 0;
@@ -85,10 +85,11 @@ h3, #qr {display: none;}
   #update,
   #publication,
   #about,
-  #credit
+  #credit,
+  .noprint
    {display:none;}
    
-  h3, #qr {display: inline-block;}
+  h3, #qr, .printonly {display: inline-block;}
 }
 </style>
 </head>
@@ -101,7 +102,7 @@ h3, #qr {display: none;}
 </div>
 
 <div class="value">
-<h2 id="title"><u>this is</u> a <i>space</i> for <b>valuing an act of valuing</b></h2>
+<h2 id="title"><u>this is</u> a <i class="noprint">space</i> <i class="printonly">entry form</i> for <b>valuing an act of valuing</b></h2>
 </div>
 
 <div id="update"></div>

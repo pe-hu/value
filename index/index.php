@@ -96,7 +96,7 @@ fclose($fp);
 <h1 class="jp_title"><a id="open" href="#submit">あなたの大切なものは何ですか？</a></h1>
 
 <div id="submit" class="none">
-  <iframe src="online/index.php"></iframe>
+  <iframe src="/value/online/index.php"></iframe>
 </div>
 
 <div id="list">

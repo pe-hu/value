@@ -37,6 +37,35 @@ fclose($fp);
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
 <title>大切にすることを大切にする場所</title>
 <style type="text/css">
+#submit {
+	position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  background-color: #fff;
+}
+#submit iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.none {
+  z-index: 0;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+  height: 0;
+  transition: all 5000ms ease;
+}
+.open {
+  z-index: 50;
+  opacity: 1;
+  pointer-events:all;
+  user-select:auto;
+  width: 100%;
+  height: 100vh;
+  transition: all 4500ms ease;
+}
 #credit {
   width:95%;
   margin:2.5rem 2.5% 0;
@@ -64,7 +93,11 @@ fclose($fp);
 </head>
 <body>
 
-<h1 class="jp_title"><a href="/value/online/">あなたの大切なものは何ですか？</a></h1>
+<h1 class="jp_title"><a id="open" href="#submit">あなたの大切なものは何ですか？</a></h1>
+
+<div id="submit" class="none">
+  <iframe src="online/index.php"></iframe>
+</div>
 
 <div id="list">
 <div id="index">
@@ -115,6 +148,19 @@ fclose($fp);
 <p>Presented by</p>
 <p><a href="/pehu/" class="pehu">∧° ┐ | creative, community space</a></p>
 </div>
+
+<script>
+  let btn = document.querySelector('#open');
+  let open = document.querySelector('#submit');
+   
+  let btnToggleclass = function(el) {
+    el.classList.toggle('open');
+  }
+   
+  btn.addEventListener('click', function() {
+    btnToggleclass(open);
+  }, false);
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="org.js"></script>

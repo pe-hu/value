@@ -93,7 +93,13 @@ fclose($fp);
 </head>
 <body>
 
-<h1 class="jp_title"><a onclick="window.location.reload(true);">あなたの大切なものは何ですか？</a></h1>
+<h1 class="jp_title"><a onclick="window.location.reload(true);">
+  <?php
+  $mod = filemtime("index.csv");
+  date_default_timezone_set('Asia/Tokyo');
+  print "".date("Y-m-d H:i:s",$mod);
+  ?>
+  更新</a></h1>
 
 <div id="list">
 <div id="index">

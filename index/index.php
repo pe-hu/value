@@ -64,7 +64,7 @@ fclose($fp);
 </head>
 <body>
 
-<h1 class="jp_title"><a href="/value/">大切にすることを大切にする場所</a></h1>
+<h1 class="jp_title"><a href="/value/online/">あなたの大切なものは何ですか？</a></h1>
 
 <div id="list">
 <div id="index">

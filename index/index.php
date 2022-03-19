@@ -148,7 +148,7 @@ fclose($fp);
 
 <div id="credit">
 <p>Presented by</p>
-<p><a href="/pehu/" class="pehu">∧° ┐ | creative, community space</a></p>
+<p><a href="/pehu/" class="pehu">∧° ┐</a></p>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

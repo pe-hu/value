@@ -109,7 +109,7 @@
   #qr, .printonly {display: inline-block;}
 }
 @media screen and (max-width: 1100px){
-    .library li {max-height: 75vh;}
+    #publication iframe {max-height: 75vh;}
 }
 </style>
 </head>
@@ -162,8 +162,8 @@
 </div>
 
 <div id="publication">
-<div id="book"></div>
-<div id="still"></div>
+<iframe src="book/"></iframe>
+<iframe src="still/"></iframe>
 </div>
 
 <div id="credit">
@@ -188,8 +188,6 @@
 <script type="text/javascript">
 $(function(){
 $("#update").load("index/update.php");
-$("#book").load("book/");
-$("#still").load("still/");
 })
 $(function(){
 var p=$("#do");

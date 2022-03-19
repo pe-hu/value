@@ -162,8 +162,8 @@
 </div>
 
 <div id="publication">
-<iframe src="book/"></iframe>
-<iframe src="still/"></iframe>
+<div id="book"></div>
+<div id="still"></div>
 </div>
 
 <div id="credit">
@@ -188,6 +188,8 @@
 <script type="text/javascript">
 $(function(){
 $("#update").load("index/update.php");
+$("#book").load("book/");
+$("#still").load("still/");
 })
 $(function(){
 var p=$("#do");

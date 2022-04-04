@@ -48,7 +48,7 @@ if( !empty($_POST['btn_confirm']) ) {
 	$header .= "Reply-To: ∧°┐ <we.are.pe.hu@gmail.com>\n";
 
 	// 件名を設定
-	$auto_reply_subject = '大切にすることを大切にする場所';
+	$auto_reply_subject = '大切にすることを大切にするための場所';
 
 	// 本文を設定
 	$auto_reply_text .= "Thank You for Submit\n\n";
@@ -63,7 +63,7 @@ if( !empty($_POST['btn_confirm']) ) {
 
 
 	// 件名を設定
-	$admin_reply_subject = '大切にすることを大切にする場所';
+	$admin_reply_subject = '大切にすることを大切にするための場所';
 
 	// 本文を設定
 	$admin_reply_text .= "大切なもの | What do you value?\n" . $_POST['title'] . "\n\n";
@@ -93,7 +93,7 @@ if( !empty($_POST['btn_confirm']) ) {
 <link rel="icon" href="../icon.png">
 <link rel="stylesheet" type="text/css" href="/value/top.css" />
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
-<title>大切にすることを大切にする場所</title>
+<title>大切にすることを大切にするための場所</title>
 <style type="text/css">
 body {padding: 0; margin: 0;}
 #value {

@@ -35,7 +35,7 @@ fclose($fp);
 <link rel="icon" href="/value/icon.png">
 <link rel="stylesheet" type="text/css" href="index.css" />
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
-<title>大切にすることを大切にする場所</title>
+<title>大切にすることを大切にするための場所</title>
 <style type="text/css">
 #submit {
 	position: fixed;

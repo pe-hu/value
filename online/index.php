@@ -152,8 +152,20 @@ body {padding: 0; margin: 0;}
 	color: #000;
 	border-radius:2.5rem;
 }
+
+.link {
+	position:fixed;
+	bottom: 0;
+	left: 0;
+	font-size:2.5rem;
+	margin:2.5vw;
+}
+.link a {
+	text-decoration:none;
+	color:#000;
+}
 @media print{
-	#submit input[type="submit"] {display:none;}
+	#submit input[type="submit"], .link {display:none;}
 }
 </style>
 </head>
@@ -231,5 +243,8 @@ body {padding: 0; margin: 0;}
 </section>
 <?php endif; ?>
 </div>
+<p class="link">
+<a href="#" onclick="window.history.back(); return false;">↩︎</a>
+</p>
 </body>
 </html>

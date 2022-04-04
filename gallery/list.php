@@ -47,7 +47,7 @@ fclose($fp);
 @media screen and (max-width: 550px){
 #org {
   padding: 0 1rem;
-  margin:7.5rem auto;
+  margin:2.5rem auto;
 	font-family: 'Source Serif Pro', serif;
 }
 #org li {

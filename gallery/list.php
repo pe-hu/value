@@ -39,9 +39,15 @@ fclose($fp);
 <style type="text/css">
 
 @media screen and (max-width: 1000px){
-  #org {
-    margin:4.5rem auto;
-  }
+#org {
+  position:relative;
+  color: #000;
+  font-size: 1rem;
+  padding: 0 1rem 0;
+  margin:4.5rem auto 2.5rem;
+  max-width: 80rem;
+	font-family: 'Source Serif Pro', serif;
+}
 }
 
 @media screen and (max-width: 550px){

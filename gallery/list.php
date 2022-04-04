@@ -11,7 +11,7 @@ $image = (string)filter_input(INPUT_POST, 'image');
 $url = (string)filter_input(INPUT_POST, 'ulr');
 $appreciate = (string)filter_input(INPUT_POST, 'appreciate');
 
-$fp = fopen('index.csv', 'a+b');
+$fp = fopen('list.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$title, $name, $link, $language, $text, $image, $url, $appreciate]);

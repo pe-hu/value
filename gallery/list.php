@@ -55,6 +55,9 @@ fclose($fp);
 #org li {
   margin: 2.5%;
 }
+.jp_title {
+	display: none;
+}
 }
 </style>
 </head>
@@ -62,6 +65,7 @@ fclose($fp);
 
 <div id="list">
 <div id="org">
+<p class="jp_title">大切にすることを大切にするためのギャラリー</p>
 <ul class="random">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>

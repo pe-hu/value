@@ -55,7 +55,7 @@ fclose($fp);
 
 <div id="list">
 <div id="org">
-<p>大切にすることを大切にするためのギャラリーリスト</p>
+<p>大切にすることを大切にするためのギャラリー一覧</p>
 <ul class="random">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>

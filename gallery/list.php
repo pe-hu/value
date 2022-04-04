@@ -49,7 +49,7 @@ fclose($fp);
 @media screen and (max-width: 550px){
 #org {
   padding: 0 1rem;
-  margin:4.5rem auto 7.5rem;
+  margin:7.5rem auto;
 	font-family: 'Source Serif Pro', serif;
 }
 #org li {

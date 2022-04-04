@@ -158,7 +158,7 @@ body {padding: 0; margin: 0;}
 </style>
 </head>
 <body>
-<a id="value" href="/value/" target="_parent">あなたの大切なものは何ですか？</a>
+<a id="value" href="/value/index/" target="_parent">あなたの大切なものは何ですか？</a>
 <div id="submit">
 <?php if( $page_flag === 1 ): ?>
 <section id="main" class="form">

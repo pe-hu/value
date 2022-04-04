@@ -52,6 +52,9 @@ fclose($fp);
   margin:4.5rem auto 7.5rem;
 	font-family: 'Source Serif Pro', serif;
 }
+#org li {
+  margin: 2.5%;
+}
 .jp_title {
 	display: none;
 }

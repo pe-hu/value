@@ -50,8 +50,16 @@ fclose($fp);
 .jp_title {display:none;}
 #org {
   padding: 0 1rem;
-  margin:4.5rem auto 2.5rem;
+  margin:4.5rem auto 7.5rem;
 	font-family: 'Source Serif Pro', serif;
+}
+.jp_title {
+	-ms-writing-mode: horizontal-tb;
+	writing-mode: horizontal-tb;
+	position:fixed;
+	left:1rem;
+	bottom:1rem;
+  z-index: 50;
 }
 }
 </style>

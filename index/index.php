@@ -141,6 +141,11 @@ fclose($fp);
 <span class="name">名前</span>
 </li>
 <?php endif; ?>
+<li class="list_item list_toggle" data-appreciate="topics">
+<p class="what">あなたの大切なものは何ですか？</p>
+<span class="name">What do you value?</span>
+<a href="/value/online/" target="_parent"></a>
+</li>
 </ul>
 </div>
 </div>

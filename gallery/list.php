@@ -37,11 +37,6 @@ fclose($fp);
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
 <title>大切にすることを大切にするためのギャラリー</title>
 <style type="text/css">
-@media screen and (max-width: 950px){
-  #index {
-    position:absolute;
-  }
-}
 
 @media screen and (max-width: 550px){
   #org {
@@ -71,12 +66,6 @@ fclose($fp);
 <?php endif; ?>
 </ul>
 </div>
-</div>
-
-
-<div id="credit">
-<p>Presented by</p>
-<p><a href="/pehu/" class="pehu">∧° ┐</a></p>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

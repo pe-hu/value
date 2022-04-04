@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gallery Your Name</title>
+<style type="text/css">
+      #randomImg {
+        position: fixed;
+        top:0; left:0;
+        z-index:-1;
+        overflow:hidden;
+        width:100%;
+        height:100vh;
+        user-select:none;
+        pointer-events:none;
+      }
+      #randomImg img {
+        min-width:100%;
+        min-height:100%;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+</head>
+<body>
+<div id="randomImg" class="random"></div>
+<script type="text/javascript">
+const random = [
+  "001.jpeg",
+  "002.jpeg",
+  "003.jpeg",
+  "004.jpeg",
+  "005.jpeg",
+  "006.jpeg"
+  ];
+  
+  function randomImg(randomArray) {
+    var random =
+    randomArray[Math.floor(Math.random() * randomArray.length)];
+    console.log(random);
+    return random;
+  }
+  function imgGenerator() {
+    var img = `<img src="${randomImg(random)}">`;
+    document.querySelector(".random").innerHTML = img;
+  }
+  window.setInterval(function() {
+    imgGenerator();
+  }, 2000);
+</script>
+</body>
+</html>

@@ -5,77 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="icon" href="/value/icon.png">
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
 <title>大切にすることを大切にするためのギャラリー</title>
-<style type="text/css">
-body {font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;}
-
-.jp_title {
-	position:fixed;
-    z-index: 100;
-	right:2.5vw;
-	top:2.5rem;
-	font-size:0.9rem;
-	font-weight:500;
-    color: #000;
-    text-decoration: none;
-    border-left: solid 1px red;
-}
-.jp_title,
-.ja .app {
-	-ms-writing-mode: tb-rl;
-	writing-mode: vertical-rl;
-}
-#gallely {
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    background-color: red;
-}
-.none {
-    z-index: 0;
-    opacity: 0;
-    pointer-events: none;
-    user-select: none;
-    height: 0;
-    transition: all 5000ms ease;
-}
-.open {
-    z-index: 50;
-    opacity: 1;
-    pointer-events:all;
-    user-select:auto;
-    width: 100%;
-    min-height: 100vh;
-    transition: all 2500ms ease;
-}
-
-@media screen and (max-width: 950px){
-}
-
-@media screen and (max-width: 550px){
-}
-</style>
 </head>
-<body>
-
-<a class="jp_title" id="open" href="#gallely">大切にすることを大切にするためのギャラリー</a>
-
-<div id="gallely" class="none"></div>
-
-<script>
-    let btn = document.querySelector('#open');
-    let open = document.querySelector('#gallely');
-     
-    let btnToggleclass = function(el) {
-      el.classList.toggle('open');
-    }
-     
-    btn.addEventListener('click', function() {
-      btnToggleclass(open);
-    }, false);
-  </script>
+<frameset cols="50%, 50%">
+  <frame src="list.html" name="content">
+  <frame src="youename" name="gallery">
+</frameset>
 </body>
 </html>

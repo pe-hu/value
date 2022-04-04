@@ -50,7 +50,7 @@ fclose($fp);
 	left:2.5vw;
 	top:0;
   margin: 2.5%;
-	height:1rem;
+	height:auto;
 	-ms-writing-mode: horizontal-tb;
 	writing-mode: horizontal-tb;
 }

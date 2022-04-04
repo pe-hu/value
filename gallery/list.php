@@ -54,8 +54,8 @@ fclose($fp);
 <body>
 
 <div id="list">
-<p>Index / <a onclick="window.location.reload(true);">大切にすることを大切にするためのギャラリー</a></p>
 <div id="org">
+<p>Index / <a onclick="window.location.reload(true);">大切にすることを大切にするためのギャラリー</a></p>
 <ul class="random">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>

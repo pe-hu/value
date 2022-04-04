@@ -68,18 +68,6 @@
         transform: translate(-50%, -50%);
       }
 
-      .link {
-        position:fixed;
-        bottom: 0;
-        left: 0;
-        font-size:2.5rem;
-        margin:0.5rem 1.25rem;
-      }
-      .link a {
-        text-decoration:none;
-        color:#fff;
-      }
-
       @media screen and (max-width: 550px){
         #open, .link {display:none;}
       }
@@ -92,9 +80,6 @@
 </div>
 
 <div id="randomImg" class="random"></div>
-<p class="link">
-<a href="#" onclick="window.history.back(); return false;">↩︎</a>
-</p>
 
 <script>
   let btn = document.querySelector('#open');

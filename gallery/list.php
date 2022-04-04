@@ -40,18 +40,19 @@ fclose($fp);
 
 @media screen and (max-width: 1000px){
 #org {
-  position:relative;
-  color: #000;
-  font-size: 1rem;
-  padding: 0 1rem 0;
+  padding: 0 4.5rem 0 1rem;
   margin:4.5rem auto 2.5rem;
-  max-width: 80rem;
 	font-family: 'Source Serif Pro', serif;
 }
 }
 
 @media screen and (max-width: 550px){
 .jp_title {display:none;}
+#org {
+  padding: 0 1rem;
+  margin:4.5rem auto 2.5rem;
+	font-family: 'Source Serif Pro', serif;
+}
 }
 </style>
 </head>

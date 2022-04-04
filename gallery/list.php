@@ -40,13 +40,13 @@ fclose($fp);
 
 @media screen and (max-width: 1000px){
   #org {
-    margin:2.5rem auto;
+    margin:5rem auto;
   }
 }
 
 @media screen and (max-width: 550px){
   #org {
-    margin:2.5rem auto;
+    margin:5rem auto;
   }
 }
 </style>

@@ -38,12 +38,10 @@ fclose($fp);
 <title>大切にすることを大切にするためのギャラリー</title>
 <style type="text/css">
 
-@media screen and (max-width: 1250px){
 #org {
   padding: 0 4.5rem 0 1rem;
   margin:4.5rem auto 2.5rem;
 	font-family: 'Source Serif Pro', serif;
-}
 }
 
 @media screen and (max-width: 550px){

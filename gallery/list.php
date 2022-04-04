@@ -45,7 +45,11 @@ fclose($fp);
 }
 
 @media screen and (max-width: 550px){
-.jp_title {display:none;}
+.jp_title {
+	position:relative;
+	-ms-writing-mode: horizontal-tb;
+	writing-mode: horizontal-tb;
+}
 }
 </style>
 </head>

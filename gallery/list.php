@@ -40,15 +40,12 @@ fclose($fp);
 
 @media screen and (max-width: 1000px){
   #org {
-    margin:5rem auto;
+    margin:4.5rem auto;
   }
 }
 
 @media screen and (max-width: 550px){
 .jp_title {display:none;}
-  #org {
-    margin:5rem auto;
-  }
 }
 </style>
 </head>

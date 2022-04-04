@@ -45,6 +45,7 @@ fclose($fp);
 }
 
 @media screen and (max-width: 550px){
+.jp_title {display:none;}
   #org {
     margin:5rem auto;
   }

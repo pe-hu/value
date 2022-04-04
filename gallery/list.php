@@ -64,8 +64,8 @@ fclose($fp);
 </style>
 </head>
 <body>
-
 <p class="jp_title">大切にすることを大切にするためのギャラリー</p>
+
 <div id="list">
 <div id="org">
 <ul class="random">

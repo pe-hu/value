@@ -58,7 +58,6 @@ fclose($fp);
 	position:fixed;
 	left:1rem;
 	bottom:1rem;
-  height: auto;
   z-index: 50;
 }
 }

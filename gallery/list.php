@@ -45,7 +45,7 @@ fclose($fp);
 
 @media screen and (max-width: 550px){
   #org {
-    margin:20rem auto 2.5rem;
+    margin:2.5rem auto;
   }
 }
 </style>
@@ -53,10 +53,6 @@ fclose($fp);
 <body>
 
 <div id="list">
-<div id="index">
-  <p><a onclick="window.location.reload(true);">大切にすることを大切にするためのギャラリー</a></p>
-</div>
-
 <div id="org">
 <ul class="random">
 <?php if (!empty($rows)): ?>

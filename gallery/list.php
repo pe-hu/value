@@ -38,7 +38,7 @@ fclose($fp);
 <title>大切にすることを大切にするためのギャラリー</title>
 <style type="text/css">
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1250px){
 #org {
   padding: 0 4.5rem 0 1rem;
   margin:4.5rem auto 2.5rem;
@@ -53,12 +53,7 @@ fclose($fp);
 	font-family: 'Source Serif Pro', serif;
 }
 .jp_title {
-	-ms-writing-mode: horizontal-tb;
-	writing-mode: horizontal-tb;
-	position:fixed;
-	left:1rem;
-	bottom:1rem;
-  z-index: 50;
+	display: none;
 }
 }
 </style>

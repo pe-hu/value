@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -9,61 +10,93 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
     <title>大切にすることを大切にするための本</title>
     <style type="text/css">
-      .value,
-      .en {
-        font-family:'Source Serif Pro', serif;
-      }
-      .value {
-        font-size:2.5rem;
-        width:90%;
-        height: 65vh;
-      }
-      .info i {font-size:110%; padding-right: 2vw;}
-      .info b {font-weight:900; font-size:120%;}
-      
-      .date {
-        font-size:1rem;
-        position:absolute;
-        right:2.5vw;
-        top:5vh;
-        -ms-writing-mode: tb-rl;
-        writing-mode: vertical-rl;
-      }
-
-      .contents a {
-        background: #fff;
-        color:#000;
-        padding:0.25rem;
-        text-decoration: none;
-        margin-right: 1rem;
-        transition: all 1500ms ease;
-        display: inline-block;
-      }
-      .contents a:hover {
-        color:red;
-      }
-
-      .cover {background-image: url(book.png);}
-      .a {background-image: url(000.jpg);}
-      .b {background-image: url(004.JPG);}
-      .c {background-image: url(005.JPG);}
-      .d {background-image: url(006.JPG);}
-      .f {background-image: url(007.JPG);}
-      .g {background-image: url(008.JPG);}
-      .h {background-image: url(009.JPG);}
-
-      @media screen and (max-width: 1100px){
-        .value {
-          font-size:3vw;
+        .value,
+        .en {
+            font-family: 'Source Serif Pro', serif;
         }
-
-.contents a {
-  line-height: 200%;
-  padding:0.25vw;
-  font-size: 200%;
-  margin-right: 1vw;
-}
-      }
+        
+        .value {
+            font-size: 2.5rem;
+            width: 90%;
+            height: 65vh;
+        }
+        
+        .info i {
+            font-size: 110%;
+            padding-right: 2vw;
+        }
+        
+        .info b {
+            font-weight: 900;
+            font-size: 120%;
+        }
+        
+        .date {
+            font-size: 1rem;
+            position: absolute;
+            right: 2.5vw;
+            top: 5vh;
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+        }
+        
+        .contents a {
+            background: #fff;
+            color: #000;
+            padding: 0.25rem;
+            text-decoration: none;
+            margin-right: 1rem;
+            transition: all 1500ms ease;
+            display: inline-block;
+        }
+        
+        .contents a:hover {
+            color: red;
+        }
+        
+        .cover {
+            background-image: url(book.png);
+        }
+        
+        .a {
+            background-image: url(000.jpg);
+        }
+        
+        .b {
+            background-image: url(004.JPG);
+        }
+        
+        .c {
+            background-image: url(005.JPG);
+        }
+        
+        .d {
+            background-image: url(006.JPG);
+        }
+        
+        .f {
+            background-image: url(007.JPG);
+        }
+        
+        .g {
+            background-image: url(008.JPG);
+        }
+        
+        .h {
+            background-image: url(009.JPG);
+        }
+        
+        @media screen and (max-width: 1100px) {
+            .value {
+                font-size: 3vw;
+            }
+            .contents a {
+                line-height: 200%;
+                padding: 0.25vw;
+                font-size: 200%;
+                margin-right: 1vw;
+            }
+        }
     </style>
 
     <!-- Import the webpage's stylesheet -->
@@ -72,97 +105,96 @@
     <!-- Import the webpage's javascript file -->
     <script src="../scrollable.js"></script>
 
-  </head>
-  <body>
+</head>
+
+<body>
     <ul class="mousedragscrollable library">
-      <li>
-        <p class="date">大切にすることを大切にするための本</p>
-        <div class="contents">
-          <div class="value">
-          <h1 class="info">
-            <i>the book</i> for<br/>
-            <b>valuing an act<br/>
+        <li>
+            <p class="date">大切にすることを大切にするための本</p>
+            <div class="contents">
+                <div class="value">
+                    <h1 class="info">
+                        <i>the book</i> for<br/>
+                        <b>valuing an act<br/>
               of valuing</b></h1>
-          </div>
-        <p class="center en">
-        <span class="by">First</span>
-        <span class="by">Edition</span>
-        <span class="by"></span>
-        <span class="as">November </span>
-        <span class="by">23th</span>
-        <span class="by">2019</span>
-        <br/>
-        <span class="by">B6</span>
-        <span class="by">size</span>
-        <span class="by"></span>
-        <span class="by">134</span>
-        <span class="as">pages</span>
-        <span class="">300　copies</span>
-        </p>
-        </div>
-      </li>
+                </div>
+                <p class="center en">
+                    <span class="by">First</span>
+                    <span class="by">Edition</span>
+                    <span class="by"></span>
+                    <span class="as">November </span>
+                    <span class="by">23th</span>
+                    <span class="by">2019</span>
+                    <br/>
+                    <span class="by">B6</span>
+                    <span class="by">size</span>
+                    <span class="by"></span>
+                    <span class="by">134</span>
+                    <span class="as">pages</span>
+                    <span class="">300　copies</span>
+                </p>
+            </div>
+        </li>
 
-      <li class="cover"></li>
+        <li class="cover"></li>
 
-      <li>
-        <p class="date">あなたの大切なものは何ですか？</p>
-        <div class="contents">
-        <p class="margin">
-        このとてもシンプルな問いへの３８個の回答をこの本に収録します。<br/>
-        アーティスト・デザイナー・ディレクターなど計30名が、大切に想う物事を知ることで、読者自身が想う大切なものごとをもっと大切に想えるようなヒントになればという想いを込めて制作しました。
-        </p>
-        <h2 class="en"><u>“What do you value?”</u></h2>
-        <p class="en">
-          This book gathers 38 unique answers for this simple question from (artists, musicians, designers, art directors).<br/>
-          We published this book hoping to provide readers with hints to admire their valuables better by reading the answers.
-        </p>
-        </div>
-      </li>
+        <li>
+            <p class="date">あなたの大切なものは何ですか？</p>
+            <div class="contents">
+                <p class="margin">
+                    このとてもシンプルな問いへの３８個の回答をこの本に収録します。<br/> アーティスト・デザイナー・ディレクターなど計30名が、大切に想う物事を知ることで、読者自身が想う大切なものごとをもっと大切に想えるようなヒントになればという想いを込めて制作しました。
+                </p>
+                <h2 class="en"><u>“What do you value?”</u></h2>
+                <p class="en">
+                    This book gathers 38 unique answers for this simple question from (artists, musicians, designers, art directors).<br/> We published this book hoping to provide readers with hints to admire their valuables better by reading the answers.
+                </p>
+            </div>
+        </li>
 
-      <li class="a"></li>
+        <li class="a"></li>
 
-      <li>
-        <div class="contents">
-          <p class="center"><u>参加者</u></p>
-          <p class="name">
-          立川愛子 (well) | 星川あさこ | 小西彩水 | 芥川亜由弥 | 趙千恵 | Dove | fileloaded1.ofdusty | 沼本春花 | Joseph Torres | 中尾香織 | 笹嶋一馬 | 中西一成
-          | Kenji T. | 江崎將史 | 唐木満 (O Gallery eyes) | 小林椋 | Natalia Panzer | Nicholas Strobelt | 大津愛美 | 鷲尾玲 |  趙里奈
-          | ロクロトタンテ | 高原颯時 (well) | シーケタ | 松尾信太郎 | 船川翔司 | Theodore Cale Schafer |
-          Tom Trudgeon | 水内義人 | Yuto Ohashi
-          </p>
-        </div>
-      </li>
-      
-      <li class="b"></li>
-      <li class="c"></li>
-      <li class="d"></li>
-      <li class="f"></li>
-      <li class="g"></li>
+        <li>
+            <div class="contents">
+                <p class="center"><u>参加者</u></p>
+                <p class="name">
+                    立川愛子 (well) | 星川あさこ | 小西彩水 | 芥川亜由弥 | 趙千恵 | Dove | fileloaded1.ofdusty | 沼本春花 | Joseph Torres | 中尾香織 | 笹嶋一馬 | 中西一成 | Kenji T. | 江崎將史 | 唐木満 (O Gallery eyes) | 小林椋 | Natalia Panzer | Nicholas Strobelt | 大津愛美 | 鷲尾玲 | 趙里奈 | ロクロトタンテ | 高原颯時 (well) | シーケタ | 松尾信太郎
+                    | 船川翔司 | Theodore Cale Schafer | Tom Trudgeon | 水内義人 | Yuto Ohashi
+                </p>
+            </div>
+        </li>
 
-      <li class="h">
-        <div class="contents">
-        <p class="en">
-        <b class="by">Distribute</b>
-        </p>
-        <p class="en">
-        <a href="https://newlifecollection.com/ca51/1/p-r51-s/" target="_blank">New Life Collection</a>
-        <a href="https://archive.transbooks.center/2019/" target="_blank">TRANS BOOKS</a>
-        <a href="http://www.folkbookstore.com/" target="_blank">FOLK old book store</a>
-        <a href="https://doma.stores.jp/" target="_blank">DOMA</a>
-        <a href="https://newlifecollection.com/ca51/1/p-r51-s/" target="_blank">新宿眼下画廊</a>
-        <a href="https://www.iack.online/" target="_blank">IACK</a>
-        <a href="https://www.instagram.com/antiques_kohaku/" target="_blank">琥珀</a>
-        <a href="http://voukyoto.com/" target="_blank">VOU / 棒</a>
-        <a href="http://itohen.info/" target="_blank">itohen</a>
-        <a href="https://bnaaltermuseum.com/" target="_blank">BnA Alter Museum</a>
-        <a href="https://aohatabooks.com/" target="_blank">本屋青旗</a>
-        <a href="https://dottodot.today/" target="_blank">dot to dot today</a>
-        </p>
-      </li>
-      
+        <li class="b"></li>
+        <li class="c"></li>
+        <li class="d"></li>
+        <li class="f"></li>
+        <li class="g"></li>
+
+        <li class="h">
+            <div class="contents">
+                <p class="en">
+                    <b class="by">Distribute</b>
+                </p>
+                <p class="en">
+                    <a href="https://newlifecollection.com/ca51/1/p-r51-s/" target="_blank">New Life Collection</a>
+                    <a href="https://archive.transbooks.center/2019/" target="_blank">TRANS BOOKS</a>
+                    <a href="http://www.folkbookstore.com/" target="_blank">FOLK old book store</a>
+                    <a href="https://doma.stores.jp/" target="_blank">DOMA</a>
+                    <a href="https://www.gankagarou.com/" target="_blank">新宿眼下画廊</a>
+                    <a href="https://www.iack.online/" target="_blank">IACK</a>
+                    <a href="https://www.instagram.com/antiques_kohaku/" target="_blank">琥珀</a>
+                    <a href="http://voukyoto.com/" target="_blank">VOU / 棒</a>
+                    <a href="http://itohen.info/" target="_blank">itohen</a>
+                    <a href="https://bnaaltermuseum.com/" target="_blank">BnA Alter Museum</a>
+                    <a href="https://aohatabooks.com/" target="_blank">本屋青旗</a>
+                    <a href="https://dottodot.today/" target="_blank">dot to dot today</a>
+                </p>
+        </li>
+
     </ul>
-  </body>
+</body>
 
-  <script>$(".mousedragscrollable").mousedragscrollable();</script>
+<script>
+    $(".mousedragscrollable").mousedragscrollable();
+</script>
 
 </html>

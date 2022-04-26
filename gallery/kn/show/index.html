@@ -87,6 +87,7 @@
             display: inline-block;
             font-size: 0.8rem;
             padding: 2.5% 0 20% 2.5vw;
+            text-shadow: #fff 1px 1px;
         }
         
         .en .app {
@@ -96,19 +97,12 @@
             margin: 0 auto 7.5vh;
         }
         
-        .en .app .tt {
-            display: block;
-            font-size: 0.75rem;
-            font-weight: 555;
-            padding: 0 2rem;
-            font-family: 'Source Serif Pro', serif;
-        }
-        
         .en .app .essay {
             display: block;
             font-size: 0.8rem;
-            padding: 2rem 2rem;
+            padding: 1rem 2rem;
             font-family: 'Source Serif Pro', serif;
+            background-color: rgba(255, 255, 255, 0.45);
         }
         
         #you {
@@ -158,7 +152,7 @@
 
 <body>
     <div id="image">
-        <p><img src="https://cache.cart-imgs.fc2.com/user_img/pehu/2ecc32ab3755b0f2a065fa88d8c3596c.JPG"></p>
+        <p class="random"></p>
     </div>
 
     <div id="about" class="ja">
@@ -174,13 +168,37 @@
         <div id="about" class="en">
             <div class="app">
                 <div class="essay">
-                    <u>Gallery KN</u>
+                    <p><u>Gallery KN</u></p>
                     <p>住所：<br/>時間：</p>
                     <p>予約制：予約する</p>
                 </div>
             </div>
         </div>
     </div>
+    <p class="link">
+        <a href="#" onclick="window.history.back(); return false;">↩︎</a>
+    </p>
+    <script type="text/javascript">
+        const random = [
+            "https://cache.cart-imgs.fc2.com/user_img/pehu/2ecc32ab3755b0f2a065fa88d8c3596c.JPG",
+            "https://cache.cart-imgs.fc2.com/user_img/pehu/a9d816d4a5c78810eaf16a1373d0ae0c.JPG"
+        ];
+
+        function randomImg(randomArray) {
+            var random =
+                randomArray[Math.floor(Math.random() * randomArray.length)];
+            console.log(random);
+            return random;
+        }
+
+        function imgGenerator() {
+            var img = `<img src="${randomImg(random)}">`;
+            document.querySelector(".random").innerHTML = img;
+        }
+        window.setInterval(function() {
+            imgGenerator();
+        }, 5000);
+    </script>
 </body>
 
 </html>

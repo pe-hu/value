@@ -12,6 +12,37 @@
             font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
         }
         
+        #image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 85vw;
+            height: 85vh;
+        }
+        
+        #image img {
+            margin: auto;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            width: auto;
+            max-width: 70%;
+            height: auto;
+            max-height: 80%;
+            -webkit-filter: blur(0.5rem);
+            filter: blur(0.5rem);
+            transition: all 2500ms ease;
+        }
+        
+        #image img:hover {
+            -webkit-filter: blur(0);
+            filter: blur(0);
+            transition: all 1000ms ease;
+        }
+        
         #what,
         #title,
         .ja .app,
@@ -29,7 +60,6 @@
         #what {
             right: 1vw;
             font-size: 0.8rem;
-            height: 30vh;
             z-index: 10;
         }
         
@@ -45,20 +75,18 @@
             max-height: 55rem;
             margin: 5vh auto 0;
             overflow: auto;
+            pointer-events: none;
+            user-select: none;
         }
         
-        .ja .app .tt {
-            position: absolute;
-            top: 3rem;
-            font-size: 0.75rem;
-            font-weight: 555;
-            z-index: 10;
+        .ja .app b {
+            font-size: 125%;
         }
         
         .ja .app .essay {
             display: inline-block;
             font-size: 0.8rem;
-            padding: 2.5% 2rem 20% 5rem;
+            padding: 2.5% 0 20% 2.5vw;
         }
         
         .en .app {
@@ -125,29 +153,19 @@
                 font-size: 55%;
             }
         }
-        
-        .ja .essay p {
-            padding: 0.25rem;
-            mix-blend-mode: overlay;
-            color: #fff;
-            text-shadow: #000 1px 1px;
-            display: inline-block;
-        }
-        
-        .en .essay {
-            background-color: rgba(255, 255, 255, 0.45);
-        }
     </style>
 </head>
 
 <body>
+    <div id="image">
+        <p><img src="https://cache.cart-imgs.fc2.com/user_img/pehu/2ecc32ab3755b0f2a065fa88d8c3596c.JPG"></p>
+    </div>
 
     <div id="about" class="ja">
         <div class="app">
             <div class="essay">
-                <p><b>ご挨拶</b></p><br/>
-                <p>この小さな透明のショーケース「大切にすることを大切にするためのギャラリー」のことを考えた時、小学生の頃、勉強机の棚部分に本じゃなく、小物やミニチュアの庭を仕切り毎に飾っていたことを思い出しました。</p>
-                <p>あの頃、棚の模様替えをしたり手入れすることを楽しみ満足してたように、自分に合ったサイズで自分の好きなものをここに飾ること、そして皆さんにそれらを発表できることがとても楽しみです。</p>
+                <p><b>展覧会タイトル</b></p>
+                <p>この展覧会について</p>
             </div>
         </div>
     </div>
@@ -157,8 +175,8 @@
             <div class="app">
                 <div class="essay">
                     <u>Gallery KN</u>
-                    <p><br/>私は、この小さなギャラリーを持って色んな場所へ滞在し、私と一緒にその時その場所にあったものを展示します。</p>
-                    <p>私にとってとても貴重で、捨てれないほど愛着のある大切なものを、一生たくさん集めたいと思っています。</p>
+                    <p>住所：<br/>時間：</p>
+                    <p>予約制：予約する</p>
                 </div>
             </div>
         </div>

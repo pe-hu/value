@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gallery KN</title>
     <style type="text/css">
+        body {
+            overflow: hidden;
+        }
+        
         #value {
             position: fixed;
             top: 5%;
@@ -29,10 +33,12 @@
         }
         
         #infomation {
-            position: fixed;
+            position: relative;
+            padding: 0;
+            margin: 5vh 5vw;
             top: 0;
             left: 0;
-            width: 100%;
+            width: 90%;
         }
         
         #infomation iframe {
@@ -43,7 +49,7 @@
         
         #open {
             opacity: 1;
-            position: fixed;
+            position: absolute;
             z-index: 100;
             top: 50%;
             left: 50%;
@@ -81,14 +87,14 @@
             opacity: 1;
             pointer-events: all;
             user-select: auto;
-            width: 100%;
-            height: 100vh;
+            height: 90vh;
             transition: all 5000ms ease;
         }
         
         #present,
         #randomImg {
             position: fixed;
+            margin: 0;
             top: 0;
             left: 0;
             z-index: -1;
@@ -99,29 +105,14 @@
             pointer-events: none;
         }
         
-        #video {
-            position: absolute;
-            z-index: -1;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            min-height: 100%;
-            min-width: 100%;
-        }
-        
+        #video,
         #randomImg img {
-            min-width: 100%;
-            min-height: 100%;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-        }
-        
-        @media screen and (max-width: 550px) {
-            .link {
-                display: none;
-            }
+            min-height: 100%;
+            min-width: 100%;
         }
     </style>
 </head>

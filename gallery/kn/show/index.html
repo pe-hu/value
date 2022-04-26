@@ -147,6 +147,12 @@
                 font-size: 55%;
             }
         }
+        
+        @media print {
+            .noprint {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -175,7 +181,7 @@
             </div>
         </div>
     </div>
-    <p class="link">
+    <p class="link noprint">
         <a href="#" onclick="window.history.back(); return false;">↩︎</a>
     </p>
     <script type="text/javascript">

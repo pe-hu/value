@@ -134,6 +134,12 @@
             text-shadow: #000 1px 1px;
             display: inline-block;
         }
+        
+        @media print {
+            .noprint {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -152,7 +158,7 @@
     <div id="en">
         <div id="about" class="en">
             <div class="app">
-                <div class="essay">
+                <div class="essay noprint">
                     <p>????.??.?? - ??.?? <a href="../show/">Show</a> <i>Address</i></p>
                 </div>
                 <div class="essay">

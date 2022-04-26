@@ -176,18 +176,19 @@
                 <div class="essay">
                     <p><u>KN Gallery</u> 場所</p>
                     <p>会期：<br/>時間：</p>
-                    <p>完全予約制：来場を希望される方はこちらからご予約をお願いします。</p>
+                    <p>完全予約制：
+                        <a href="mailto:nakaokaorii@gmail.com?subject=KN Gallery 予約?body=お名前と希望する来場日時をご連絡ください。" ">来場を希望される方はこちらからご予約をお願いします。</a></p>
                 </div>
             </div>
         </div>
     </div>
-    <p class="link noprint">
-        <a href="#" onclick="window.history.back(); return false;">↩︎</a>
+    <p class="link noprint ">
+        <a href="# " onclick="window.history.back(); return false; ">↩︎</a>
     </p>
-    <script type="text/javascript">
+    <script type="text/javascript ">
         const random = [
-            "https://cache.cart-imgs.fc2.com/user_img/pehu/2ecc32ab3755b0f2a065fa88d8c3596c.JPG",
-            "https://cache.cart-imgs.fc2.com/user_img/pehu/a9d816d4a5c78810eaf16a1373d0ae0c.JPG"
+            "https://cache.cart-imgs.fc2.com/user_img/pehu/2ecc32ab3755b0f2a065fa88d8c3596c.JPG ",
+            "https://cache.cart-imgs.fc2.com/user_img/pehu/a9d816d4a5c78810eaf16a1373d0ae0c.JPG "
         ];
 
         function randomImg(randomArray) {
@@ -198,8 +199,8 @@
         }
 
         function imgGenerator() {
-            var img = `<img src="${randomImg(random)}">`;
-            document.querySelector(".random").innerHTML = img;
+            var img = `<img src="${randomImg(random)} ">`;
+            document.querySelector(".random ").innerHTML = img;
         }
         window.setInterval(function() {
             imgGenerator();

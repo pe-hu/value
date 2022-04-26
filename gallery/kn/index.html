@@ -41,6 +41,7 @@
         }
         
         #open {
+            opacity: 1;
             position: fixed;
             z-index: 100;
             top: 50%;
@@ -52,6 +53,11 @@
             text-align: center;
             text-decoration: none;
             font-family: 'Times New Roman', Times, serif;
+            transition: all 4500ms ease;
+        }
+        
+        #open:hover {
+            opacity: 0;
         }
         
         #open b {

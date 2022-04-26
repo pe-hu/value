@@ -22,14 +22,21 @@
         #open {
             position: fixed;
             z-index: 100;
-            top: 1rem;
-            left: 1rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             color: #fff;
-            font-size: 1.5rem;
-            width: 2rem;
-            height: 2rem;
+            text-shadow: #000 1px 1px;
+            font-size: 1rem;
             text-align: center;
             text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        #open b {
+            font-size: 150%;
+            font-weight: 100;
+            line-height: 200%;
         }
         
         .none {
@@ -92,7 +99,7 @@
 </head>
 
 <body>
-    <a id="open" href="#infomation">i</a>
+    <a id="open" href="#infomation">Gallery<br/><b>KN</b></a>
     <div id="infomation" class="none">
         <iframe src="infomation/"></iframe>
     </div>

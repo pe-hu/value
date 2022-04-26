@@ -1,169 +1,209 @@
 body {
-	font-family: YuGothic, Yu Gothic",Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-	background:#fff;
+    font-family: YuGothic, Yu Gothic",Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
 }
+
 #what,
 #title,
 #value,
 .ja .app,
 .ja .list {
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
 }
 
 #image {
-	background:#fff;
-	position:relative;
-	z-index:10;
-	top:0; left:0;
-	width:85vw; height:85vh;
+    background: #fff;
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 85vw;
+    height: 85vh;
 }
+
 #image img {
-	margin:auto;
-	padding:5%;
-	text-align:center;
-	z-index:100;
-	position:absolute;
-	top:50%; left:50%;
-	transform:translateY(-50%) translateX(-50%);
-	-webkit-transform:translateY(-50%) translateX(-50%);
-	width:auto; max-width:70%;
-	height:auto; max-height:80%;
-	-webkit-filter: blur(0.5rem);
-	filter: blur(0.5rem);
+    margin: auto;
+    padding: 5%;
+    text-align: center;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    width: auto;
+    max-width: 70%;
+    height: auto;
+    max-height: 80%;
+    -webkit-filter: blur(0.5rem);
+    filter: blur(0.5rem);
     transition: all 2500ms ease;
 }
+
 #image img:hover {
-	-webkit-filter: blur(0);
-	filter: blur(0);
+    -webkit-filter: blur(0);
+    filter: blur(0);
     transition: all 1000ms ease;
 }
 
 #value {
-	position:fixed;
-	top:5%; left:5%;
-	z-index:100;
-	font-size:75%;
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    z-index: 100;
+    font-size: 75%;
 }
 
 #what,
 #you {
-	position:fixed;
-	padding:1%;
+    position: fixed;
+    padding: 1%;
 }
+
 #what {
-	right:1vw;
-	font-size:0.8rem;
-	height:30vh;
-	z-index:10;
+    right: 1vw;
+    font-size: 0.8rem;
+    height: 30vh;
+    z-index: 10;
 }
 
-.one {top:2.5%;}
-.two {top:17.5%;}
-.three  {bottom:20%;}
-.four {bottom:2.5%;}
+.one {
+    top: 2.5%;
+}
 
-#about {padding:0;}
+.two {
+    top: 17.5%;
+}
+
+.three {
+    bottom: 20%;
+}
+
+.four {
+    bottom: 2.5%;
+}
+
+#about {
+    padding: 0;
+}
 
 .ja .app {
-	position:relative;
-	display:flex;
-	width:90%;
-	height: 90vh;
-	margin:5vh auto;
-	overflow: auto;
+    position: relative;
+    display: flex;
+    width: 90%;
+    height: 90vh;
+    margin: 5vh auto;
+    overflow: auto;
 }
+
 .ja .app .tt {
-	position: absolute;
-	top:3rem;
-	font-size:0.75rem;
-	font-weight: 555;
-	z-index:10;
+    position: absolute;
+    top: 3rem;
+    font-size: 0.75rem;
+    font-weight: 555;
+    z-index: 10;
 }
+
 .ja .app .essay {
-	display: inline-block;
-	font-size:0.8rem;
-	height:80%;
-	padding:5% 2rem 15% 5rem;
+    display: inline-block;
+    font-size: 0.8rem;
+    height: 80%;
+    padding: 5% 2rem 15% 5rem;
 }
+
 .ja .list {
-	position:relative;
-	width:85%;
-	height: 80vh;
-	margin:1rem auto 0;
-	font-size:1rem;
-	padding:0 10% 0 0;
+    position: relative;
+    width: 85%;
+    height: 80vh;
+    margin: 1rem auto 0;
+    font-size: 1rem;
+    padding: 0 10% 0 0;
 }
+
 .ja .list a {
-	text-decoration: none;
-	display: inline-block;
-	color:#000;
-	padding: 1rem;
-	-webkit-filter: blur(0.5rem);
-	filter: blur(0.5rem);
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    padding: 1rem;
+    -webkit-filter: blur(0.5rem);
+    filter: blur(0.5rem);
     transition: all 250ms ease;
 }
+
 .ja .list a:hover {
-	-webkit-filter: blur(0);
-	filter: blur(0);
+    -webkit-filter: blur(0);
+    filter: blur(0);
     transition: all 100ms ease;
 }
 
 .en .app {
-	position:relative;
-	width:90%;
-	max-width:45rem;
-	margin:5rem auto 7.5rem;
+    position: relative;
+    width: 90%;
+    max-width: 45rem;
+    margin: 5rem auto 7.5rem;
 }
+
 .en .app .tt {
-	display: block;
-	font-size:0.75rem;
-	font-weight: 555;
-	padding:0 2rem;
-	font-family: 'Source Serif Pro', serif;
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 555;
+    padding: 0 2rem;
+    font-family: 'Source Serif Pro', serif;
 }
+
 .en .app .essay {
-	display: block;
-	font-size:0.8rem;
-	padding: 2rem 2rem;
-	font-family: 'Source Serif Pro', serif;
+    display: block;
+    font-size: 0.8rem;
+    padding: 2rem 2rem;
+    font-family: 'Source Serif Pro', serif;
 }
 
 #you {
-	right:0;
-	bottom:2vw;
-	font-size:1rem;
-	margin:0 5%;
-	z-index:10;
+    right: 0;
+    bottom: 2vw;
+    font-size: 1rem;
+    margin: 0 5%;
+    z-index: 10;
 }
 
 .link {
-	position:fixed;
-	bottom: 0;
-	left: 0;
-	font-size:2.5rem;
-	margin:2.5vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 2.5rem;
+    margin: 2.5vw;
 }
+
 .link a {
-	text-decoration:none;
-	color:#000;
+    text-decoration: none;
+    color: #000;
 }
 
-@media screen and (max-width: 900px){
-#what, #you {font-size:75%;}
-}
-@media screen and (max-width: 550px){
-.image img {
- -webkit-filter: blur(0rem);
- filter: blur(0rem);
-}
-.image img:hover {
- -webkit-filter: blur(0);
- filter: blur(0);
-}
-#what, #you {font-size:55%;}
+@media screen and (max-width: 900px) {
+    #what,
+    #you {
+        font-size: 75%;
+    }
 }
 
-@media print{
-	#value, .link {display:none;}
+@media screen and (max-width: 550px) {
+    .image img {
+        -webkit-filter: blur(0rem);
+        filter: blur(0rem);
+    }
+    .image img:hover {
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
+    #what,
+    #you {
+        font-size: 55%;
+    }
+}
+
+@media print {
+    #value,
+    .link {
+        display: none;
+    }
 }

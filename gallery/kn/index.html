@@ -2,7 +2,7 @@
 <html lang="ja">
 
 <head>
-    <title>Gallery KN</title>
+    <title>KN Gallery</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <meta name="author" content="Kaori Nakao">
     <meta name="description" content="私は、この小さなギャラリーを持って色んな場所に滞在し、私と一緒にその時その場所にあったものをここに展示します。">
 
-    <meta property="og:title" content="Gallery KN" />
+    <meta property="og:title" content="KN Gallery" />
     <meta property="og:description" content="私は、この小さなギャラリーを持って色んな場所に滞在し、私と一緒にその時その場所にあったものをここに展示します。" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://creative-community.space/value/gallery/kn/" />
@@ -70,19 +70,26 @@
             opacity: 1;
             position: absolute;
             z-index: 100;
+            font-size: 1rem;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: #fff;
-            text-shadow: #000 1px 1px;
-            font-size: 1rem;
             text-align: center;
             text-decoration: none;
-            font-family: 'Times New Roman', Times, serif;
             transition: all 2500ms ease;
         }
         
+        #open span {
+            display: inline-block;
+            margin-left: 2rem;
+            color: #000;
+            font-weight: bolder;
+            font-family: 'Source Serif Pro', serif;
+            animation: 2.5s linear infinite alternate logo;
+        }
+        
         #open img {
+            margin-bottom: -1.9rem;
             filter: 200%;
             animation: 2.5s linear infinite alternate logo;
         }
@@ -159,7 +166,7 @@
 
 <body>
     <span id="value"><a href="/value/index/" target="_parent">大切にすることを大切にするためのギャラリー</a></span>
-    <a id="open" href="#infomation"><img src="logo.png" width="100rem"></a>
+    <a id="open" href="#infomation"><img src="infomation/logo.png" width="111rem"><br/><span>Gallery</span></a>
     <div id="infomation" class="none">
         <iframe src="infomation/"></iframe>
     </div>

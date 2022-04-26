@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery KN</title>
+    <style type="text/css">
+        #infomation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        
+        #infomation iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        #open {
+            position: fixed;
+            z-index: 100;
+            top: 1rem;
+            right: 1rem;
+            color: #000;
+            font-size: 1.5rem;
+            width: 2rem;
+            height: 2rem;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .none {
+            z-index: 0;
+            opacity: 0;
+            pointer-events: none;
+            user-select: none;
+            height: 0;
+            transition: all 4500ms ease;
+        }
+        
+        .open {
+            z-index: 1;
+            opacity: 1;
+            pointer-events: all;
+            user-select: auto;
+            width: 100%;
+            height: 100vh;
+            transition: all 5000ms ease;
+        }
+        
+        #randomImg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+            user-select: none;
+            pointer-events: none;
+        }
+        
+        #randomImg img {
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        @media screen and (max-width: 550px) {
+            .link {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a id="open" href="#infomation">i</a>
+    <div id="infomation" class="none">
+        <iframe src="infomation/"></iframe>
+    </div>
+
+    <div id="randomImg" class="random"></div>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+        let btn = document.querySelector('#open');
+        let open = document.querySelector('#infomation');
+
+        let btnToggleclass = function(el) {
+            el.classList.toggle('open');
+        }
+
+        btn.addEventListener('click', function() {
+            btnToggleclass(open);
+        }, false);
+        $(function() {
+            var p = $("#do");
+            p.scrollLeft(1000);
+        });
+        $(function() {
+            // #で始まるアンカーをクリックした場合に処理
+            $('a[href^=#]').click(function() {
+                // スクロールの速度
+                var speed = 1500; // ミリ秒
+                // アンカーの値取得
+                var href = $(this).attr("href");
+                // 移動先を取得
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                // 移動先を数値で取得
+                var position = target.offset().top;
+                // スムーススクロール
+                $('body,html').animate({
+                    scrollTop: position
+                }, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        const random = [
+            "https://scontent-nrt1-1.cdninstagram.com/v/t51.2885-15/93009199_1152237775123392_3532114826889656865_n.jpg?stp=dst-jpg_e35&_nc_ht=scontent-nrt1-1.cdninstagram.com&_nc_cat=100&_nc_ohc=DTTOkPazADMAX9e-ofC&tn=N8J2yNF-2BhJffTz&edm=ALQROFkBAAAA&ccb=7-4&ig_cache_key=MjI4NzcxNTc2OTY2Njg4NTY5NA%3D%3D.2-ccb7-4&oh=00_AT8ooJLirZOhCqQbtpUFTv-x6rKu638bPd17I2HwAj_qjQ&oe=626EEBE5&_nc_sid=30a2ef",
+            "https://scontent-nrt1-1.cdninstagram.com/v/t51.2885-15/93250888_212746906689165_5316025863698892381_n.jpg?stp=dst-jpg_e35&_nc_ht=scontent-nrt1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=7903oB5rSugAX9Gxakx&edm=ALQROFkBAAAA&ccb=7-4&ig_cache_key=MjI4ODIxNjE2NjAzODk5OTE5MA%3D%3D.2-ccb7-4&oh=00_AT9Hnylllg1He06sHoL3qsIgFpx4K-Z6ho9yaPzTYRB08w&oe=626F8618&_nc_sid=30a2ef"
+        ];
+
+        function randomImg(randomArray) {
+            var random =
+                randomArray[Math.floor(Math.random() * randomArray.length)];
+            console.log(random);
+            return random;
+        }
+
+        function imgGenerator() {
+            var img = `<img src="${randomImg(random)}">`;
+            document.querySelector(".random").innerHTML = img;
+        }
+        window.setInterval(function() {
+            imgGenerator();
+        }, 5000);
+    </script>
+</body>
+
+</html>

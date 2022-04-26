@@ -85,7 +85,7 @@
             color: #000;
             font-weight: bolder;
             font-family: 'Source Serif Pro', serif;
-            animation: 2.5s linear infinite alternate logo;
+            animation: 2.5s linear infinite alternate gallery;
         }
         
         #open img {
@@ -100,6 +100,15 @@
             }
             to {
                 filter: invert(1);
+            }
+        }
+        
+        @keyframes gallery {
+            from {
+                filter: invert(1);
+            }
+            to {
+                filter: invert(0);
             }
         }
         

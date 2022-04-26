@@ -14,19 +14,10 @@
         
         #what,
         #title,
-        #value,
         .ja .app,
         .ja .list {
             -ms-writing-mode: tb-rl;
             writing-mode: vertical-rl;
-        }
-        
-        #value {
-            position: fixed;
-            top: 5%;
-            left: 5%;
-            z-index: 100;
-            font-size: 75%;
         }
         
         #what,
@@ -137,29 +128,19 @@
         
         .ja .essay p {
             padding: 0.25rem;
-            text-shadow: #fff 1px 1px;
+            mix-blend-mode: overlay;
+            color: #fff;
+            text-shadow: #000 1px 1px;
             display: inline-block;
         }
         
         .en .essay {
             background-color: rgba(255, 255, 255, 0.45);
         }
-        
-        #value a {
-            text-decoration: none;
-            color: #000;
-            font-family: 'Source Serif Pro', serif;
-        }
-        
-        #value a:hover {
-            color: #fff;
-            border-left: 1px red solid;
-        }
     </style>
 </head>
 
 <body>
-    <span id="value"><a href="/value/index/" target="_parent">大切にすることを大切にするためのギャラリー</a></span>
 
     <div id="about" class="ja">
         <div class="app">

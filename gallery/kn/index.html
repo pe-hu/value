@@ -6,6 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Gallery KN</title>
     <style type="text/css">
+        #value {
+            position: fixed;
+            top: 5%;
+            left: 5%;
+            z-index: 100;
+            font-size: 75%;
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+        }
+        
+        #value a {
+            text-decoration: none;
+            color: #000;
+            font-family: 'Source Serif Pro', serif;
+        }
+        
+        #value a:hover {
+            color: #fff;
+            border-left: 1px red solid;
+        }
+        
         #infomation {
             position: fixed;
             top: 0;
@@ -99,6 +120,7 @@
 </head>
 
 <body>
+    <span id="value"><a href="/value/index/" target="_parent">大切にすることを大切にするためのギャラリー</a></span>
     <a id="open" href="#infomation">Gallery<br/><b>KN</b></a>
     <div id="infomation" class="none">
         <iframe src="infomation/"></iframe>

@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="logo.png">
+    <link rel="apple-touch-icon" href="logo.png">
     <title>Gallery KN</title>
     <style type="text/css">
         body {
@@ -61,6 +63,20 @@
             text-decoration: none;
             font-family: 'Times New Roman', Times, serif;
             transition: all 2500ms ease;
+        }
+        
+        #open img {
+            filter: 200%;
+            animation: 2.5s linear infinite alternate logo;
+        }
+        
+        @keyframes logo {
+            from {
+                filter: invert(0);
+            }
+            to {
+                filter: invert(1);
+            }
         }
         
         #open:hover {
@@ -126,7 +142,7 @@
 
 <body>
     <span id="value"><a href="/value/index/" target="_parent">大切にすることを大切にするためのギャラリー</a></span>
-    <a id="open" href="#infomation">Gallery<br/><b>KN</b></a>
+    <a id="open" href="#infomation"><img src="logo.png" width="100rem"></a>
     <div id="infomation" class="none">
         <iframe src="infomation/"></iframe>
     </div>

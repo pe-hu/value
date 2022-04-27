@@ -150,12 +150,31 @@
             color: #000;
             font-weight: 555;
             font-family: 'Source Serif Pro', serif;
+            animation: 2.5s linear infinite alternate gallery;
         }
         
         #open img {
             margin-bottom: -1.9rem;
             filter: 200%;
             animation: 2.5s linear infinite alternate logo;
+        }
+        
+        @keyframes logo {
+            from {
+                filter: invert(0);
+            }
+            to {
+                filter: invert(1);
+            }
+        }
+        
+        @keyframes gallery {
+            from {
+                filter: invert(1);
+            }
+            to {
+                filter: invert(0);
+            }
         }
         
         @media screen and (max-width: 1100px) {

@@ -12,7 +12,6 @@ body {
 }
 
 #image {
-    background: #fff;
     position: relative;
     z-index: 10;
     top: 0;
@@ -52,6 +51,7 @@ body {
     left: 5%;
     z-index: 100;
     font-size: 75%;
+    text-shadow: #fff 1px 1px;
 }
 
 #what,
@@ -92,8 +92,11 @@ body {
     display: flex;
     width: 90%;
     height: 90vh;
-    margin: 5vh auto;
+    max-height: 55rem;
+    margin: 5vh auto 0;
     overflow: auto;
+    pointer-events: none;
+    user-select: none;
 }
 
 .ja .app .tt {
@@ -107,7 +110,6 @@ body {
 .ja .app .essay {
     display: inline-block;
     font-size: 0.8rem;
-    height: 80%;
     padding: 5% 2rem 15% 5rem;
 }
 
@@ -140,7 +142,7 @@ body {
     position: relative;
     width: 90%;
     max-width: 45rem;
-    margin: 5rem auto 7.5rem;
+    margin: 2.5rem auto 7.5rem;
 }
 
 .en .app .tt {

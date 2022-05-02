@@ -99,9 +99,6 @@ body {
     background: #fff;
 }
 
-.library::-webkit-scrollbar-track,
-.library li::-webkit-scrollbar-track {}
-
 .library::-webkit-scrollbar-thumb,
 .library li::-webkit-scrollbar-thumb {
     background: #000;

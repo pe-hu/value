@@ -6,6 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="../online/post.css" />
+    <style type="text/css">
+        h1 {
+            font-size: 2.5rem;
+            padding: 5% 0 5% 0;
+            margin: 0 auto;
+            font-family: 'Source Serif Pro', serif;
+            letter-spacing: 0.125rem;
+        }
+        
+        h1 u {
+            font-weight: 600;
+        }
+        
+        h1 i {
+            padding-right: 0.25rem;
+        }
+        
+        h1 b {
+            font-weight: 900;
+        }
+    </style>
     <title>this is a gallery for valuing an act of valuing</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 </head>
@@ -15,11 +36,19 @@
     <div id="about" class="en">
         <div class="app">
             <div class="essay">
-                this is a gallery for valuing an act of valuing
+                <h1><u>this is</u> a <i>gallery</i> for <b>valuing an act of valuing</b></h1>
                 <br/>
+                <div id="list"></div>
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#list").load("list.php");
+        })
+    </script>
 </body>
 
 </html>

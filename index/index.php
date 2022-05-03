@@ -25,9 +25,11 @@ while ($row = fgetcsv($fp)) {
 flock($fp, LOCK_UN);
 fclose($fp);
 
-?>
+?><!DOCTYPE html>
 <html lang="ja">
+
 <head>
+<title>大切にすることを大切にするための場所</title>
 <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,7 +40,7 @@ fclose($fp);
 <meta property="og:title" content="大切にすることを大切にするための場所" />
 <meta property="og:description" content="あなたの大切なものは何ですか？" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://creative-community.space/value/index/" />
+<meta property="og:url" content="https://creative-community.space/value/" />
 <meta property="og:site_name" content="creative-community.space" />
 <meta property="og:image" content="https://creative-community.space/value/icon.png" />
 <meta property="og:locale" content="ja_JP" />
@@ -51,7 +53,7 @@ fclose($fp);
 <link rel="apple-touch-icon" href="https://creative-community.space/value/icon.png">
 <link rel="stylesheet" type="text/css" href="index.css" />
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
-<title>大切にすることを大切にするための場所</title>
+
 <style type="text/css">
 #submit {
 	position: fixed;

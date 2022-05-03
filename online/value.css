@@ -52,6 +52,12 @@ body {
     z-index: 100;
     font-size: 75%;
     text-shadow: #fff 1px 1px;
+    text-decoration: none;
+    color: #000;
+}
+
+#value:hover {
+    border-right: red solid 1px;
 }
 
 #what,

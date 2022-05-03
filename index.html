@@ -1,210 +1,259 @@
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="icon" href="icon.png">
-<link rel="stylesheet" type="text/css" href="top.css" />
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
-<title>大切にすることを大切にするための場所</title>
-<style type="text/css">
-#btn {
-    bottom:0;
-    right:0;
-}
-#about {
-	padding: 2.5rem 0 0;
-}
-#gallery {
-	position: fixed;
-  top:0;
-  left:0;
-  width: 100%;
-  background-color: #fff;
-}
-#gallery iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-.none {
-  z-index: 0;
-  opacity: 0;
-  pointer-events: none;
-  user-select: none;
-  height: 0;
-  transition: all 5000ms ease;
-}
-.open {
-  z-index: 50;
-  opacity: 1;
-  pointer-events:all;
-  user-select:auto;
-  width: 100%;
-  height: 100vh;
-  transition: all 4500ms ease;
-}
-#publication iframe {
-  width: 100%;
-  height: 90vh;
-  border: none;
-}
-#update {
-	padding:2.5rem 0;
-}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="∧°┐">
+    <meta name="description" content="あなたの大切なものは何ですか？">
 
-#post .topic {
-    display: none;
-}
-#post .topic:nth-child(-n+4) {
-    display: block;
-}
-#credit {
-  width:95%;
-  margin:2.5rem 2.5% 0;
-  font-size:1.25rem;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap:wrap;
-}
-#credit a {
-  color:#000;
-  text-decoration: none;
-  border-bottom: 2px dotted;
-}
-#credit b {
-  color:#fff;
-  background: #000;
-  padding:0.5rem;
-  font-weight: 500;
-}
-.pehu {font-family: "MS Mincho", "SimSong", serif;}
+    <meta property="og:title" content="大切にすることを大切にするための場所" />
+    <meta property="og:description" content="あなたの大切なものは何ですか？" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://creative-community.space/value/" />
+    <meta property="og:site_name" content="creative-community.space" />
+    <meta property="og:image" content="https://creative-community.space/value/icon.png" />
+    <meta property="og:locale" content="ja_JP" />
 
-.jp_title p, #qr, .printonly {display: none;}
-#address {
-  padding-top:55vw;
-	font-family: 'Source Serif Pro', "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-}
-#qr {
-  position: absolute;
-  bottom: 0;
-  left:2rem;
-  padding: 2.5rem;
-}
-#qr img {
-  width: 5rem;
-}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@NLC_update" />
+    <meta name="twitter:image" content="https://creative-community.space/value/icon.png" />
 
-@media print{
-  #target,
-  #update,
-  #publication,
-  #about,
-  #credit,
-  .noprint
-   {display:none;}
-   
-  .jp_title p {display: block;}
-  #qr, .printonly {display: inline-block;}
-}
-@media screen and (max-width: 750px){
-    #publication iframe {max-height: 75vh;}
-}
-</style>
+    <link rel="icon" href="icon.png">
+    <link rel="apple-touch-icon" href="https://creative-community.space/value/icon.png">
+    <link rel="stylesheet" type="text/css" href="top.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <title>大切にすることを大切にするための場所</title>
+    <style type="text/css">
+        #btn {
+            bottom: 0;
+            right: 0;
+        }
+        
+        #about {
+            padding: 2.5rem 0 0;
+        }
+        
+        #gallery {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+        }
+        
+        #gallery iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .none {
+            z-index: 0;
+            opacity: 0;
+            pointer-events: none;
+            user-select: none;
+            height: 0;
+            transition: all 5000ms ease;
+        }
+        
+        .open {
+            z-index: 50;
+            opacity: 1;
+            pointer-events: all;
+            user-select: auto;
+            width: 100%;
+            height: 100vh;
+            transition: all 4500ms ease;
+        }
+        
+        #publication iframe {
+            width: 100%;
+            height: 90vh;
+            border: none;
+        }
+        
+        #update {
+            padding: 2.5rem 0;
+        }
+        
+        #post .topic {
+            display: none;
+        }
+        
+        #post .topic:nth-child(-n+4) {
+            display: block;
+        }
+        
+        #credit {
+            width: 95%;
+            margin: 2.5rem 2.5% 0;
+            font-size: 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        #credit a {
+            color: #000;
+            text-decoration: none;
+            border-bottom: 2px dotted;
+        }
+        
+        #credit b {
+            color: #fff;
+            background: #000;
+            padding: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .pehu {
+            font-family: "MS Mincho", "SimSong", serif;
+        }
+        
+        .jp_title p,
+        #qr,
+        .printonly {
+            display: none;
+        }
+        
+        #address {
+            padding-top: 55vw;
+            font-family: 'Source Serif Pro', "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+        }
+        
+        #qr {
+            position: absolute;
+            bottom: 0;
+            left: 2rem;
+            padding: 2.5rem;
+        }
+        
+        #qr img {
+            width: 5rem;
+        }
+        
+        @media print {
+            #target,
+            #update,
+            #publication,
+            #about,
+            #credit,
+            .noprint {
+                display: none;
+            }
+            .jp_title p {
+                display: block;
+            }
+            #qr,
+            .printonly {
+                display: inline-block;
+            }
+        }
+        
+        @media screen and (max-width: 750px) {
+            #publication iframe {
+                max-height: 75vh;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<div id="target">
-<a href="#about">About</a>
-<a href="#update">Update</a>
-<a href="#publication">Publication</a>
-<a id="open" href="gallery/" target="_parent">Gallery</a>
-</div>
+    <div id="target">
+        <a href="#about">About</a>
+        <a href="#update">Update</a>
+        <a href="#publication">Publication</a>
+        <a id="open" href="gallery/" target="_parent">Gallery</a>
+    </div>
 
-<div class="value">
-<h2 id="title"><u>this is</u> a <i class="noprint">space</i> <i class="printonly">entry form</i> for <b>valuing an act of valuing</b></h2>
-</div>
+    <div class="value">
+        <h2 id="title"><u>this is</u> a <i class="noprint">space</i> <i class="printonly">entry form</i> for <b>valuing an act of valuing</b></h2>
+    </div>
 
-<div id="update"></div>
+    <div id="update"></div>
 
-<p id="qr"><img src="qr.png"></p>
+    <p id="qr"><img src="qr.png"></p>
 
-<div id="about">
-<div class="en">
-<div class="app">
-<div class="essay" style="text-align:center; font-size:125%;">
-大切にすることを大切にするための場所
-</div>
-<div class="link">
-<p><a style="font-size:125%;" href="/value/index/">Enter</a></p>
-</div>
-</div>
-</div>
-<div class="ja">
-<div class="app">
-<p class="tt">大切にすることを大切にする<br/>
-クリエイティブ・コミュニティスペース ペフ</p>
-<div class="essay">
-<p>このプロジェクトで「大切にすること」はただ一つ。<br/>
-  誰にでもある「何かを大切に思う気持ち」を平等に評価すること。</p>
-<p>誰にもわかってもらえないかもしれないけど、自分にとっては大切なことやもの。
-  特別な人からの贈り物とか、ずっと使っている愛着のあるものだったり、自慢したいことだったり、もうここにはないけど時々思い出す瞬間とか。</p>
-<p>いろいろな人たちの「大切にすること」を知ることが、「大切にすることを大切にする」ための第一歩。</p>
-<p>誰からの評価も批判も気にならないほど、大切にすることを大切にするために、ここにいろいろな人たちの大切にすることやものを集めます。</p>
-</div>
-</div>
-</div>
-</div>
+    <div id="about">
+        <div class="en">
+            <div class="app">
+                <div class="essay" style="text-align:center; font-size:125%;">
+                    大切にすることを大切にするための場所
+                </div>
+                <div class="link">
+                    <p><a style="font-size:125%;" href="/value/index/">Enter</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="ja">
+            <div class="app">
+                <p class="tt">大切にすることを大切にする<br/> クリエイティブ・コミュニティスペース ペフ</p>
+                <div class="essay">
+                    <p>このプロジェクトで「大切にすること」はただ一つ。<br/> 誰にでもある「何かを大切に思う気持ち」を平等に評価すること。
+                    </p>
+                    <p>誰にもわかってもらえないかもしれないけど、自分にとっては大切なことやもの。 特別な人からの贈り物とか、ずっと使っている愛着のあるものだったり、自慢したいことだったり、もうここにはないけど時々思い出す瞬間とか。
+                    </p>
+                    <p>いろいろな人たちの「大切にすること」を知ることが、「大切にすることを大切にする」ための第一歩。</p>
+                    <p>誰からの評価も批判も気にならないほど、大切にすることを大切にするために、ここにいろいろな人たちの大切にすることやものを集めます。</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div id="publication">
-<iframe src="book/"></iframe>
-<iframe src="still/"></iframe>
-</div>
+    <div id="publication">
+        <iframe src="book/"></iframe>
+        <iframe src="still/"></iframe>
+    </div>
 
-<div id="credit">
-<p class="noprint">Presented by</p>
-<p><a href="/pehu/" class="pehu">∧° ┐</a></p>
-</div>
+    <div id="credit">
+        <p class="noprint">Presented by</p>
+        <p><a href="/pehu/" class="pehu">∧°┐</a></p>
+    </div>
 
-<script>
-  let btn = document.querySelector('#open');
-  let open = document.querySelector('#gallery');
-   
-  let btnToggleclass = function(el) {
-    el.classList.toggle('open');
-  }
-   
-  btn.addEventListener('click', function() {
-    btnToggleclass(open);
-  }, false);
-</script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript">
-$(function(){
-$("#update").load("index/update.php");
-})
-$(function(){
-var p=$("#do");
-p.scrollLeft(1000);
-});
-$(function(){
-   // #で始まるアンカーをクリックした場合に処理
-   $('a[href^=#]').click(function() {
-      // スクロールの速度
-      var speed = 1500; // ミリ秒
-      // アンカーの値取得
-      var href= $(this).attr("href");
-      // 移動先を取得
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      // 移動先を数値で取得
-      var position = target.offset().top;
-      // スムーススクロール
-      $('body,html').animate({scrollTop:position}, speed, 'swing');
-      return false;
-   });
-});
-</script>
+    <script>
+        let btn = document.querySelector('#open');
+        let open = document.querySelector('#gallery');
+
+        let btnToggleclass = function(el) {
+            el.classList.toggle('open');
+        }
+
+        btn.addEventListener('click', function() {
+            btnToggleclass(open);
+        }, false);
+    </script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#update").load("index/update.php");
+        })
+        $(function() {
+            var p = $("#do");
+            p.scrollLeft(1000);
+        });
+        $(function() {
+            // #で始まるアンカーをクリックした場合に処理
+            $('a[href^=#]').click(function() {
+                // スクロールの速度
+                var speed = 1500; // ミリ秒
+                // アンカーの値取得
+                var href = $(this).attr("href");
+                // 移動先を取得
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                // 移動先を数値で取得
+                var position = target.offset().top;
+                // スムーススクロール
+                $('body,html').animate({
+                    scrollTop: position
+                }, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
 </body>
+
 </html>

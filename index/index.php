@@ -29,10 +29,26 @@ fclose($fp);
 <html lang="ja">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="icon" href="/value/icon.png">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="∧°┐">
+<meta name="description" content="あなたの大切なものは何ですか？">
+
+<meta property="og:title" content="大切にすることを大切にするための場所" />
+<meta property="og:description" content="あなたの大切なものは何ですか？" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://creative-community.space/value/index/" />
+<meta property="og:site_name" content="creative-community.space" />
+<meta property="og:image" content="https://creative-community.space/value/icon.png" />
+<meta property="og:locale" content="ja_JP" />
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@NLC_update" />
+<meta name="twitter:image" content="https://creative-community.space/value/icon.png" />
+
+<link rel="icon" href="https://creative-community.space/value/icon.png">
+<link rel="apple-touch-icon" href="https://creative-community.space/value/icon.png">
 <link rel="stylesheet" type="text/css" href="index.css" />
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
 <title>大切にすることを大切にするための場所</title>

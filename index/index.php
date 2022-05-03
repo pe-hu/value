@@ -107,7 +107,9 @@ fclose($fp);
       <p>Index / <a onclick="window.location.reload(true);">valuing an act of valuing</a></p>
   <ul class="search-box appreciate" id="click">
   <input type="radio" name="appreciate" value="topics" id="topics">
-  <label for="topics" class="label">Topics</label><hr/>
+  <label for="topics" class="label">Topics</label>
+  <input type="radio" name="appreciate" value="show" id="show">
+  <label for="show" class="label">Show</label><hr/>
   <li>
   <input type="radio" name="appreciate" value="things" id="things">
   <label for="things" class="label">Things</label></li>

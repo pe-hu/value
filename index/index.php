@@ -25,7 +25,8 @@ while ($row = fgetcsv($fp)) {
 flock($fp, LOCK_UN);
 fclose($fp);
 
-?><!DOCTYPE html>
+?>
+<!DOCTYPE html>
 <html lang="ja">
 
 <head>

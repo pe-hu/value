@@ -101,8 +101,6 @@ body {
     max-height: 55rem;
     margin: 5vh auto 0;
     overflow: auto;
-    pointer-events: none;
-    user-select: none;
 }
 
 .ja .app .tt {

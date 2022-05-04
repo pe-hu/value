@@ -74,8 +74,6 @@
             max-height: 55rem;
             margin: 5vh auto 0;
             overflow: auto;
-            pointer-events: none;
-            user-select: none;
         }
         
         .ja .app b {
@@ -86,6 +84,11 @@
             display: inline-block;
             font-size: 0.8rem;
             padding: 2.5% 0 20% 2.5vw;
+        }
+        
+        .ja.greeting .app .essay {
+            pointer-events: none;
+            user-select: none;
         }
         
         .en .app {
@@ -133,6 +136,15 @@
             font-style: italic;
         }
         
+        .appointment .greeting,
+        .mail {
+            display: none;
+        }
+        
+        .appointment .mail {
+            display: block;
+        }
+        
         @media screen and (max-width: 550px) {
             .image img {
                 -webkit-filter: blur(0rem);
@@ -152,12 +164,12 @@
     </style>
 </head>
 
-<body>
+<body id="box">
     <div id="image">
         <p class="random"></p>
     </div>
 
-    <div id="about" class="ja">
+    <div id="about" class="ja greeting">
         <div class="app">
             <div class="essay">
                 <p><b>２つ</b></p><br/>
@@ -168,22 +180,58 @@
         </div>
     </div>
 
-    <div id="en">
+    <div id="en" class="greeting">
         <div id="about" class="en">
             <div class="app">
                 <div class="essay">
                     <p><u>KN Gallery</u> 場所 <i>北海道旅行中の車の中</i></p>
                     <p>会期：2022年5月10日（火）- 14日（土）</p>
                     <p>アポイントメント：
-                        <a href="mailto:nakaokaorii@gmail.com?subject=KN Gallery&amp;body=お名前と希望する来場日時をご連絡ください。">来場を希望される方は、こちらからご連絡ください。</a></p>
+                        <a id="btn">来場を希望される方は、こちらからご連絡ください。</a></p>
                 </div>
             </div>
         </div>
     </div>
+
+    <div id="about" class="ja mail">
+        <div class="app">
+            <div class="essay">
+                <p>この展覧会は、北海道内を車で旅行する車中を会場とします。</p>
+                <p>そのため、会場に辿り着くことは困難ですが、もしリアルタイムの展覧会をご覧になりたい場合、インスタグラムのビデオチャットにて映像をお繋ぎします。(5〜10分程度)</p>
+                <br/>
+                <p>※予定をあまり決めていない為、ご希望の時間帯に電波の届かない場所に行ってしまう可能性もあります。
+                    <br/>出来る限りそのような事態は避けますが、どうしてもしょうがないこともあるのでご了承ください。</p>
+                <p>※運転中はフレームアウトしてしまってもすぐに戻せなかったり、揺れが生じてお見苦しい映像になるかもしれません。</p>
+            </div>
+        </div>
+    </div>
+    <div id="en" class="mail">
+        <div id="about" class="en">
+            <div class="app">
+                <div class="essay">
+                    <p>あなたのお名前とインスタグラムアカウント、5月10日から14日の間でご希望の日時をお知らせください。</p>
+                    <p>アポイントメント：<a href="mailto:nakaokaorii@gmail.com?subject=KN Gallery&amp;body=あなたのお名前とインスタグラムアカウント、5月10日から14日の間でご希望の日時をお知らせください。">nakaokaorii [at] gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <p class="link noprint ">
         <a href="# " onclick="window.history.back(); return false; ">↩︎</a>
     </p>
-    <script type="text/javascript ">
+
+    <script>
+        let btn = document.querySelector('#btn');
+        let box = document.querySelector('#box');
+
+        let btnToggleclass = function(el) {
+            el.classList.toggle('appointment');
+        }
+
+        btn.addEventListener('click', function() {
+            btnToggleclass(box);
+        }, false);
+
         const random = [
             "01.JPG",
             "02.JPG",

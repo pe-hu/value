@@ -1,0 +1,303 @@
+<html lang="ja">
+
+<head>
+    <title>２つ | KN Gallery</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="KN Gallery">
+    <meta name="reply-to" content="nakaokaorii&#64;gmail.com">
+    <meta name="description" content="２つ | KN Gallery">
+
+    <meta property="og:title" content="２つ | KN Gallery" />
+    <meta property="og:description" content="会期：2022年5月10日（火）- 14日（土）
+    アポイントメント制" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://creative-community.space/value/gallery/kn/show/" />
+    <meta property="og:site_name" content="creative-community.space" />
+    <meta property="og:image" content="https://creative-community.space/value/gallery/kn/april26/image.JPG" />
+    <meta property="og:locale" content="ja_JP" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@NLC_update" />
+    <meta name="twitter:image" content="https://creative-community.space/value/gallery/kn/april26/image.JPG" />
+
+    <link rel="icon" href="../infomation/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <style type="text/css">
+        body {
+            font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+        }
+        
+        #present {
+            position: fixed;
+            margin: 0;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+            user-select: none;
+            pointer-events: none;
+        }
+        
+        #video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-height: 100%;
+            min-width: 100%;
+        }
+        
+        #image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 85vw;
+            height: 85vh;
+        }
+        
+        #image img {
+            margin: auto;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            -webkit-transform: translateY(-50%) translateX(-50%);
+            width: auto;
+            max-width: 70%;
+            height: auto;
+            max-height: 80%;
+            -webkit-filter: blur(0.5rem);
+            filter: blur(0.5rem);
+            transition: all 2500ms ease;
+        }
+        
+        #image img:hover {
+            -webkit-filter: blur(0);
+            filter: blur(0);
+            transition: all 1000ms ease;
+        }
+        
+        .ja .app {
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            position: relative;
+            display: flex;
+            width: 90%;
+            height: 90vh;
+            max-height: 55rem;
+            margin: 5vh auto 0;
+            overflow: auto;
+        }
+        
+        .ja .app b {
+            font-size: 125%;
+        }
+        
+        .ja .app .essay {
+            display: inline-block;
+            font-size: 0.8rem;
+            padding: 2.5% 0 20% 2.5vw;
+        }
+        
+        .ja.greeting .app {
+            color: #FAD7A0;
+            pointer-events: none;
+            user-select: none;
+        }
+        
+        .ja.note .app span {
+            color: #000;
+            display: inline;
+            padding: 0.1rem;
+            background-color: rgba(255, 255, 255, 0.45);
+        }
+        
+        .en .app {
+            position: relative;
+            width: 90%;
+            max-width: 45rem;
+            margin: 0 auto 7.5vh;
+        }
+        
+        .en .app .essay {
+            display: block;
+            font-size: 0.8rem;
+            padding: 1rem 2rem;
+            font-family: 'Source Serif Pro', serif;
+            background-color: rgba(255, 255, 255, 0.45);
+        }
+        
+        .en .app u {
+            margin-right: 0.25rem;
+        }
+        
+        .en .app i {
+            font-size: 90%;
+        }
+        
+        .link {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            font-size: 2.5rem;
+            margin: 2.5vw;
+        }
+        
+        .link a,
+        .essay a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .essay a {
+            border-bottom: red solid 1px;
+        }
+        
+        .essay a:hover {
+            font-style: italic;
+        }
+        
+        .appointment .greeting,
+        .note {
+            display: none;
+        }
+        
+        .appointment .note {
+            display: block;
+        }
+        
+        @media screen and (max-width: 550px) {
+            .image img {
+                -webkit-filter: blur(0rem);
+                filter: blur(0rem);
+            }
+            .image img:hover {
+                -webkit-filter: blur(0);
+                filter: blur(0);
+            }
+        }
+        
+        @media print {
+            .noprint {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="present" class="">
+        <video id="video" webkit-playsinline playsinline muted autoplay loop>
+      <source src="mov/20220514A.MOV" type="video/mp4">
+      <p>動画を再生できる環境ではありません。</p>
+      </video>
+    </div>
+
+    <body id="box">
+        <div id="image">
+            <p class="random"></p>
+        </div>
+
+        <div id="about" class="ja greeting">
+            <div class="app">
+                <div class="essay">
+                    <p><b>２つ</b></p><br/>
+                    <p>４月２６日、曇り。風が強くて寒かった。</p>
+                    <p>朝６：３０から仕事して、昼の休憩時間に散歩に出た。マフラーを巻いた。</p>
+                    <p>散歩中、２つのものを拾った。<br/>このあたりで１日に２つも拾いたいと思うものを見つけたことはなかった。</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="en" class="greeting">
+            <div id="about" class="en">
+                <div class="app">
+                    <div class="essay">
+                        <p><u>KN Gallery</u> 場所 <i>北海道旅行中の車の中</i></p>
+                        <p>会期：2022年5月10日（火）- 14日（土）</p>
+                        <p>アポイントメント：
+                            <a id="btn">来場を希望される方は、こちらからご連絡ください。</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="ja note">
+            <div class="app">
+                <div class="essay">
+                    <p><span>この展覧会は、北海道内を車で旅行する車中を会場とします。</span></p>
+                    <p><span>そのため、会場に辿り着くことは困難ですが、もしリアルタイムの展覧会をご覧になりたい場合、インスタグラムのビデオチャットにて映像をお繋ぎします。(5〜10分程度)</span></p>
+                    <br/>
+                    <p><span>※予定をあまり決めていない為、ご希望の時間帯に電波の届かない場所に行ってしまう可能性もあります。</span>
+                        <br/><span>出来る限りそのような事態は避けますが、どうしてもしょうがないこともあるのでご了承ください。</span></p>
+                    <p><span>※運転中はフレームアウトしてしまってもすぐに戻せなかったり、揺れが生じてお見苦しい映像になるかもしれません。</span></p>
+                </div>
+            </div>
+        </div>
+        <div id="en" class="note">
+            <div id="about" class="en">
+                <div class="app">
+                    <div class="essay">
+                        <p>あなたのお名前とインスタグラムアカウント、5月10日から14日の間でご希望の日時をお知らせください。</p>
+                        <p>アポイントメント：<a href="mailto:nakaokaorii@gmail.com?subject=KN Gallery&amp;body=あなたのお名前とインスタグラムアカウント、5月10日から14日の間でご希望の日時をお知らせください。">nakaokaorii [at] gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="link noprint ">
+            <a href="https://creative-community.space/value/gallery/kn/" target="_parent">↩︎</a>
+        </p>
+
+        <script>
+            let btn = document.querySelector('#btn');
+            let box = document.querySelector('#box');
+
+            let btnToggleclass = function(el) {
+                el.classList.toggle('appointment');
+            }
+
+            btn.addEventListener('click', function() {
+                btnToggleclass(box);
+            }, false);
+
+            const random = [
+                "01.JPG",
+                "02.JPG",
+                "03.JPG",
+                "04.JPG",
+                "05.JPG",
+                "06.JPG",
+                "07.JPG",
+                "08.JPG",
+                "image.JPG"
+            ];
+
+            function randomImg(randomArray) {
+                var random =
+                    randomArray[Math.floor(Math.random() * randomArray.length)];
+                console.log(random);
+                return random;
+            }
+
+            function imgGenerator() {
+                var img = `<img src="${randomImg(random)} ">`;
+                document.querySelector(".random ").innerHTML = img;
+            }
+            window.setInterval(function() {
+                imgGenerator();
+            }, 4500);
+        </script>
+    </body>
+
+</html>

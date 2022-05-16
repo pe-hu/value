@@ -29,45 +29,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
     <style type="text/css">
-        body {
-            background: #76A3E9;
-            color: #FFFFF0;
-        }
-        
-        .value,
-        .en {
-            font-family: 'Source Serif Pro', serif;
-            line-height: 200%;
-        }
-        
-        .en {
-            text-shadow: #FFFFF0 0.1vw 0.25vw 0.25vw;
-        }
-        
-        .en span {
-            color: #483C32;
-            background: #FFFFF0;
-            padding: 0.25vw 0 0;
-        }
-        
-        .en u {
-            text-shadow: #483C32 0.1vw 0.25vw 0.25vw;
-        }
-        
-        .value {
-            font-size: 2.5rem;
-            width: 90%;
-            height: 65vh;
-            text-shadow: #FFFFF0 0.1vw 0.25vw 0.25vw;
-        }
-        
-        .info i {
-            font-size: 110%;
-        }
-        
-        .info b {
-            font-weight: 900;
-            font-size: 120%;
+         :root {
+            --bg-color: #76A3E9;
+            --text-color: #FFFFF0;
+            --text-shadow: #FFFFF0 0.25vw 0.25vw 0.25vw;
         }
         
         .date {
@@ -153,6 +118,47 @@
         
         .q {
             background-image: url(00.PNG);
+        }
+        
+        body {
+            background: var(--bg-color);
+            color: var(--text-color);
+        }
+        
+        .value,
+        .en {
+            font-family: 'Source Serif Pro', serif;
+            line-height: 200%;
+        }
+        
+        .en {
+            text-shadow: var(--text-shadow);
+        }
+        
+        .en span {
+            color: #483C32;
+            background: #FFFFF0;
+            padding: 0.25vw 0 0;
+        }
+        
+        .en u {
+            text-shadow: var(--text-shadow);
+        }
+        
+        .value {
+            font-size: 2.5rem;
+            width: 90%;
+            height: 65vh;
+            text-shadow: var(--text-shadow);
+        }
+        
+        .info i {
+            font-size: 110%;
+        }
+        
+        .info b {
+            font-weight: 900;
+            font-size: 120%;
         }
         
         .link {

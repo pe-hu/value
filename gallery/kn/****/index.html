@@ -68,12 +68,16 @@
             writing-mode: vertical-rl;
         }
         
+        .ja.greeting {
+            color: #fff;
+            text-shadow: #000 1px 1px 5px;
+        }
+        
         .ja .app {
             position: relative;
             display: flex;
             width: 90%;
             height: 90vh;
-            color: #fff;
             max-height: 55rem;
             margin: 5vh auto 0;
             overflow: auto;
@@ -89,7 +93,6 @@
             display: inline-block;
             font-size: 0.8rem;
             padding: 2.5% 0 20% 2.5vw;
-            text-shadow: #000 1px 1px 5px;
         }
         
         .en .app {
@@ -137,6 +140,15 @@
             font-style: italic;
         }
         
+        .appointment .greeting,
+        .note {
+            display: none;
+        }
+        
+        .appointment .note {
+            display: block;
+        }
+        
         @media screen and (max-width: 550px) {
             .image img {
                 -webkit-filter: blur(0rem);
@@ -156,12 +168,12 @@
     </style>
 </head>
 
-<body>
+<body id="box">
     <div id="image">
         <p class="random"></p>
     </div>
 
-    <div id="about" class="ja">
+    <div id="about" class="ja greeting">
         <div class="app">
             <div class="essay">
                 <p><b>｡::ﾟ::｡::¨･¨::｡::ﾟ::｡::¨･¨::｡::ﾟ</b></p>
@@ -173,14 +185,32 @@
         </div>
     </div>
 
-    <div id="en">
+    <div id="en" class="greeting">
         <div id="about" class="en">
             <div class="app">
                 <div class="essay">
                     <p><u>KN Gallery</u> 場所 <i>非公表</i></p>
                     <p>会期：2022年6月予定</p>
                     <p>アポイントメント：
-                        <a href="mailto:nakaokaorii@gmail.com?subject=KN Gallery&amp;body=お名前と希望する来場日時をご連絡ください。">来場を希望される方は、こちらからご連絡ください。</a></p>
+                        <a id="btn">来場を希望される方は、こちらからご連絡ください。</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="ja note">
+        <div class="app">
+            <div class="essay">
+                <p><span>準備中</span></p>
+            </div>
+        </div>
+    </div>
+    <div id="en" class="note">
+        <div id="about" class="en">
+            <div class="app">
+                <div class="essay">
+                    <p>準備中</p>
+                    <p>アポイントメント：<a href="mailto:nakaokaorii@gmail.com?subject=KN Gallery&amp;body=準備中">nakaokaorii [at] gmail.com</a></p>
                 </div>
             </div>
         </div>
@@ -189,6 +219,17 @@
         <a href="# " onclick="window.history.back(); return false; ">↩︎</a>
     </p>
     <script type="text/javascript ">
+        let btn = document.querySelector('#btn');
+        let box = document.querySelector('#box');
+
+        let btnToggleclass = function(el) {
+            el.classList.toggle('appointment');
+        }
+
+        btn.addEventListener('click', function() {
+            btnToggleclass(box);
+        }, false);
+
         const random = [
             "000.JPG ",
             "001.JPG "

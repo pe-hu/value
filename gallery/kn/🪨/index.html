@@ -29,6 +29,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
     <link rel="icon" href="../infomation/logo.png">
     <style type="text/css">
+         :root {
+            --bg-color: #654321;
+            --text-color: #123456;
+            --text-shadow: #FFFFFF 1px 1px 5px;
+        }
+        
         body {
             font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
         }
@@ -81,6 +87,11 @@
             user-select: none;
         }
         
+        .ja.greeting {
+            color: var(--text-color);
+            text-shadow: var(--text-shadow);
+        }
+        
         .ja .app b {
             font-size: 125%;
         }
@@ -89,7 +100,6 @@
             display: inline-block;
             font-size: 0.8rem;
             padding: 2.5% 0 20% 2.5vw;
-            text-shadow: #fff 1px 1px;
         }
         
         .en .app {
@@ -104,7 +114,8 @@
             font-size: 0.8rem;
             padding: 1rem 2rem;
             font-family: 'Source Serif Pro', serif;
-            background-color: rgba(255, 255, 255, 0.45);
+            color: var(--text-color);
+            background: var(--bg-color);
         }
         
         .en .app u {
@@ -126,15 +137,17 @@
         .link a,
         .essay a {
             text-decoration: none;
-            color: #000;
+            color: var(--text-color);
+            text-shadow: var(--text-shadow);
         }
         
         .essay a {
-            border-bottom: red solid 1px;
+            border-bottom: var(--text-color) solid 1px;
         }
         
         .essay a:hover {
             font-style: italic;
+            filter: invert(1);
         }
         
         @media screen and (max-width: 550px) {
@@ -161,7 +174,7 @@
         <p class="random"></p>
     </div>
 
-    <div id="about" class="ja">
+    <div id="about" class="ja greeting">
         <div class="app">
             <div class="essay">
                 <p><b>石１つ</b></p>

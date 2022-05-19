@@ -127,10 +127,10 @@ fclose($fp);
   <ul class="search-box appreciate" id="click">
   <input type="radio" name="appreciate" value="topics" id="topics">
   <label for="topics" class="label">Topics</label>
-  <input type="radio" name="appreciate" value="gallery" id="gallery">
-  <label for="gallery" class="label">Gallery</label>
   <input type="radio" name="appreciate" value="show" id="show">
-  <label for="show" class="label">Show</label><hr/>
+  <label for="show" class="label">Show</label>
+  <input type="radio" name="appreciate" value="gallery" id="gallery">
+  <label for="gallery" class="label">Gallery</label><hr/>
   <li>
   <input type="radio" name="appreciate" value="things" id="things">
   <label for="things" class="label">Things</label></li>

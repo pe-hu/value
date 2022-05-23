@@ -69,7 +69,7 @@ fclose($fp);
 <li class="list_item list_toggle">
 <p class="what"><?=h($row[0])?></p>
 <span class="name"><?=h($row[1])?></span>
-<a href="<?=h($row[2])?>" target="gallery"></a>
+<a href="<?=h($row[2])?>"></a>
 </li>
 <?php endforeach; ?>
 <?php else: ?>

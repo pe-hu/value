@@ -1,144 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Gallery Laurel Schwulst</title>
-<style type="text/css">
-  #infomation {
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    background-color: rgba(255,255,255,0.55);
-  }
-  #infomation iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-  #open {
-    position: fixed;
-    z-index: 100;
-    top:1rem;
-    right:1rem;
-    color: #000;
-    background-color: #fff;
-    border:solid #000 1px;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    width: 2rem;
-    height: 2rem;
-    text-align: center;
-    text-decoration: none;
-  }
-  .none {
-    z-index: 0;
-    opacity: 0;
-    pointer-events: none;
-    user-select: none;
-    height: 0;
-    transition: all 4500ms ease;
-  }
-  .open {
-    z-index: 1;
-    opacity: 1;
-    pointer-events:all;
-    user-select:auto;
-    width: 100%;
-    height: 100vh;
-    transition: all 5000ms ease;
-  }
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery Laurel Schwulst</title>
+    <meta name="author" content="Gallery Laurel Schwulst">
+    <meta name="description" content="This is a part of firefly sanctuary">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://creative-community.space/value/gallery/laurelschwulst/" />
+    <meta property="og:site_name" content="creative-community.space" />
+    <meta property="og:image" content="https://creative-community.space/value/gallery/laurelschwulst/img/001.jpeg" />
+    <meta property="og:locale" content="ja_JP" />
 
-      #randomImg {
-        position: fixed;
-        top:0; left:0;
-        z-index:-1;
-        overflow:hidden;
-        width:100%;
-        height:100vh;
-        user-select:none;
-        pointer-events:none;
-      }
-      #randomImg img {
-        min-width:100%;
-        min-height:100%;
-        position: absolute;
-        top: 50%; left: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      @media screen and (max-width: 550px){
-        .link {display:none;}
-      }
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@NLC_update" />
+    <meta name="twitter:image" content="https://creative-community.space/value/gallery/laurelschwulst/img/001.jpeg" />
+    <style type="text/css">
+        #infomation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        
+        #infomation iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        #open {
+            position: fixed;
+            z-index: 100;
+            top: 1rem;
+            right: 1rem;
+            color: #000;
+            background-color: #fff;
+            border: solid #000 1px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            width: 2rem;
+            height: 2rem;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .none {
+            z-index: 0;
+            opacity: 0;
+            pointer-events: none;
+            user-select: none;
+            height: 0;
+            transition: all 4500ms ease;
+        }
+        
+        .open {
+            z-index: 1;
+            opacity: 1;
+            pointer-events: all;
+            user-select: auto;
+            width: 100%;
+            height: 100vh;
+            transition: all 5000ms ease;
+        }
+        
+        #randomImg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+            user-select: none;
+            pointer-events: none;
+        }
+        
+        #randomImg img {
+            min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        @media screen and (max-width: 550px) {
+            .link {
+                display: none;
+            }
+        }
     </style>
 </head>
+
 <body>
-<a id="open" href="#infomation">i</a>
-<div id="infomation" class="none">
-  <iframe src="infomation/"></iframe>
-</div>
+    <a id="open" href="#infomation">i</a>
+    <div id="infomation" class="none">
+        <iframe src="infomation/"></iframe>
+    </div>
 
-<div id="randomImg" class="random"></div>
+    <div id="randomImg" class="random">
+        <img src="img/001.jpeg">
+    </div>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script>
-  let btn = document.querySelector('#open');
-  let open = document.querySelector('#infomation');
-   
-  let btnToggleclass = function(el) {
-    el.classList.toggle('open');
-  }
-   
-  btn.addEventListener('click', function() {
-    btnToggleclass(open);
-  }, false);
-$(function(){
-var p=$("#do");
-p.scrollLeft(1000);
-});
-$(function(){
-   // #で始まるアンカーをクリックした場合に処理
-   $('a[href^=#]').click(function() {
-      // スクロールの速度
-      var speed = 1500; // ミリ秒
-      // アンカーの値取得
-      var href= $(this).attr("href");
-      // 移動先を取得
-      var target = $(href == "#" || href == "" ? 'html' : href);
-      // 移動先を数値で取得
-      var position = target.offset().top;
-      // スムーススクロール
-      $('body,html').animate({scrollTop:position}, speed, 'swing');
-      return false;
-   });
-});
-</script>
-<script type="text/javascript">
-const random = [
-  "img/001.jpeg",
-  "img/002.jpeg",
-  "img/003.jpeg",
-  "img/004.jpeg",
-  "img/005.jpeg",
-  "img/006.jpeg",
-  "img/007.jpeg"
-  ];
-  
-  function randomImg(randomArray) {
-    var random =
-    randomArray[Math.floor(Math.random() * randomArray.length)];
-    console.log(random);
-    return random;
-  }
-  function imgGenerator() {
-    var img = `<img src="${randomImg(random)}">`;
-    document.querySelector(".random").innerHTML = img;
-  }
-  window.setInterval(function() {
-    imgGenerator();
-  }, 5000);
-</script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+        let btn = document.querySelector('#open');
+        let open = document.querySelector('#infomation');
+
+        let btnToggleclass = function(el) {
+            el.classList.toggle('open');
+        }
+
+        btn.addEventListener('click', function() {
+            btnToggleclass(open);
+        }, false);
+        $(function() {
+            var p = $("#do");
+            p.scrollLeft(1000);
+        });
+        $(function() {
+            // #で始まるアンカーをクリックした場合に処理
+            $('a[href^=#]').click(function() {
+                // スクロールの速度
+                var speed = 1500; // ミリ秒
+                // アンカーの値取得
+                var href = $(this).attr("href");
+                // 移動先を取得
+                var target = $(href == "#" || href == "" ? 'html' : href);
+                // 移動先を数値で取得
+                var position = target.offset().top;
+                // スムーススクロール
+                $('body,html').animate({
+                    scrollTop: position
+                }, speed, 'swing');
+                return false;
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        const random = [
+            "img/001.jpeg",
+            "img/002.jpeg",
+            "img/003.jpeg",
+            "img/004.jpeg",
+            "img/005.jpeg",
+            "img/006.jpeg",
+            "img/007.jpeg"
+        ];
+
+        function randomImg(randomArray) {
+            var random =
+                randomArray[Math.floor(Math.random() * randomArray.length)];
+            console.log(random);
+            return random;
+        }
+
+        function imgGenerator() {
+            var img = `<img src="${randomImg(random)}">`;
+            document.querySelector(".random").innerHTML = img;
+        }
+        window.setInterval(function() {
+            imgGenerator();
+        }, 5000);
+    </script>
 </body>
+
 </html>

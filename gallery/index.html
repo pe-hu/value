@@ -13,14 +13,15 @@
 <body>
     <span id="value" onclick="window.location.reload(true);">大切にすることを大切にするためのギャラリー</span>
 
-    <div id="en"></div>
+    <div id="infomation"></div>
+
     <div id="about" class="en">
         <div class="app">
             <div class="essay">
                 <p><u>「ニューライフコレクション」限定商品</u></p>
                 <h2>この小さなショーケースは、あなたが大切にするものを大切に展示するためのギャラリーです。</h2>
                 <div id="image">
-                    <p class="random"><img src="000.jpeg" width="100%"></p>
+                    <p class="random_img"><img src="000.jpeg" width="100%"></p>
                 </div>
                 <h1><a href="https://newlifecollection.com/ca2/4/p-r-s/" target="_blank">Buy Now | 購入する</a></h1>
                 <br/>
@@ -39,8 +40,28 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(function() {
-            $("#en").load("en.html");
+            $("#infomation").load("en.html");
         })
+
+        const random = [
+            "000.jpeg",
+            "cover.png"
+        ];
+
+        function randomImg(randomArray) {
+            var random =
+                randomArray[Math.floor(Math.random() * randomArray.length)];
+            console.log(random);
+            return random;
+        }
+
+        function imgGenerator() {
+            var img = `<img src="${randomImg(random)}" width="100%">`;
+            document.querySelector(".random_img").innerHTML = img;
+        }
+        window.setInterval(function() {
+            imgGenerator();
+        }, 2500);
     </script>
 </body>
 

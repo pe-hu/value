@@ -8,26 +8,19 @@
     <link rel="stylesheet" type="text/css" href="../online/value.css" />
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,600;0,700;1,600&display=swap" rel="stylesheet">
     <title>大切にすることを大切にするためのギャラリー</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(function() {
-            $("#en").load("en.html");
-        })
-    </script>
 </head>
 
 <body>
-    <div id="en"></div>
-    <span id="value">大切にすることを大切にするためのギャラリー</span>
+    <span id="value" onclick="window.location.reload(true);">大切にすることを大切にするためのギャラリー</span>
 
+    <div id="en"></div>
     <div id="about" class="en">
         <div class="app">
             <div class="essay">
                 <p><u>「ニューライフコレクション」限定商品</u></p>
                 <h2>この小さなショーケースは、あなたが大切にするものを大切に展示するためのギャラリーです。</h2>
-                <div id="image" class="random">
-                    <img src="000.jpeg">
+                <div id="image">
+                    <p class="random"><img src="000.jpeg" width="100%"></p>
                 </div>
                 <h1><a href="https://newlifecollection.com/ca2/4/p-r-s/" target="_blank">Buy Now | 購入する</a></h1>
                 <br/>
@@ -42,26 +35,12 @@
     <p class="link">
         <a href="#" onclick="window.history.back(); return false;">↩︎</a>
     </p>
-    <script type="text/javascript ">
-        const random = [
-            "000.jpeg ",
-            "000.jpeg "
-        ];
 
-        function randomImg(randomArray) {
-            var random =
-                randomArray[Math.floor(Math.random() * randomArray.length)];
-            console.log(random);
-            return random;
-        }
-
-        function imgGenerator() {
-            var img = `<img src="${randomImg(random)} ">`;
-            document.querySelector(".random ").innerHTML = img;
-        }
-        window.setInterval(function() {
-            imgGenerator();
-        }, 5000);
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#en").load("en.html");
+        })
     </script>
 </body>
 

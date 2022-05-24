@@ -40,7 +40,7 @@ fclose($fp);
 
 #org {
   padding: 0 4.5rem 0 1rem;
-  margin:0 auto;
+  margin:2.5rem auto 0;
 	font-family: 'Source Serif Pro', serif;
 }
 

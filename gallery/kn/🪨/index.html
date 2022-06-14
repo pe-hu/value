@@ -17,12 +17,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://creative-community.space/value/gallery/kn/🪨/" />
     <meta property="og:site_name" content="creative-community.space" />
-    <meta property="og:image" content="001.JPG" />
+    <meta property="og:image" content="img/000.JPG" />
     <meta property="og:locale" content="ja_JP" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@NLC_update" />
-    <meta name="twitter:image" content="001.JPG" />
+    <meta name="twitter:image" content="img/000.JPG" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,205 +32,280 @@
          :root {
             --bg-color: #654321;
             --text-color: #123456;
-            --text-shadow: #FFFFFF 1px 1px 5px;
+            --text-shadow: #FFFFFF 0.25vw 0.25vw 0.25vw;
+        }
+        
+        .date {
+            font-family: 'Source Serif Pro', serif;
+            font-size: 1rem;
+            position: absolute;
+            right: 0;
+            top: 5vh;
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            color: var(--text-color);
+            text-shadow: #000 0.1vw 0.25vw 0.25vw;
+            animation: 2.5s linear infinite alternate logo;
+        }
+        
+        .cover {
+            background-image: url(img/003.JPG);
+        }
+        
+        .a {
+            background-image: url(003.JPG);
+        }
+        
+        .b {
+            background-image: url(004.JPG);
+        }
+        
+        .c {
+            background-image: url(007.JPG);
+        }
+        
+        .d {
+            background-image: url(012.JPG);
+        }
+        
+        .e {
+            background-image: url(013.JPG);
+        }
+        
+        .f {
+            background-image: url(009.JPG);
+        }
+        
+        .g {
+            background-image: url(005.JPG);
+        }
+        
+        .h {
+            background-image: url(014.JPG);
+        }
+        
+        .i {
+            background-image: url(008.JPG);
+        }
+        
+        .j {
+            background-image: url(010.JPG);
+        }
+        
+        .k {
+            background-image: url(001.JPG);
+        }
+        
+        .l {
+            background-image: url(img/001.JPG);
+        }
+        
+        .m {
+            background-image: url(img/002.JPG);
+        }
+        
+        .n {
+            background-image: url(img/000.JPG);
         }
         
         body {
-            font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-        }
-        
-        #image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 85vw;
-            height: 85vh;
-        }
-        
-        #image img {
-            margin: auto;
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateY(-50%) translateX(-50%);
-            -webkit-transform: translateY(-50%) translateX(-50%);
-            width: auto;
-            max-width: 70%;
-            height: auto;
-            max-height: 80%;
-            -webkit-filter: blur(0.5rem);
-            filter: blur(0.5rem);
-            transition: all 2500ms ease;
-        }
-        
-        #image img:hover {
-            -webkit-filter: blur(0);
-            filter: blur(0);
-            transition: all 1000ms ease;
-        }
-        
-        .ja .app {
-            -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
-        }
-        
-        .ja .app {
-            position: relative;
-            display: flex;
-            width: 90%;
-            height: 90vh;
-            max-height: 55rem;
-            margin: 5vh auto 0;
-            overflow: auto;
-            pointer-events: none;
-            user-select: none;
-        }
-        
-        .ja.greeting {
+            background: var(--bg-color);
             color: var(--text-color);
+        }
+        
+        p.shadow {
             text-shadow: var(--text-shadow);
         }
         
-        .ja .app b {
-            font-size: 125%;
-        }
-        
-        .ja .app .essay {
-            display: inline-block;
-            font-size: 0.8rem;
-            padding: 2.5% 0 20% 2.5vw;
-        }
-        
-        .en .app {
-            position: relative;
-            width: 90%;
-            max-width: 45rem;
-            margin: 0 auto 7.5vh;
-        }
-        
-        .en .app .essay {
-            display: block;
-            font-size: 0.8rem;
-            padding: 1rem 2rem;
+        .value,
+        .en {
             font-family: 'Source Serif Pro', serif;
-            color: var(--text-color);
-            background: var(--bg-color);
+            line-height: 200%;
         }
         
-        .en .app u {
-            margin-right: 0.25rem;
+        .en span {
+            color: #000;
+            background: #fff;
+            padding: 0.25vw 0 0;
         }
         
-        .en .app i {
-            font-size: 90%;
+        .en u {
+            text-shadow: var(--text-shadow);
+        }
+        
+        .value {
+            font-size: 2.5rem;
+            width: 90%;
+            height: 65vh;
+            text-shadow: var(--text-shadow);
+        }
+        
+        .info i {
+            font-size: 110%;
+        }
+        
+        .info b {
+            font-weight: 900;
+            font-size: 120%;
         }
         
         .link {
             position: fixed;
-            bottom: 0;
-            left: 0;
+            bottom: 1rem;
+            left: 2.5vw;
             font-size: 2.5rem;
-            margin: 2.5vw;
         }
         
-        .link a,
-        .essay a {
+        .link a {
             text-decoration: none;
             color: var(--text-color);
-            text-shadow: var(--text-shadow);
         }
         
-        .essay a {
-            border-bottom: var(--text-color) solid 1px;
+        #open {
+            opacity: 1;
+            position: absolute;
+            z-index: 100;
+            font-size: 1rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            text-decoration: none;
         }
         
-        .essay a:hover {
-            font-style: italic;
-            filter: invert(1);
+        #open img {
+            margin-bottom: -1.9rem;
+            filter: 200%;
+            animation: 2.5s linear infinite alternate logo;
         }
         
-        @media screen and (max-width: 550px) {
-            .image img {
-                -webkit-filter: blur(0rem);
-                filter: blur(0rem);
+        #open span {
+            display: inline-block;
+            margin-left: 2rem;
+            color: #fff;
+            font-weight: 555;
+            font-family: 'Source Serif Pro', serif;
+            animation: 2.5s linear infinite alternate gallery;
+        }
+        
+        @keyframes logo {
+            from {
+                filter: invert(0);
             }
-            .image img:hover {
-                -webkit-filter: blur(0);
-                filter: blur(0);
+            to {
+                filter: invert(1);
             }
         }
         
-        @media print {
-            .noprint {
-                display: none;
+        @keyframes gallery {
+            from {
+                filter: invert(1);
+            }
+            to {
+                filter: invert(0);
+            }
+        }
+        
+        @media screen and (max-width: 1100px) {
+            .value {
+                font-size: 1rem;
+                text-shadow: var(--text-shadow);
             }
         }
     </style>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="../../../scrollable.css" />
 </head>
 
 <body>
-    <div id="image">
-        <p class="random"></p>
-    </div>
-
-    <div id="about" class="ja greeting">
-        <div class="app">
-            <div class="essay">
-                <p><b>石１つ</b></p>
-                <p>海岸のあちこちにボロボロの石が転がっていた。</p>
-                <p>石にはたくさんのヒビが入っていた。
-                    <br/>つついたら、なんとか１つだった石の形は崩れ、大量の破片になった。</p>
-            </div>
-        </div>
-    </div>
-
-    <div id="en">
-        <div id="about" class="en">
-            <div class="app">
-                <div class="essay">
-                    <p><u>KN Gallery</u> 場所 <i>森、道、市場 2022</i></p>
-                    <p>会期：2022年5月27日（金）- 29日（日）</p>
-                    <p>詳細：
-                        <a href="https://mori-michi-ichiba.info/2022_newlifecollection/" target="_blank">New Life Collection by ∧°┐</a></p>
+    <ul class="mousedragscrollable library">
+        <li class="cover">
+            <p class="date">#3 At Mori Michi Ichiba 2022</p>
+            <div class="contents">
+                <div class="value">
+                    <h1 class="info">
+                        <b>石１つ</b>
+                    </h1>
                 </div>
+                <p class="center en">
+                    <span class="">会期：2022年5月27日（金）- 29日（日）</span><br/>
+                    <span>場所</span>
+                    <span class=""> <i>森、道、市場 2022</i></span>
+                </p>
             </div>
-        </div>
-    </div>
+        </li>
+
+        <li>
+            <div class="contents">
+                <p class="en shadow">
+                    石にはたくさんのヒビが入っていた。
+                    <br/>私はこんな石を見たことがなかったけど、ここにはたくさんあった。
+                    <br/>つついてみたら、なんとか１つだった石の形は崩れ、大量の破片になった。
+                </p>
+            </div>
+        </li>
+
+        <li class="a"></li>
+        <li class="b"></li>
+        <li class="c"></li>
+        <li class="d"></li>
+        <li class="e"></li>
+        <li class="f"></li>
+
+        <li>
+            <div class="contents">
+                <p class="en shadow">
+                    崩してしまうことは申し訳ない気持ちになる。
+                    <br/>でも、なんか楽しくて次々に崩した。
+                </p>
+            </div>
+        </li>
+
+        <li class="g"></li>
+        <li class="h"></li>
+        <li class="i"></li>
+        <li class="j"></li>
+        <li class="k"></li>
+
+        <li>
+            <div class="contents">
+                <p class="en shadow">
+                    崩した中の石１つ分の破片を細かい物も残さず持って帰った。
+                </p>
+                <p class="en shadow">
+                    形は全然違うけど、これらはあの石１つ。
+                </p>
+            </div>
+        </li>
+
+        <li class="l"></li>
+        <li class="m"></li>
+
+        <li>
+            <div class="contents">
+                <a id="open" href="https://creative-community.space/value/gallery/kn/" target="_parent">
+                    <img src="../infomation/logo.png" width="111rem"><br/>
+                    <span>Gallery</span>
+                </a>
+            </div>
+        </li>
+
+        <li class="n"></li>
+
+    </ul>
     <p class="link noprint ">
-        <a href="# " onclick="window.history.back(); return false; ">↩︎</a>
+        <a href="#" onclick="window.history.back(); return false;">↩︎</a>
     </p>
-    <script type="text/javascript ">
-        const random = [
-            "000.JPG",
-            "001.JPG",
-            "002.JPG",
-            "003.JPG",
-            "004.JPG",
-            "005.JPG",
-            "006.JPG",
-            "007.JPG",
-            "008.JPG",
-            "009.JPG",
-            "010.JPG",
-            "011.JPG"
-        ];
-
-        function randomImg(randomArray) {
-            var random =
-                randomArray[Math.floor(Math.random() * randomArray.length)];
-            console.log(random);
-            return random;
-        }
-
-        function imgGenerator() {
-            var img = `<img src="${randomImg(random)} ">`;
-            document.querySelector(".random ").innerHTML = img;
-        }
-        window.setInterval(function() {
-            imgGenerator();
-        }, 5000);
-    </script>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<!-- Import the webpage's javascript file -->
+<script src="../../../scrollable.js"></script>
+<script>
+    $(".mousedragscrollable").mousedragscrollable();
+</script>
 
 </html>

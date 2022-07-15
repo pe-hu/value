@@ -17,12 +17,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://creative-community.space/value/gallery/kn/****/" />
     <meta property="og:site_name" content="creative-community.space" />
-    <meta property="og:image" content="https://creative-community.space/value/gallery/kn/****/img/000.JPG" />
+    <meta property="og:image" content="img/000.JPG" />
     <meta property="og:locale" content="ja_JP" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@NLC_update" />
-    <meta name="twitter:image" content="https://creative-community.space/value/gallery/kn/****/img/000.JPG" />
+    <meta name="twitter:image" content="img/000.JPG" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,239 +32,314 @@
          :root {
             --bg-color: #F9F6EE;
             --text-color: #C7EF7B;
-            --text-shadow: #696969 1px 1px 5px;
+            --text-shadow: #696969 0.25vw 0.25vw 0.25vw;
+        }
+        
+        .cover {
+            background-image: url(img/000.JPG);
+        }
+        
+        .date {
+            font-family: 'Source Serif Pro', serif;
+            font-size: 1rem;
+            position: absolute;
+            right: 0;
+            top: 5vh;
+            -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+            color: var(--text-color);
+            text-shadow: #000 0.1vw 0.25vw 0.25vw;
+            animation: 2.5s linear infinite alternate logo;
+        }
+        
+        .a {
+            background-image: url(01.JPG);
+        }
+        
+        .b {
+            background-image: url(00.JPG);
+        }
+        
+        .c {
+            background-image: url(06.JPG);
+        }
+        
+        .d {
+            background-image: url(07.JPG);
+        }
+        
+        .e {
+            background-image: url(mov/001.png);
+        }
+        
+        .f {
+            background-image: url(mov/002.png);
+        }
+        
+        .g {
+            background-image: url(mov/003.png);
+        }
+        
+        .h {
+            background-image: url(mov/004.png);
+        }
+        
+        .i {
+            background-image: url(mov/005.png);
+        }
+        
+        .j {
+            background-image: url(mov/006.png);
+        }
+        
+        .k {
+            background-image: url(mov/007.png);
+        }
+        
+        .l {
+            background-image: url(mov/008.png);
+        }
+        
+        .m {
+            background-image: url(mov/009.png);
+        }
+        
+        .n {
+            background-image: url(img/001.JPG);
+        }
+        
+        .o {
+            background-image: url(img/002.JPG);
         }
         
         body {
-            font-family: "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-        }
-        
-        #image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 85vw;
-            height: 85vh;
-        }
-        
-        #image img {
-            margin: auto;
-            text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateY(-50%) translateX(-50%);
-            -webkit-transform: translateY(-50%) translateX(-50%);
-            width: auto;
-            max-width: 70%;
-            height: auto;
-            max-height: 80%;
-            -webkit-filter: blur(0.5rem);
-            filter: blur(0.5rem);
-            transition: all 2500ms ease;
-        }
-        
-        #image img:hover {
-            -webkit-filter: blur(0);
-            filter: blur(0);
-            transition: all 1000ms ease;
-        }
-        
-        .ja .app {
-            -ms-writing-mode: tb-rl;
-            writing-mode: vertical-rl;
-        }
-        
-        .ja .app {
-            position: relative;
-            display: flex;
-            width: 90%;
-            height: 90vh;
-            max-height: 55rem;
-            margin: 5vh auto 0;
-        }
-        
-        .ja.greeting {
+            background: var(--bg-color);
             color: var(--text-color);
+        }
+        
+        p.shadow {
             text-shadow: var(--text-shadow);
         }
         
-        .ja.greeting .app {
-            pointer-events: none;
-            user-select: none;
-        }
-        
-        .ja .app b {
-            font-size: 125%;
-        }
-        
-        .ja .app .essay {
-            display: inline-block;
-            font-size: 0.8rem;
-            padding: 2.5% 0 20% 2.5vw;
-        }
-        
-        .en .app {
-            position: relative;
-            width: 90%;
-            max-width: 45rem;
-            margin: 0 auto 7.5vh;
-        }
-        
-        .en .app .essay {
-            display: block;
-            font-size: 0.8rem;
-            padding: 1rem 2rem;
+        .value,
+        .en {
             font-family: 'Source Serif Pro', serif;
-            color: var(--text-color);
-            background: var(--bg-color);
+            line-height: 200%;
         }
         
-        .en .app u {
-            margin-right: 0.25rem;
+        .en span {
+            color: #000;
+            background: #fff;
+            padding: 0.25vw 0 0;
         }
         
-        .en .app i {
-            font-size: 90%;
+        .en u {
+            text-shadow: var(--text-shadow);
+        }
+        
+        .value {
+            font-size: 2.5rem;
+            width: 90%;
+            height: 65vh;
+            text-shadow: var(--text-shadow);
+        }
+        
+        .info i {
+            font-size: 110%;
+        }
+        
+        .info b {
+            font-weight: 900;
+            font-size: 120%;
         }
         
         .link {
             position: fixed;
-            bottom: 0;
-            left: 0;
+            bottom: 1rem;
+            left: 2.5vw;
             font-size: 2.5rem;
-            margin: 2.5vw;
         }
         
-        .link a,
-        .essay a {
+        .link a {
             text-decoration: none;
             color: var(--text-color);
-            text-shadow: var(--text-shadow);
         }
         
-        .essay a {
-            border-bottom: var(--text-color) solid 1px;
+        #open {
+            opacity: 1;
+            position: absolute;
+            z-index: 100;
+            font-size: 1rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            text-decoration: none;
         }
         
-        .essay a:hover {
-            font-style: italic;
-            filter: invert(1);
+        #open img {
+            margin-bottom: -1.9rem;
+            filter: 200%;
+            animation: 2.5s linear infinite alternate logo;
         }
         
-        .appointment .greeting,
-        .note {
-            display: none;
+        #open span {
+            display: inline-block;
+            margin-left: 2rem;
+            color: #fff;
+            font-weight: 555;
+            font-family: 'Source Serif Pro', serif;
+            animation: 2.5s linear infinite alternate gallery;
         }
         
-        .appointment .note {
-            display: block;
-        }
-        
-        @media screen and (max-width: 550px) {
-            .image img {
-                -webkit-filter: blur(0rem);
-                filter: blur(0rem);
+        @keyframes logo {
+            from {
+                filter: invert(0);
             }
-            .image img:hover {
-                -webkit-filter: blur(0);
-                filter: blur(0);
+            to {
+                filter: invert(1);
             }
         }
         
-        @media print {
-            .noprint {
-                display: none;
+        @keyframes gallery {
+            from {
+                filter: invert(1);
+            }
+            to {
+                filter: invert(0);
+            }
+        }
+        
+        @media screen and (max-width: 1100px) {
+            .value {
+                font-size: 1rem;
+                text-shadow: var(--text-shadow);
             }
         }
     </style>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="../../../scrollable.css" />
 </head>
 
-<body id="box">
-    <div id="image">
-        <p class="random"></p>
-    </div>
-
-    <div id="about" class="ja greeting">
-        <div class="app">
-            <div class="essay">
-                <p><b>｡::ﾟ::｡::¨･¨::｡::ﾟ::｡::¨･¨::｡::ﾟ</b></p>
-                <p>砕け散ったレース
-                    <br/>細かな歯
-                    <br/>人形の腕のような節状のもの
+<body>
+    <ul class="mousedragscrollable library">
+        <li class="cover">
+            <p class="date">#4 Video Chat & Live Steam</p>
+            <div class="contents">
+                <div class="value">
+                    <h1 class="info">
+                        <b>｡::ﾟ::｡::¨･¨::｡::ﾟ::｡::¨･¨::｡::ﾟ</b>
+                    </h1>
+                </div>
+                <p class="center en">
+                    <span class="">会期：2022年6月21日(火) - 28日(火)</span><br/>
+                    <span>場所</span>
+                    <span class="">Instagram (<a href="https://www.instagram.com/c_c.mobile/" target="_blank" style="color: black;">@c_c.mobile</a>)</span>
                 </p>
             </div>
-        </div>
-    </div>
+        </li>
 
-    <div id="en" class="greeting">
-        <div id="about" class="en">
-            <div class="app">
-                <div class="essay">
-                    <p><u>KN Gallery</u> 場所 <i><a href="https://www.instagram.com/c_c.mobile/" target="_blank">c_c.mobile</a></i> （会期中に複数回のライブ配信を予定しています。）</p>
-                    <p>会期：2022年6月21日(火) - 28日(火)</p>
-                    <p><a id="btn">アポイントメント</a></p>
-                </div>
+        <li>
+            <div class="contents">
+                <h2 class="en"><u>2022-05-03 12:52 pm</u></h2>
+                <p class="en shadow">
+                    石や岩ばかりの海岸で、崩せるボロボロの石やロシアからの漂流物を見ながら歩いていると、美しい形が落ちているのを見つけた。
+                    <br/>規則的で精巧な形をして、カケラだけ見たら人工物にも見えるような、周りの物とは違う雰囲気だった。
+                </p>
             </div>
-        </div>
-    </div>
+        </li>
 
-    <div id="about" class="ja note">
-        <div class="app">
-            <div class="essay">
-                <p><span>この展示は、オンライン上でのみ公開します。</span></p>
-                <br/>
-                <p><span>インスタグラムのビデオチャットにて、リアルタイムの映像を約5分間接続します。</span></p>
-                <p><span>(あなたのカメラと音声はオフにする)</span></p>
+        <li class="a"></li>
+
+        <li>
+            <div class="contents">
+                <p class="en shadow">
+                    ・見えないくらい細かな歯のついた左右対称な形が一対
+                </p>
+                <p class="en shadow">
+                    ・数個の丸で出来た型を精確に繰り返して、黄色・黄緑・灰色の染み出したような色の表側
+                    <br/>真っ直ぐのラインと小さな流れのような穴があって、真っ白の裏側。
+                    <br/>縁はギザギザ。砕けてたくさんになっていた。
+                </p>
+                <p class="en shadow">
+                    ・陶器の人形の腕のような、肌色の節状のものが一つ。
+                    <br/>(持って帰る時に少しちぎれてしまった。中心には芯のような物があった。)
+                </p>
             </div>
-        </div>
-    </div>
-    <div id="en" class="note">
-        <div id="about" class="en">
-            <div class="app">
-                <div class="essay">
-                    <p>ビデオチャットを希望する日時とアカウント名を、📧</p>
-                    <p><a target="_parent" href="mailto:nakaokaorii@gmail.com?subject=｡::ﾟ::｡::¨･¨::｡::ﾟ::｡::¨･¨::｡::ﾟ | KN Gallery&amp;body=⌚︎5分間のビデオチャットを希望する日時%0D%0A(第一希望)%0D%0A(第二希望)%0D%0A%0D%0Aインスタグラムアカウント→">nakaokaorii [at] gmail.com</a></p>
-                </div>
+        </li>
+
+        <li class="b"></li>
+        <li class="c"></li>
+
+        <li>
+            <div class="contents">
+                <p class="en shadow">
+                    きれいに飾りたいと思った。
+                    <br/>落ちてるものだし、海では珍しいものでもないけど、きれいなものだから、ちゃんと見たかった。
+                </p>
             </div>
-        </div>
-    </div>
+        </li>
+
+        <li class="d"></li>
+
+        <li>
+            <div class="contents">
+                <p class="en shadow">
+                    観察用にライブ配信をした。
+                </p>
+                <h2 class="en">
+                    <u>2022-06-21 11:00-11:20 am</u>
+                    <br/><u>2022-06-26 9:00-9:20 pm</u>
+                    <br/><u>2022-06-27 5:50-6:00 am</u>
+                </h2>
+            </div>
+        </li>
+
+        <li class="e"></li>
+        <li class="f"></li>
+        <li class="g"></li>
+        <li class="h"></li>
+        <li class="i"></li>
+        <li class="j"></li>
+        <li class="k"></li>
+        <li class="l"></li>
+        <li class="m"></li>
+
+        <li>
+            <div class="contents">
+                <p class="en shadow">
+                    ずっと見た。
+                    <br/>光が強かったり弱かったり、影や反射が出来て、中はしんと止まってるけど、たくさん見れた。
+                </p>
+            </div>
+        </li>
+
+        <li>
+            <div class="contents">
+                <a id="open" href="https://creative-community.space/value/gallery/kn/" target="_parent">
+                    <img src="../infomation/logo.png" width="111rem"><br/>
+                    <span>Gallery</span>
+                </a>
+            </div>
+        </li>
+
+        <li class="n"></li>
+        <li class="o"></li>
+
+    </ul>
     <p class="link noprint ">
-        <a href="# " onclick="window.history.back(); return false; ">↩︎</a>
+        <a href="#" onclick="window.history.back(); return false;">↩︎</a>
     </p>
-    <script type="text/javascript ">
-        let btn = document.querySelector('#btn');
-        let box = document.querySelector('#box');
-
-        let btnToggleclass = function(el) {
-            el.classList.toggle('appointment');
-        }
-
-        btn.addEventListener('click', function() {
-            btnToggleclass(box);
-        }, false);
-
-        const random = [
-            "00.JPG ",
-            "01.JPG ",
-            "02.JPG "
-        ];
-
-        function randomImg(randomArray) {
-            var random =
-                randomArray[Math.floor(Math.random() * randomArray.length)];
-            console.log(random);
-            return random;
-        }
-
-        function imgGenerator() {
-            var img = `<img src="${randomImg(random)} ">`;
-            document.querySelector(".random ").innerHTML = img;
-        }
-        window.setInterval(function() {
-            imgGenerator();
-        }, 5000);
-    </script>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<!-- Import the webpage's javascript file -->
+<script src="../../../scrollable.js"></script>
+<script>
+    $(".mousedragscrollable").mousedragscrollable();
+</script>
 
 </html>
